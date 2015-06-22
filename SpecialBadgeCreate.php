@@ -125,4 +125,7 @@ class SpecialBadgeCreate extends FormSpecialPage {
 		$this->getOutput()->addWikiMsg( 'ob-create-success' );
 	}
 
+	protected function getGroupName() {
+		return 'other';
+	}
 }

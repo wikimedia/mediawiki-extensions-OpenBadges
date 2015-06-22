@@ -44,11 +44,8 @@ $wgAPIModules['openbadges'] = 'ApiOpenBadges';
 
 // Special pages
 $wgSpecialPages['BadgeIssue'] = 'SpecialBadgeIssue';
-$wgSpecialPageGroups['BadgeIssue'] = 'other';
 $wgSpecialPages['BadgeCreate'] = 'SpecialBadgeCreate';
-$wgSpecialPageGroups['BadgeCreate'] = 'other';
 $wgSpecialPages['BadgeView'] = 'SpecialBadgeView';
-$wgSpecialPageGroups['BadgeView'] = 'other';
 
 // Permissions
 // @todo Add custom create and issue groups

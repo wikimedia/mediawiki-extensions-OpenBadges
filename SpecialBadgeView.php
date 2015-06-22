@@ -81,4 +81,7 @@ class SpecialBadgeView extends SpecialPage {
 		return $badgeTable;
 	}
 
+	protected function getGroupName() {
+		return 'other';
+	}
 }

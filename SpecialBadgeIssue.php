@@ -185,4 +185,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 		$this->getOutput()->addWikiMsg( 'ob-issue-success' );
 	}
 
+	protected function getGroupName() {
+		return 'other';
+	}
 }
