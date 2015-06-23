@@ -176,6 +176,16 @@ class ApiOpenBadges extends ApiBase {
 			wfTimestamp( TS_ISO_8601, $res->current()->obl_timestamp )
 		);
 
+		// get evidence based on which the badge was issued
+		// only show if not empty
+		if ( !empty( $res->current()->obl_badge_evidence ) ) {
+			$this->getResult()->addValue(
+				null,
+				'evidence',
+				$res->current()->obl_badge_evidence
+			);
+		}
+
 		// get the url to the badge image
 		$this->getResult()->addValue(
 			null,

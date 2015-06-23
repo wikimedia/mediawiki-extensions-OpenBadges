@@ -40,6 +40,12 @@ class SpecialBadgeIssue extends FormSpecialPage {
 				'required' => true,
 				'options' => self::getAllBadges(),
 			),
+			'Evidence' => array(
+				'type' => 'text',
+				'label-message' => 'ob-issue-evidence',
+				'required' => false,
+				'validation-callback' => array( 'SpecialBadgeIssue', 'validateEvidence' ),
+			),
 		);
 	}
 
@@ -94,7 +100,8 @@ class SpecialBadgeIssue extends FormSpecialPage {
 			array(
 				'obl_timestamp' => $dbw->timestamp(),
 				'obl_receiver' => $status->value['Receiver'],
-				'obl_badge_id' => $status->value['BadgeId']
+				'obl_badge_id' => $status->value['BadgeId'],
+				'obl_badge_evidence' => $status->value['Evidence']
 			),
 			__METHOD__
 		);
@@ -105,11 +112,11 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	/**
 	 * Check if the user exists
 	 *
-	 * @return bool
+	 * @return bool|string
 	 */
 	public function validateUser( $userName, $alldata ) {
 		if ( $userName == '' ) {
-			return wfMessage( 'htmlform-required' );
+			return wfMessage( 'htmlform-required' )->text();
 		}
 		$dbr = wfGetDB( DB_MASTER );
 		$userRow = $dbr->selectRow(
@@ -118,11 +125,40 @@ class SpecialBadgeIssue extends FormSpecialPage {
 			array( 'user_name' => $userName )
 		);
 		if ( !$userRow ) {
-			return wfMessage( 'ob-db-user-not-found' );
+			return wfMessage( 'ob-db-user-not-found' )->text();
 		}
 		return true;
 	}
 
+	/**
+	 * Check if the evidence is a URL or empty
+	 *
+	 * @return bool|string
+	 */
+	public function validateEvidence( $url, $alldata ) {
+		if ( $url == '' ) {
+			return true;
+		}
+		elseif ( !SpecialBadgeIssue::isURL( $url ) ) {
+			return wfMessage( 'ob-db-evidence-not-url' )->text();
+		}
+		return true;
+	}
+
+	/**
+	 * Check if string starts with https or http protocol
+	 *
+	 * @return bool
+	 */
+	public function isURL( $url ) {
+		if ( substr( $url, 0, strlen( 'http://' ) ) === 'http://' ) {
+			return true;
+		}
+		elseif ( substr( $url, 0, strlen( 'https://' ) ) === 'https://' ) {
+			return true;
+		}
+		return false;
+	}
 
 	/**
 	 * Validates whether the user and badge exists. Returns a good Status and
@@ -147,6 +183,8 @@ class SpecialBadgeIssue extends FormSpecialPage {
 			array( 'obl_badge_id' => $data['BadgeId'] )
 		);
 
+		$evidence = $data['Evidence'] == '' ? null : $data['Evidence'];
+
 		if ( $userRow && $badgeRow ) {
 			// check if same badge-user combo already issued
 			$issued = $dbr->selectRow(
@@ -163,7 +201,8 @@ class SpecialBadgeIssue extends FormSpecialPage {
 			else {
 				$assertionRes = array(
 					'Receiver' => $userRow->user_id,
-					'BadgeId' => $badgeRow->obl_badge_id
+					'BadgeId' => $badgeRow->obl_badge_id,
+					'Evidence' => $evidence
 				);
 				$status = Status::newGood( $assertionRes );
 			}

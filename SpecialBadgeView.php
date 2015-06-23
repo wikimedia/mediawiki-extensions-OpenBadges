@@ -40,7 +40,8 @@ class SpecialBadgeView extends SpecialPage {
 			array(
 				'obl_name',
 				'openbadges_class.obl_badge_image',
-				'openbadges_assertion.obl_badge_id' ),
+				'openbadges_assertion.obl_badge_id',
+				'obl_badge_evidence' ),
 			'obl_receiver = ' . $userId,
 			__METHOD__,
 			array(),
@@ -57,6 +58,7 @@ class SpecialBadgeView extends SpecialPage {
 			$badgeImage = $file->transform( array( 'width' => 180, 'height' => 360 ) );
 			$thumb = $badgeImage->toHtml( array( 'desc-link' => true ) );
 			$thumb = Html::rawElement( 'td', array(), $thumb );
+
 			$assertCall = array(
 				'action' => 'openbadges',
 				'format' => 'json',
@@ -67,10 +69,28 @@ class SpecialBadgeView extends SpecialPage {
 			$assertLink = Html::rawElement(
 				'a',
 				array( 'href' => $apiUrl . http_build_query( $assertCall ) ),
-				wfMessage( 'ob-view-proof' )
+				wfMessage( 'ob-view-proof' )->text()
 			);
 			$assertLink =  Html::rawElement( 'td', array(), $assertLink );
-			$badgeTr .= Html::rawElement( 'tr', array(), $badgeName . $thumb . $assertLink );
+
+			$evidenceLink = $row->obl_badge_evidence;
+			if ( empty( $evidenceLink ) ) {
+				$evidenceLink = wfMessage( 'ob-view-no-evidence' )->text();
+			}
+			else {
+				$evidenceLink = Html::rawElement(
+					'a',
+					array( 'href' => $row->obl_badge_evidence ),
+					wfMessage( 'ob-view-evidence' )->text()
+				);
+			}
+			$evidenceLink =  Html::rawElement( 'td', array(), $evidenceLink );
+
+			$badgeTr .= Html::rawElement(
+				'tr',
+				array(),
+				$badgeName . $thumb . $assertLink . $evidenceLink
+			);
 		}
 
 		$badgeTable = Html::rawElement(
