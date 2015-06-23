@@ -2,7 +2,7 @@
 /**
  * OpenBadges special page to view all the badges assigned to a user.
  *
- * TODO: rebuild using TablePager or something like SpecialListFiles
+ * @todo rebuild using TablePager or something like SpecialListFiles
  *
  * @file
  * @ingroup Extensions
@@ -60,6 +60,7 @@ class SpecialBadgeView extends SpecialPage {
 			$assertCall = array(
 				'action' => 'openbadges',
 				'format' => 'json',
+				'type' => 'assertion',
 				'obl_badge_id' => $row->obl_badge_id,
 				'obl_receiver' => $userId
 			);

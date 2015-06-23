@@ -92,7 +92,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 		$result = $dbw->insert(
 			'openbadges_assertion',
 			array(
-				'obl_timestamp' => wfTimestamp(),
+				'obl_timestamp' => $dbw->timestamp(),
 				'obl_receiver' => $status->value['Receiver'],
 				'obl_badge_id' => $status->value['BadgeId']
 			),

@@ -136,7 +136,7 @@ class ApiOpenBadges extends ApiBase {
 		$this->getResult()->addValue( null, 'uid',  $res->current()->obl_id );
 
 		// add information about the recipient user
-		// TODO email could also be salted
+		// @todo email could also be salted
 		$hashAlgo = "sha256";
 		$hashedEmail = hash( $hashAlgo, $res->current()->user_email );
 		$this->getResult()->addValue( null, 'recipient', array(
@@ -170,14 +170,17 @@ class ApiOpenBadges extends ApiBase {
 		);
 
 		// get the date that the badge was issued on
-		$this->getResult()->addValue( null, 'issuedOn', $res->current()->obl_timestamp );
+		$this->getResult()->addValue(
+			null,
+			'issuedOn',
+			wfTimestamp( TS_ISO_8601, $res->current()->obl_timestamp )
+		);
 
 		// get the url to the badge image
 		$this->getResult()->addValue(
-				null,
-				'image',
-				$this->imageUrl( $res->current()->obl_badge_image
-			)
+			null,
+			'image',
+			$this->imageUrl( $res->current()->obl_badge_image )
 		);
 	}
 
@@ -237,7 +240,7 @@ class ApiOpenBadges extends ApiBase {
 	 * Given an image filename this returns the file url if a png
 	 * or a thumb-file url if an svg
 	 *
-	 * TODO don't hardcode thumb width
+	 * @todo don't hardcode thumb width
 	 *
 	 * @return string
 	 */

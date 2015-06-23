@@ -5,7 +5,7 @@
  * See https://github.com/openbadges/openbadges-specification
  * for specs.
  *
- * TODO Add logging
+ * @todo Add logging
  *
  * @file
  * @ingroup Extensions
