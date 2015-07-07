@@ -2,7 +2,7 @@
 	"@metadata": {
 		"authors": []
 	},
-	"ob-desc": "Mozilla Open Badges extension",
+	"ob-desc": "Allows the wiki to become an [http://openbadges.org/ OpenBadges] issuer",
 	"action-createbadge": "create badges",
 	"action-viewbadge": "view badges",
 	"action-issuebadge": "issue badges",
