@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"chococookies",
-			"Lokal_Profil"
+			"Lokal_Profil",
+			"Liuxinyu970226"
 		]
 	},
 	"ob-desc": "Short description of the openbadges extension (implements Mozilla OpenBadges)",
@@ -22,13 +23,13 @@
 	"ob-create-name-exists": "Error message if badge name is already in use",
 	"badgeview": "Title of special page for viewing badges awarded to the current user",
 	"ob-view-proof": "Link handle to view assertion claim",
-	"ob-view-evidence": "Link handle to view the evidence claim",
-	"ob-view-no-evidence": "Placeholder when there is no evidence claim",
+	"ob-view-evidence": "Link handle to view the evidence claim\n{{Identical|Evidence}}",
+	"ob-view-no-evidence": "Placeholder when there is no evidence claim\n{{Identical|None}}",
 	"badgeissue": "Title of special page for issuing badges to users",
 	"badge-issue-legend": "Legend field for SpecialBadgeIssue",
 	"ob-issue-submit": "Form submit button, issue badge to the username",
-	"ob-issue-user": "Username, form field",
-	"ob-issue-type": "Name or type of badge, form field to input the name of the badge that will be awarded",
+	"ob-issue-user": "Username, form field\n{{Identical|Username}}",
+	"ob-issue-type": "Name or type of badge, form field to input the name of the badge that will be awarded\n{{Identical|Badge}}",
 	"ob-issue-evidence": "Evidence URL, form field to input the url of the evidence supporting the badge being awarded",
 	"ob-db-user-not-found": "Error message if user does not exist",
 	"ob-db-evidence-not-url": "Error message if the evidence is not a URL",
@@ -37,7 +38,5 @@
 	"ob-db-error-issued": "Error message if this badge has already been issued to the user",
 	"ob-issue-success": "Success message for badge issue",
 	"apihelp-openbadges-description": "{{doc-apihelp-description|openbadges}}",
-	"apihelp-openbadges-obl_badge_id": "{{doc-apihelp-param|openbadges|obl_badge_id}}",
-	"apihelp-openbadges-param-type": "{{doc-apihelp-param|openbadges|type}}",
-	"apihelp-openbadges-obl_receiver": "{{doc-apihelp-param|openbadges|obl_receiver}}"
+	"apihelp-openbadges-param-type": "{{doc-apihelp-param|openbadges|type}}"
 }

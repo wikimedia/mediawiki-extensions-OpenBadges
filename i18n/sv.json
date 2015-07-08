@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiPhoenix"
+		]
+	},
+	"ob-create-no-image": "Bilden finns inte.",
+	"ob-create-wrong-mime": "Bilden har fel format, endast png eller svg är tillåtet.",
+	"ob-view-proof": "Bevis",
+	"ob-view-evidence": "Bevis",
+	"ob-view-no-evidence": "Ingen",
+	"ob-issue-user": "Användarnamn",
+	"ob-db-user-not-found": "Användaren finns inte.",
+	"ob-db-unknown-error": "Okänt databasfel."
+}

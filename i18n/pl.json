@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"action-createbadge": "tworzenie odznak",
+	"action-viewbadge": "oglądanie odznak",
+	"right-createbadge": "Utwórz odznaki",
+	"badgecreate": "Utwórz odznakę",
+	"badge-create-legend": "Utwórz nową odznakę",
+	"ob-create-badge-submit": "Dodaj odznakę do bazy danych",
+	"ob-create-badge-name": "Nazwa odznaki",
+	"ob-create-badge-description": "Opis odznaki",
+	"ob-create-badge-image": "Plik obrazka odznaki",
+	"ob-create-success": "Odznaka została utworzona.",
+	"ob-create-no-image": "Obrazek nie istnieje.",
+	"ob-create-wrong-mime": "Obrazek ma niewłaściwy format: dozwolony jest tylko png lub svg.",
+	"ob-create-name-exists": "Nazwa odznaki już istnieje.",
+	"badgeview": "Moje odznaki",
+	"ob-view-no-evidence": "Brak",
+	"ob-issue-user": "Nazwa użytkownika",
+	"ob-issue-type": "Odznaka",
+	"ob-db-user-not-found": "Użytkownik nie istnieje.",
+	"ob-db-badge-not-found": "Odznaka nie istnieje.",
+	"ob-db-unknown-error": "Nieznany błąd bazy danych."
+}
