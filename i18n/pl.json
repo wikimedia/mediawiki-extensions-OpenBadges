@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrumps"
+			"Chrumps",
+			"PiotrAntosz"
 		]
 	},
 	"action-createbadge": "tworzenie odznak",
@@ -18,10 +19,16 @@
 	"ob-create-wrong-mime": "Obrazek ma niewłaściwy format: dozwolony jest tylko png lub svg.",
 	"ob-create-name-exists": "Nazwa odznaki już istnieje.",
 	"badgeview": "Moje odznaki",
+	"ob-view-proof": "Dowód",
+	"ob-view-evidence": "Dowód",
 	"ob-view-no-evidence": "Brak",
 	"ob-issue-user": "Nazwa użytkownika",
 	"ob-issue-type": "Odznaka",
+	"ob-issue-evidence": "URL dowodu",
 	"ob-db-user-not-found": "Użytkownik nie istnieje.",
+	"ob-db-evidence-not-url": "Dowód musi być adresem URL.",
 	"ob-db-badge-not-found": "Odznaka nie istnieje.",
-	"ob-db-unknown-error": "Nieznany błąd bazy danych."
+	"ob-db-unknown-error": "Nieznany błąd bazy danych.",
+	"apihelp-openbadges-param-type": "Typ zapytania",
+	"apihelp-openbadges-param-obl_receiver": "Użytkownik który otrzymał OpenBadge."
 }

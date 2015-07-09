@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ahmed-Najib-Biabani-Ibrahimkhel"
+		]
+	},
+	"action-createbadge": "نښانونه جوړول",
+	"action-viewbadge": "نښانونه کتل",
+	"right-createbadge": "نښانونه جوړول",
+	"right-viewbadge": "نښانونه کتل",
+	"badgecreate": "يو نښان جوړول",
+	"badge-create-legend": "يو نوی نښان جوړول",
+	"ob-create-badge-name": "نښان نوم",
+	"ob-create-badge-description": "د نښان څرگندونه",
+	"ob-create-badge-image": "د نښان انځور دوتنه",
+	"ob-create-no-image": "انځور نشته.",
+	"ob-create-name-exists": "دا نښان نوم له پخوا څخه شته.",
+	"badgeview": "زما نښانونه",
+	"ob-view-no-evidence": "هېڅ",
+	"ob-issue-user": "کارن-نوم",
+	"ob-issue-type": "نښان",
+	"ob-db-user-not-found": "کارن نشته.",
+	"ob-db-badge-not-found": "نښان نشته.",
+	"apihelp-openbadges-param-type": "د غوښتنې ډول."
+}

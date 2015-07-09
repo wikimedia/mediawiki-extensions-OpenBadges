@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"ob-create-no-image": "D'Bild gëtt et net.",
+	"ob-view-proof": "Beweis",
+	"ob-view-evidence": "Beweis",
+	"ob-issue-user": "Benotzernumm",
+	"ob-db-user-not-found": "Benotzer gëtt et net."
+}
