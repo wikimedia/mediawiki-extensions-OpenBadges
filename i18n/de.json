@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Metalhead64"
+			"Metalhead64",
+			"Purodha"
 		]
 	},
 	"ob-desc": "Erlaubt es dem Wiki, ein [http://openbadges.org/ OpenBadges]-Aussteller zu werden",
@@ -33,7 +34,7 @@
 	"ob-issue-type": "Auszeichnung",
 	"ob-issue-evidence": "Beweis-URL",
 	"ob-db-user-not-found": "Der Benutzer ist nicht vorhanden.",
-	"ob-db-evidence-not-url": "Der Beweis muss eine URL sein.",
+	"ob-db-evidence-not-url": "Der Beweis muss ein URL sein.",
 	"ob-db-badge-not-found": "Auszeichnung ist nicht vorhanden.",
 	"ob-db-unknown-error": "Unbekannter Datenbankfehler.",
 	"ob-db-error-issued": "Die Auszeichnung wurde bereits an diesen Benutzer vergeben.",

@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"ob-create-no-image": "Dat Beld jidd et nit.",
+	"ob-create-wrong-mime": "Dat Beld es em verkihrte Fommaht. Es sinn_er blohß \n<i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Portable Network Graphics\">PNG</i> un <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Scalable Vector Graphics\">SVG</i> müjjelesch.",
+	"ob-view-proof": "Belähsch",
+	"ob-view-evidence": "Belääsch",
+	"ob-view-no-evidence": "Keine",
+	"ob-issue-user": "Metmaacher_Nahme",
+	"ob-issue-evidence": "Dä <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Uniform Ressource Locator\">URL</i> mem Belääsch.",
+	"ob-db-user-not-found": "Dä Metmaacher jidd_et nit.",
+	"ob-db-evidence-not-url": "Ene Belääsch moß as en <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Uniform Ressource Locator\">URL</i> aanjejovve wähde.",
+	"ob-db-unknown-error": "Ene onklohre Fähler met de Dahtebangk.",
+	"apihelp-openbadges-param-type": "De Zood_Aanfrohch."
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dcausse"
+		]
+	},
+	"ob-create-no-image": "L’image n’existe pas.",
+	"ob-db-evidence-not-url": "La preuve doit être une URL."
+}
