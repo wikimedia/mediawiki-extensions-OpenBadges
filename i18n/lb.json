@@ -4,10 +4,25 @@
 			"Robby"
 		]
 	},
+	"action-viewbadge": "Badge weisen",
+	"right-viewbadge": "Badge weisen",
+	"ob-create-badge-submit": "Badge an Datebank dobäisetzen",
 	"ob-create-badge-name": "Numm vum Badge",
+	"ob-create-badge-description": "Beschreiwung vum Badge",
+	"ob-create-badge-image": "Fichier vum Bild vum Badge",
 	"ob-create-no-image": "D'Bild gëtt et net.",
+	"ob-create-name-exists": "Numm vum Badge gëtt et schonn.",
+	"badgeview": "Meng Badgen",
 	"ob-view-proof": "Beweis",
 	"ob-view-evidence": "Beweis",
+	"ob-view-no-evidence": "Keng",
 	"ob-issue-user": "Benotzernumm",
-	"ob-db-user-not-found": "Benotzer gëtt et net."
+	"ob-issue-type": "Badge",
+	"ob-issue-evidence": "Beweis-URL",
+	"ob-db-user-not-found": "Benotzer gëtt et net.",
+	"ob-db-evidence-not-url": "De Beweis muss eng URL sinn.",
+	"ob-db-badge-not-found": "Badge gëtt et net.",
+	"ob-db-unknown-error": "Onbekannten Datebank-Feeler.",
+	"ob-db-error-issued": "De Badge gouf schonn un dëse Benotzer verdeelt.",
+	"apihelp-openbadges-param-type": "Typ vun Ufro."
 }

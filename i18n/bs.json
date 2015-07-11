@@ -1,8 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Srdjan m"
+			"Srdjan m",
+			"Semso98"
 		]
 	},
-	"ob-create-no-image": "Slika ne postoji."
+	"right-issuebadge": "Značke pitanja",
+	"ob-create-badge-submit": "Dodaj značku u bazu podataka",
+	"ob-create-no-image": "Slika ne postoji.",
+	"ob-view-proof": "Dokaz",
+	"ob-view-evidence": "Dokaz",
+	"ob-issue-user": "Korisničko ime",
+	"ob-issue-type": "Značka",
+	"ob-db-evidence-not-url": "Dokaz mora biti URL."
 }

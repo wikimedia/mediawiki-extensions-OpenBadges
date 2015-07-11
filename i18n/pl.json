@@ -30,5 +30,5 @@
 	"ob-db-badge-not-found": "Odznaka nie istnieje.",
 	"ob-db-unknown-error": "Nieznany błąd bazy danych.",
 	"apihelp-openbadges-param-type": "Typ zapytania",
-	"apihelp-openbadges-param-obl_receiver": "Użytkownik który otrzymał OpenBadge."
+	"apihelp-openbadges-param-obl_receiver": "Użytkownik, który otrzymał OpenBadge."
 }
