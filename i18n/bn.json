@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aftabuzzaman",
+			"Sayma Jahan"
+		]
+	},
+	"action-createbadge": "ব্যাজ তৈরি করুন",
+	"action-viewbadge": "ব্যাজ দেখুন",
+	"action-issuebadge": "ফলাফল প্রতীক",
+	"right-createbadge": "ব্যাজ তৈরি করুন",
+	"right-issuebadge": "ব্যাজ প্রচলন করুন",
+	"badgecreate": "ব্যাজ তৈরি করুন",
+	"badge-create-legend": "একটি নতুন ব্যাজ তৈরি করুন",
+	"ob-create-badge-name": "ব্যাজের নাম",
+	"ob-create-badge-description": "ব্যাজের বর্ণনা",
+	"ob-create-badge-image": "ব্যাজ ছবির ফাইল",
+	"ob-create-badge-criteria": "ব্যাজ নির্ণয়",
+	"ob-create-success": "ব্যাজ সফলভাবে তৈরি হয়েছে।",
+	"ob-create-no-image": "চিত্রটি বিদ্যমান নেই।",
+	"ob-create-name-exists": "ব্যাজের নামটি ইতিমধ্যে আছে।",
+	"badgeview": "আমার ব্যাজ",
+	"ob-view-proof": "প্রমাণ",
+	"ob-view-evidence": "সাক্ষ্য",
+	"badgeissue": "একটি ব্যাজ প্রচলন করুন",
+	"badge-issue-legend": "একজন ব্যবহারকারীকে ব্যাজ সরবরাহ করুন",
+	"ob-issue-submit": "নির্দিষ্ট প্রতীক",
+	"ob-issue-user": "ব্যবহারকারী নাম",
+	"ob-issue-type": "ব্যাজ",
+	"ob-db-evidence-not-url": "প্রমাণটি অবশ্যই একটি ইউআরএল হবে",
+	"ob-db-badge-not-found": "ব্যাজ নেই।",
+	"ob-db-error-issued": "ব্যাজটি ইতিমধ্যে একজন ব্যবহারকারীকে দেওয়া হয়েছে।",
+	"ob-issue-success": "ব্যাজ সফলভাবে তৈরি হয়েছে।",
+	"apihelp-openbadges-param-type": "অনুরোধের ধরন।",
+	"apihelp-openbadges-param-obl_badge_id": "{{SITENAME}} থেকে প্রাপ্ত উন্মুক্ত-ব্যাজ।",
+	"apihelp-openbadges-param-obl_receiver": "ব্যবহারকারী যিনি উন্মুক্ত-ব্যাজ গ্রহণ করেছেন।"
+}
