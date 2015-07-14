@@ -30,7 +30,7 @@
 	"ob-issue-type": "ব্যাজ",
 	"ob-db-evidence-not-url": "প্রমাণটি অবশ্যই একটি ইউআরএল হবে",
 	"ob-db-badge-not-found": "ব্যাজ নেই।",
-	"ob-db-unknown-error": "তথ্যকোষে অজানা ভুল",
+	"ob-db-unknown-error": "তথ্যকোষে অজানা ভুল।",
 	"ob-db-error-issued": "ব্যাজটি ইতিমধ্যে একজন ব্যবহারকারীকে দেওয়া হয়েছে।",
 	"ob-issue-success": "ব্যাজ সফলভাবে তৈরি হয়েছে।",
 	"apihelp-openbadges-param-type": "অনুরোধের ধরন।",

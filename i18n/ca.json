@@ -4,6 +4,18 @@
 			"Annamerida"
 		]
 	},
+	"action-issuebadge": "Emetre els distintius",
+	"right-createbadge": "Crea distintius",
+	"right-issuebadge": "Problema de distintius",
+	"badge-create-legend": "Crea un nou distintiu",
 	"ob-create-badge-submit": "Afegeix l'insignia a la base de dades.",
-	"ob-create-no-image": "La imatge no existeix"
+	"ob-create-badge-description": "Descripció del distintiu",
+	"ob-create-badge-image": "Arxiu d'imatge del distintiu",
+	"ob-create-badge-criteria": "Normes del distintiu",
+	"ob-create-success": "Distintiu creat correctament",
+	"ob-create-no-image": "La imatge no existeix",
+	"ob-issue-submit": "Assignar distintiu",
+	"ob-issue-type": "Distintiu",
+	"ob-db-evidence-not-url": "Les proves han de ser una URL.",
+	"ob-db-badge-not-found": "El distintiu no existeix"
 }

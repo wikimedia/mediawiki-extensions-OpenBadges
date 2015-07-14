@@ -1,15 +1,42 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Lokal Profil"
 		]
 	},
+	"ob-desc": "Gör det möjligt för en vika att bli en utfärdare av [http://openbadges.org/ OpenBadges]",
+	"action-createbadge": "skapa märken",
+	"action-viewbadge": "visa märken",
+	"action-issuebadge": "utfärda märken",
+	"right-createbadge": "Skapa märken",
+	"right-viewbadge": "Visa märken",
+	"right-issuebadge": "Utfärda märken",
+	"badgecreate": "Skapa ett märke",
+	"badge-create-legend": "Skapa ett nytt märke",
+	"ob-create-badge-submit": "Lägg till märke i databasen",
+	"ob-create-badge-name": "Namn på märket",
+	"ob-create-badge-description": "Beskrivning för märket",
+	"ob-create-badge-image": "Bildfil för märket",
+	"ob-create-badge-criteria": "Kriterier för märket",
+	"ob-create-success": "Märket har skapats.",
 	"ob-create-no-image": "Bilden finns inte.",
 	"ob-create-wrong-mime": "Bilden har fel format, endast png eller svg är tillåtet.",
+	"ob-create-name-exists": "Märkets namn finns redan.",
+	"badgeview": "Mina märken",
 	"ob-view-proof": "Bevis",
 	"ob-view-evidence": "Bevis",
 	"ob-view-no-evidence": "Ingen",
+	"badgeissue": "Utfärda ett märke",
+	"badge-issue-legend": "Utfärda ett märke till en användare",
 	"ob-issue-user": "Användarnamn",
+	"ob-issue-type": "Märke",
+	"ob-issue-evidence": "Bevis-URL",
 	"ob-db-user-not-found": "Användaren finns inte.",
-	"ob-db-unknown-error": "Okänt databasfel."
+	"ob-db-evidence-not-url": "Beviset måste vara en URL.",
+	"ob-db-badge-not-found": "Märket finns inte.",
+	"ob-db-unknown-error": "Okänt databasfel.",
+	"ob-db-error-issued": "Märket har redan utfärdats till denna användare.",
+	"ob-issue-success": "Märket har utfärdats.",
+	"apihelp-openbadges-param-type": "Typ av förfrågan."
 }
