@@ -3,16 +3,17 @@
 		"authors": [
 			"Dcausse",
 			"Windes",
-			"TomT0m"
+			"TomT0m",
+			"Wladek92"
 		]
 	},
 	"ob-desc": "Autoriser le wiki à devenir un  émetteur de [http://openbadges.org/ OpenBadges]",
 	"action-createbadge": "Créer des badges",
 	"action-viewbadge": "Afficher les badges",
-	"action-issuebadge": "Délivrer un badge",
+	"action-issuebadge": "délivrer des badges",
 	"right-createbadge": "Créer des badges",
 	"right-viewbadge": "Afficher les badges",
-	"right-issuebadge": "Délivrer un badge",
+	"right-issuebadge": "Délivrer des badges",
 	"badgecreate": "Créer un badge",
 	"badge-create-legend": "Créer un nouveau badge",
 	"ob-create-badge-submit": "Ajouter le badge à la base de données",
