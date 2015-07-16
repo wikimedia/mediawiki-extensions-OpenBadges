@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pirehelokan"
+		]
+	},
+	"action-viewbadge": "پێناسەکان ببینە",
+	"right-viewbadge": "پێناسەکان ببینە",
+	"badgecreate": "پێناسێک دروست بکە",
+	"ob-create-no-image": "وێنەکە بوونی نیە",
+	"ob-create-wrong-mime": "وێنەکە فۆرمەتی ھەڵەیە، تەنیا png و svg ڕێگەیان پێ دراوە.",
+	"badgeview": "پێناسەکانم",
+	"ob-view-proof": "سەلماندن",
+	"ob-view-evidence": "بەڵگە",
+	"ob-view-no-evidence": "ھیچیان",
+	"ob-issue-user": "ناوی بەکارھێنەر",
+	"ob-db-user-not-found": "بەکارھێنەر بوونی نیە.",
+	"ob-db-unknown-error": "ھەڵەی نەناسراوی بنکەدراوە",
+	"apihelp-openbadges-param-type": "جۆری داخوازی"
+}
