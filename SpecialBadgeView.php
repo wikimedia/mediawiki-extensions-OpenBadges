@@ -1,6 +1,6 @@
 <?php
 /**
- * OpenBadges special page to view all the badges assigned to a user.
+ * OpenBadges special page to view all the badges issued to a user.
  *
  * @todo rebuild using TablePager or something like SpecialListFiles
  *

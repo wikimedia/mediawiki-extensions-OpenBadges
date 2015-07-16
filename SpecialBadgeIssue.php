@@ -1,6 +1,6 @@
 <?php
 /**
- * OpenBadges special page to assign new badges to users
+ * OpenBadges special page to issue new badges to users
  *
  * @file
  * @ingroup Extensions
