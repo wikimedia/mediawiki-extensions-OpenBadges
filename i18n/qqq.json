@@ -3,7 +3,8 @@
 		"authors": [
 			"chococookies",
 			"Lokal_Profil",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Siebrand"
 		]
 	},
 	"ob-desc": "Short description of the openbadges extension (implements Mozilla OpenBadges)",
@@ -33,7 +34,7 @@
 	"ob-db-evidence-not-url": "Error message if the evidence is not a URL",
 	"ob-db-badge-not-found": "Error message if badge does not exist",
 	"ob-db-unknown-error": "Error message for unknown database error",
-	"ob-db-error-issued": "Error message if this badge has already been issued to the user",
+	"ob-db-error-issued": "Error message if this badge has already been issued to the user. This is a fatal error. In this code path, GENDER is not supported.",
 	"ob-issue-success": "Success message for badge issue",
 	"apihelp-openbadges-description": "{{doc-apihelp-description|openbadges}}",
 	"apihelp-openbadges-param-type": "{{doc-apihelp-param|openbadges|type}}"
