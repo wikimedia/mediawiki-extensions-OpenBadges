@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Annamerida"
+			"Annamerida",
+			"Macofe"
 		]
 	},
 	"action-issuebadge": "Emetre els distintius",
@@ -13,6 +14,7 @@
 	"ob-create-badge-criteria": "Normes del distintiu",
 	"ob-create-success": "Distintiu creat correctament",
 	"ob-create-no-image": "La imatge no existeix",
+	"ob-issue-user": "Nom d'usuari",
 	"ob-issue-type": "Distintiu",
 	"ob-db-evidence-not-url": "Les proves han de ser una URL.",
 	"ob-db-badge-not-found": "El distintiu no existeix"
