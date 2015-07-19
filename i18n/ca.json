@@ -2,20 +2,35 @@
 	"@metadata": {
 		"authors": [
 			"Annamerida",
-			"Macofe"
+			"Macofe",
+			"F3RaN"
 		]
 	},
 	"action-issuebadge": "Emetre els distintius",
 	"right-createbadge": "Crea distintius",
 	"right-issuebadge": "Problema de distintius",
+	"badgecreate": "Crear un distintiu",
 	"badge-create-legend": "Crea un nou distintiu",
+	"ob-create-badge-name": "Nom de la insignia",
 	"ob-create-badge-description": "Descripció del distintiu",
 	"ob-create-badge-image": "Arxiu d'imatge del distintiu",
 	"ob-create-badge-criteria": "Normes del distintiu",
 	"ob-create-success": "Distintiu creat correctament",
 	"ob-create-no-image": "La imatge no existeix",
+	"ob-create-wrong-mime": "La imatge té un format erroni, només png o svg són vàlids.",
+	"ob-create-name-exists": "El nom de la insígnia ja existeix.",
+	"ob-view-proof": "Prova",
+	"ob-view-evidence": "Evidència",
+	"ob-view-no-evidence": "Cap",
+	"badgeissue": "Emetre un distintiu",
+	"badge-issue-legend": "Emetre un distintiu per a un usuari",
 	"ob-issue-user": "Nom d'usuari",
 	"ob-issue-type": "Distintiu",
+	"ob-db-user-not-found": "L'usuari no existeix.",
 	"ob-db-evidence-not-url": "Les proves han de ser una URL.",
-	"ob-db-badge-not-found": "El distintiu no existeix"
+	"ob-db-badge-not-found": "El distintiu no existeix",
+	"ob-db-unknown-error": "Error desconegut de la base de dades.",
+	"apihelp-openbadges-param-type": "Tipus de sol·licitud.",
+	"apihelp-openbadges-param-obl_badge_id": "OpenBadge rebut de {{SITENAME}}.",
+	"apihelp-openbadges-param-obl_receiver": "Usuari que ha rebut l'OpenBadge."
 }

@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anuragbihani94"
+		]
+	},
+	"action-viewbadge": "बिल्ले पहा",
+	"right-createbadge": "बिल्ला बनवा",
+	"badge-create-legend": "नवीन बिल्ला तयार करा",
+	"ob-create-badge-description": "बिल्ल्याचे वर्णन",
+	"badgeview": "माझे बिल्ले",
+	"ob-view-proof": "पुरावा",
+	"ob-view-evidence": "पुरावा",
+	"ob-issue-user": "सदस्यनाव",
+	"ob-issue-type": "बिल्ला",
+	"ob-db-badge-not-found": "बिल्ला अस्तित्वात नाही"
+}
