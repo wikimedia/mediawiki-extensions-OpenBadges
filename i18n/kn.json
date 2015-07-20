@@ -4,6 +4,30 @@
 			"Ananth subray"
 		]
 	},
+	"action-createbadge": "ಬ್ಯಾಡ್ಜಗಳನ್ನು ಸೃಷ್ಟಿಸಿ",
+	"action-viewbadge": "ಬ್ಯಾಡ್ಜಗಳನ್ನು ವೀಕ್ಷಿಸಿ",
+	"action-issuebadge": "ಬ್ಯಾಡ್ಜಗಳನ್ನು ಕೊಡಿ",
+	"right-createbadge": "ಬ್ಯಾಡ್ಜಗಳನ್ನು ಸೃಷ್ಟಿಸಿ",
+	"right-viewbadge": "ಬ್ಯಾಡ್ಜಗಳನ್ನು ವೀಕ್ಷಿಸಿ",
+	"right-issuebadge": "ಬ್ಯಾಡ್ಜಗಳನ್ನು ಕೊಡಿ",
+	"badgecreate": "ಬ್ಯಾಡ್ಜನ್ನು ಸೃಷ್ಟಿಸಿ",
+	"badge-create-legend": "ಹೊಸ ಬ್ಯಾಡ್ಜನ್ನು ಸೃಷ್ಟಿಸಿ",
+	"ob-create-badge-name": "ಬ್ಯಾಡ್ಜ್ ಹೆಸರು",
+	"ob-create-badge-description": "ಬ್ಯಾಡ್ಜ್ ವಿವರಣೆ",
+	"ob-create-badge-image": "ಬ್ಯಾಡ್ಜ್ ಚಿತ್ರ ಕಡತ",
+	"ob-create-success": "ಬ್ಯಾಡ್ಜನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸೃಷ್ಟಿಸಲಾಗಿದೆ.",
+	"ob-create-no-image": "ಈ ಚಿತ್ರ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.",
+	"badgeview": "ನನ್ನ ಬ್ಯಾಡ್ಜಗಳು",
 	"ob-view-proof": "ಪುರಾವೆ",
-	"ob-issue-user": "ಬಳಕೆದಾರ ಹೆಸರು"
+	"ob-view-evidence": "ಸಾಕ್ಷಿ",
+	"ob-view-no-evidence": "ಯಾವುದೂ ಇಲ್ಲ",
+	"badgeissue": "ಬ್ಯಾಡ್ಜನ್ನು ಕೊಡಿ",
+	"badge-issue-legend": "ಬ್ಯಾಡ್ಜನ್ನು ಬಳಕೆದಾರನಿಗೆ ಕೊಡಿ",
+	"ob-issue-user": "ಬಳಕೆದಾರ ಹೆಸರು",
+	"ob-issue-type": "ಬ್ಯಾಡ್ಜ್",
+	"ob-issue-evidence": "ಸಾಕ್ಷಿ ಯು ಆರ್ ಎಲ್",
+	"ob-db-user-not-found": "ಬಳಕೆದಾರ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.",
+	"ob-db-badge-not-found": "ಬ್ಯಾಡ್ಜ್ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.",
+	"ob-issue-success": "ಬ್ಯಾಡ್ಜನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸೃಷ್ಟಿಸಲಾಗಿದೆ.",
+	"apihelp-openbadges-param-type": "ವಿನಂತಿಯ ಮಾದರಿ"
 }
