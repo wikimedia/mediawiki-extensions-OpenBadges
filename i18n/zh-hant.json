@@ -1,10 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Cwlin0416"
 		]
 	},
+	"action-createbadge": "建立徽章",
+	"action-viewbadge": "檢視徽章",
+	"right-viewbadge": "檢視徽章",
+	"badgecreate": "建立徽章",
+	"ob-create-badge-name": "徽章名稱",
+	"badgeview": "我的徽章",
 	"ob-view-no-evidence": "無",
 	"ob-issue-user": "使用者名稱",
-	"ob-issue-type": "徽章"
+	"ob-issue-type": "徽章",
+	"ob-db-user-not-found": "使用者不存在。"
 }
