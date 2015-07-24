@@ -37,5 +37,7 @@
 	"ob-db-unknown-error": "Okänt databasfel.",
 	"ob-db-error-issued": "Märket har redan utfärdats till denna användare.",
 	"ob-issue-success": "Märket har utfärdats.",
-	"apihelp-openbadges-param-type": "Typ av förfrågan."
+	"apihelp-openbadges-param-type": "Typ av förfrågan.",
+	"apihelp-openbadges-param-obl_badge_id": "OpenBadge erhållen från {{SITENAME}}.",
+	"apihelp-openbadges-param-obl_receiver": "Användare som erhöll denna OpenBadge."
 }
