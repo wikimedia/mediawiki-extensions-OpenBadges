@@ -2,8 +2,6 @@
 /**
  * OpenBadges special page to view all the badges issued to a user.
  *
- * @todo rebuild using TablePager or something like SpecialListFiles
- *
  * @file
  * @ingroup Extensions
  */
@@ -15,94 +13,144 @@ class SpecialBadgeView extends SpecialPage {
 
 	/**
 	 * Shows the page to the user.
-	 * @param string $sub: The subpage string argument (if any).
-	 *  [[Special:BadgeManager/subpage]].
 	 */
-	public function execute( $sub ) {
+	public function execute() {
 		$this->setHeaders();
 		$this->checkPermissions();
 		$this->outputHeader();
 
+		$pager = new BadgesPager();
 		$html = $this->getOutput();
-		$html->addHtml( $this->getBadgeHtml() );
+		$html->addHTML(
+			$pager->getNavigationBar() . '<ol>' .
+			$pager->getBody() . '</ol>' .
+			$pager->getNavigationBar()
+		);
 	}
 
-	public function getBadgeHtml() {
-		global $wgUser;
-		global $wgScriptPath;
-		$apiUrl = $wgCanonicalServer . $wgScriptPath . '/api.php?';
-
-		$userId = $wgUser->getId();
-
-		$dbr = wfGetDB( DB_SLAVE );
-		$badgeRes = $dbr->select(
-			array( 'openbadges_assertion', 'openbadges_class' ),
-			array(
-				'obl_name',
-				'openbadges_class.obl_badge_image',
-				'openbadges_assertion.obl_badge_id',
-				'obl_badge_evidence' ),
-			'obl_receiver = ' . $userId,
-			__METHOD__,
-			array(),
-			array(
-				'openbadges_class' => array(
-					'INNER JOIN', array (
-						'openbadges_assertion.obl_badge_id=openbadges_class.obl_badge_id' ) ) )
-		);
-
-		$badgeTr = '';
-		foreach ( $badgeRes as $row ) {
-			$badgeName = Html::element( 'td', array(), $row->obl_name );
-			$file = wfFindFile( $row->obl_badge_image );
-			$badgeImage = $file->transform( array( 'width' => 180, 'height' => 360 ) );
-			$thumb = $badgeImage->toHtml( array( 'desc-link' => true ) );
-			$thumb = Html::rawElement( 'td', array(), $thumb );
-
-			$assertCall = array(
-				'action' => 'openbadges',
-				'format' => 'json',
-				'type' => 'assertion',
-				'obl_badge_id' => $row->obl_badge_id,
-				'obl_receiver' => $userId
-			);
-			$assertLink = Html::rawElement(
-				'a',
-				array( 'href' => $apiUrl . http_build_query( $assertCall ) ),
-				wfMessage( 'ob-view-proof' )->text()
-			);
-			$assertLink =  Html::rawElement( 'td', array(), $assertLink );
-
-			$evidenceLink = $row->obl_badge_evidence;
-			if ( empty( $evidenceLink ) ) {
-				$evidenceLink = wfMessage( 'ob-view-no-evidence' )->text();
-			}
-			else {
-				$evidenceLink = Html::rawElement(
-					'a',
-					array( 'href' => $row->obl_badge_evidence ),
-					wfMessage( 'ob-view-evidence' )->text()
-				);
-			}
-			$evidenceLink =  Html::rawElement( 'td', array(), $evidenceLink );
-
-			$badgeTr .= Html::rawElement(
-				'tr',
-				array(),
-				$badgeName . $thumb . $assertLink . $evidenceLink
-			);
-		}
-
-		$badgeTable = Html::rawElement(
-			'table',
-			array( 'style' => 'width:100%', 'border' => '1' ),
-			$badgeTr
-		);
-
-		return $badgeTable;
-	}
-
+	/**
+	 * @return string
+	 */
 	protected function getGroupName() {
 		return 'other';
+	}
+}
+
+/**
+ * @ingroup SpecialPage Pager
+ */
+class BadgesPager extends TablePager {
+
+	/**
+	 * Request all badges issued to the current user
+	 *
+	 * @return array
+	 */
+	function getQueryInfo() {
+		global $wgUser;
+		$userId = $wgUser->getId();
+
+		return array(
+			'tables' => array( 'openbadges_assertion', 'openbadges_class' ),
+			'fields' => array(
+				'obl_name',
+				'obl_badge_image',
+				'openbadges_assertion.obl_badge_id AS badge_id',
+				'obl_badge_evidence' ),
+			'conds' => 'obl_receiver = ' . $userId,
+			'join_conds' => array(
+				'openbadges_class' => array(
+					'INNER JOIN',
+					'openbadges_assertion.obl_badge_id = openbadges_class.obl_badge_id' ) )
+		);
+	}
+
+	/**
+	 * @return string
+	 */
+	function getIndexField() {
+		return 'obl_name';
+	}
+
+	/**
+	 * @param string $field
+	 * @return bool
+	 */
+	function isFieldSortable( $field ) {
+		$sortable = array( 'obl_name', 'obl_badge_evidence' );
+		return in_array( $field, $sortable );
+	}
+
+	/**
+	 * @return string
+	 */
+	function getDefaultSort() {
+		return 'obl_name';
+	}
+
+	/**
+	 * @return array
+	 */
+	function getFieldNames() {
+		if ( !$this->mFieldNames ) {
+			$this->mFieldNames = array(
+				'obl_name' => $this->msg( 'ob-view-name' )->text(),
+				'obl_badge_image' => $this->msg( 'ob-view-image' )->text(),
+				'badge_id' => $this->msg( 'ob-view-proof-header' )->text(),
+				'obl_badge_evidence' => $this->msg( 'ob-view-evidence-header' )->text(),
+			);
+		}
+		return $this->mFieldNames;
+	}
+
+	/**
+	 * @param string $field
+	 * @param string|null $value
+	 * @return string
+	 * @throws MWException
+	 */
+	function formatValue( $field, $value ) {
+		global $wgScriptPath;
+		global $wgUser;
+		$apiUrl = $wgCanonicalServer . $wgScriptPath . '/api.php?';
+		$userId = $wgUser->getId();
+
+		switch ( $field ) {
+			case 'obl_name':
+				return htmlspecialchars( $value );
+			case 'obl_badge_image':
+				$file = wfFindFile( $value );
+				$badgeImage = $file->transform( array( 'width' => 180, 'height' => 360 ) );
+				$thumb = $badgeImage->toHtml( array( 'desc-link' => true ) );
+				return $thumb;
+			case 'badge_id':
+				$assertCall = array(
+					'action' => 'openbadges',
+					'format' => 'json',
+					'type' => 'assertion',
+					'obl_badge_id' => $value,
+					'obl_receiver' => $userId
+				);
+				$assertLink = Html::rawElement(
+					'a',
+					array( 'href' => $apiUrl . http_build_query( $assertCall ) ),
+					wfMessage( 'ob-view-proof' )->text()
+				);
+				return $assertLink;
+			case 'obl_badge_evidence':
+				if ( empty( $value ) ) {
+					return wfMessage( 'ob-view-no-evidence' )->text();
+				}
+				else {
+					$evidenceLink = Html::rawElement(
+						'a',
+						array( 'href' => $value ),
+						wfMessage( 'ob-view-evidence' )->text()
+					);
+					return $evidenceLink;
+				}
+			default:
+				throw new MWException( "Unknown field '$field'" );
+		}
 	}
 }
