@@ -10,6 +10,7 @@
 	"ob-create-badge-description": "Beschreiwung vum Badge",
 	"ob-create-badge-image": "Fichier vum Bild vum Badge",
 	"ob-create-no-image": "D'Bild gëtt et net.",
+	"ob-create-wrong-mime": "D'Bild huet dat falscht Format. Nëmme PNG an SVG sinn erlaabt.",
 	"ob-create-name-exists": "Numm vum Badge gëtt et schonn.",
 	"badgeview": "Meng Badgen",
 	"ob-view-proof": "Beweis",
