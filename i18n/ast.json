@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"ob-desc": "Permite a la wiki convertise nun emisor de [http://openbadges.org/ OpenBadges]",
+	"action-createbadge": "crear insinies",
+	"action-viewbadge": "ver insinies",
+	"action-issuebadge": "emitir insinies",
+	"right-createbadge": "Crear insinies",
+	"right-viewbadge": "Ver insinies",
+	"right-issuebadge": "Emitir insinies",
+	"badgecreate": "Crear una insinia",
+	"badge-create-legend": "Crear una insinia nueva",
+	"ob-create-badge-name": "Nome de la insinia",
+	"ob-create-badge-description": "Descripción de la insinia",
+	"ob-create-badge-image": "Ficheru d'imaxe de la insinia",
+	"ob-create-badge-criteria": "Criterios de la insinia",
+	"ob-create-success": "Insinia creada correutamente.",
+	"ob-create-no-image": "La imaxe nun esiste.",
+	"ob-create-wrong-mime": "La imaxe tien un formatu incorreutu, sólo se permiten png o svg.",
+	"ob-create-name-exists": "El nome de la insinia yá esiste.",
+	"badgeview": "Les mios insinies",
+	"ob-view-proof": "Prueba",
+	"ob-view-evidence": "Evidencia",
+	"ob-view-no-evidence": "Nenguna",
+	"badgeissue": "Emitir una insinia",
+	"badge-issue-legend": "Emitir una insinia a un usuariu",
+	"ob-issue-user": "Nome d'usuariu",
+	"ob-issue-type": "Insinia",
+	"ob-issue-evidence": "URL de la evidencia",
+	"ob-db-user-not-found": "L'usuariu nun esiste.",
+	"ob-db-evidence-not-url": "La evidencia tien de ser una dirección URL.",
+	"ob-db-badge-not-found": "La insinia nun esiste.",
+	"ob-db-unknown-error": "Error desconocíu de la base de datos.",
+	"ob-db-error-issued": "La insinia yá s'emitió a esti usuariu.",
+	"ob-issue-success": "Insinia emitida correutamente.",
+	"apihelp-openbadges-description": "Recibir l'afirmación agospiada pa una OpenBadge.",
+	"apihelp-openbadges-param-type": "Tipu de solicitú.",
+	"apihelp-openbadges-param-obl_badge_id": "OpenBadge recibida dende {{SITENAME}}.",
+	"apihelp-openbadges-param-obl_receiver": "Usuariu que recibió la OpenBadge."
+}
