@@ -5,8 +5,8 @@
 		]
 	},
 	"ob-create-no-image": "Die beeld bestaan nie.",
-	"ob-view-proof": "Bewys",
-	"ob-view-evidence": "Bewys",
+	"ob-view-proof-header": "Bewys",
+	"ob-view-evidence-header": "Bewys",
 	"ob-view-no-evidence": "Geen",
 	"ob-issue-user": "Gebruikersnaam",
 	"ob-db-user-not-found": "Gebruiker bestaan nie.",
