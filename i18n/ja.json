@@ -1,11 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Runequest77"
+			"Runequest77",
+			"Sujiniku"
 		]
 	},
 	"ob-create-no-image": "画像が存在しません。",
 	"ob-create-wrong-mime": "この画像のフォーマットは正しくありません。pngかsvgのみが許可されています。",
+	"ob-view-proof": "証明へのリンク",
+	"ob-view-name": "バッジ名",
+	"ob-view-evidence": "証拠へのリンク",
 	"ob-issue-user": "利用者名",
 	"ob-db-user-not-found": "ユーザーが存在しません。",
 	"ob-db-unknown-error": "不明なデータベースエラー。"

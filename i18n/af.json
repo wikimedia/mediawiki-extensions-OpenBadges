@@ -1,14 +1,27 @@
 {
 	"@metadata": {
 		"authors": [
-			"Oesjaar"
+			"Oesjaar",
+			"Naudefj"
 		]
 	},
+	"action-createbadge": "skep balkies",
+	"action-viewbadge": "wys balkies",
+	"action-issuebadge": "reik balkies uit",
+	"right-createbadge": "Skep balkies",
+	"right-viewbadge": "Wys balkies",
+	"right-issuebadge": "Reik balkies uit",
+	"badgecreate": "Skep 'n balkie",
+	"badge-create-legend": "Skep 'n nuwe balkie",
+	"ob-create-badge-name": "Balkie-naam",
+	"ob-create-badge-description": "Balkie-beskrywing",
 	"ob-create-no-image": "Die beeld bestaan nie.",
+	"badgeview": "My balkies",
 	"ob-view-proof-header": "Bewys",
 	"ob-view-evidence-header": "Bewys",
 	"ob-view-no-evidence": "Geen",
 	"ob-issue-user": "Gebruikersnaam",
+	"ob-issue-type": "Balkie",
 	"ob-db-user-not-found": "Gebruiker bestaan nie.",
 	"ob-db-unknown-error": "Onbekende databasis fout"
 }
