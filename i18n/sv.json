@@ -24,6 +24,7 @@
 	"ob-create-name-exists": "Märkets namn finns redan.",
 	"badgeview": "Mina märken",
 	"ob-view-proof-header": "Bevis",
+	"ob-view-evidence": "!!fuzzy!!länk till bevis",
 	"ob-view-evidence-header": "Bevis",
 	"ob-view-no-evidence": "Ingen",
 	"badgeissue": "Utfärda ett märke",
