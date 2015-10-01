@@ -4,7 +4,8 @@
 			"Dcausse",
 			"Windes",
 			"TomT0m",
-			"Wladek92"
+			"Wladek92",
+			"Gomoko"
 		]
 	},
 	"ob-desc": "Autoriser le wiki à devenir un  émetteur de [http://openbadges.org/ OpenBadges]",
@@ -29,6 +30,7 @@
 	"ob-view-proof-header": "Preuve",
 	"ob-view-name": "Nom de l'insigne",
 	"ob-view-image": "Illustration de l'insigne",
+	"ob-view-evidence": "lien vers la preuve",
 	"ob-view-evidence-header": "Indice",
 	"ob-view-no-evidence": "Aucun",
 	"badgeissue": "Délivrer un badge",
