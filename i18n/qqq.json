@@ -4,13 +4,14 @@
 			"chococookies",
 			"Lokal_Profil",
 			"Liuxinyu970226",
-			"Siebrand"
+			"Siebrand",
+			"Umherirrender"
 		]
 	},
 	"ob-desc": "Short description of the openbadges extension (implements Mozilla OpenBadges)",
-	"action-createbadge": "Description of createbadge permission",
-	"action-viewbadge": "Description of viewbadge permission",
-	"action-issuebadge": "Description of issuebadge permission",
+	"action-createbadge": "Description of createbadge permission\n\n{{doc-action|createbadge}}",
+	"action-viewbadge": "Description of viewbadge permission\n\n{{doc-action|viewbadge}}",
+	"action-issuebadge": "Description of issuebadge permission\n\n{{doc-action|issuebadge}}",
 	"badgecreate": "Title of special page for adding new badges to the database",
 	"badge-create-legend": "Legend field for SpecialBadgeCreate",
 	"ob-create-badge-name": "Form field, name designation for a new badge",
