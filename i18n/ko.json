@@ -4,5 +4,19 @@
 			"Hwangjy9"
 		]
 	},
+	"action-createbadge": "배지 만들기",
+	"action-viewbadge": "배지 보기",
+	"right-createbadge": "배지 만들기",
+	"right-viewbadge": "배지 보기",
+	"badgecreate": "배지 만들기",
+	"badge-create-legend": "새 배지 만들기",
+	"ob-create-badge-name": "배지 이름",
+	"ob-create-badge-description": "배지 설명",
+	"ob-create-badge-criteria": "배지 기준",
+	"ob-create-success": "배지를 성공적으로 만들었습니다.",
+	"ob-create-no-image": "이 그림은 존재하지 않습니다.",
+	"badgeview": "내 배지",
+	"ob-view-name": "배지 이름",
+	"ob-issue-user": "사용자 이름",
 	"ob-issue-type": "배지"
 }

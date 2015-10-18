@@ -12,6 +12,9 @@
 	"action-createbadge": "Description of createbadge permission\n\n{{doc-action|createbadge}}",
 	"action-viewbadge": "Description of viewbadge permission\n\n{{doc-action|viewbadge}}",
 	"action-issuebadge": "Description of issuebadge permission\n\n{{doc-action|issuebadge}}",
+	"right-createbadge": "{{doc-right|createbadge}}",
+	"right-viewbadge": "{{doc-right|viewbadge}}",
+	"right-issuebadge": "{{doc-right|issuebadge}}",
 	"badgecreate": "Title of special page for adding new badges to the database",
 	"badge-create-legend": "Legend field for SpecialBadgeCreate",
 	"ob-create-badge-name": "Form field, name designation for a new badge",
@@ -42,5 +45,7 @@
 	"ob-db-error-issued": "Error message if this badge has already been issued to the user. This is a fatal error. In this code path, GENDER is not supported.",
 	"ob-issue-success": "Success message for badge issue",
 	"apihelp-openbadges-description": "{{doc-apihelp-description|openbadges}}",
-	"apihelp-openbadges-param-type": "{{doc-apihelp-param|openbadges|type}}"
+	"apihelp-openbadges-param-type": "{{doc-apihelp-param|openbadges|type}}",
+	"apihelp-openbadges-param-obl_badge_id": "{{doc-apihelp-param|openbadges|obl badge }}",
+	"apihelp-openbadges-param-obl_receiver": "{{doc-apihelp-param|openbadges|obl_receiver}}"
 }
