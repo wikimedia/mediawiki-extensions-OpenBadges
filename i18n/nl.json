@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"FabianRM",
-			"Sjoerddebruin"
+			"Sjoerddebruin",
+			"Siebrand"
 		]
 	},
-	"ob-view-name": "Naam van badge",
+	"ob-view-name": "Badgenaam",
 	"ob-view-evidence-header": "Bewijs"
 }
