@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"WikiPhoenix",
-			"Lokal Profil"
+			"Lokal Profil",
+			"Ainali"
 		]
 	},
 	"ob-desc": "Gör det möjligt för en vika att bli en utfärdare av [http://openbadges.org/ OpenBadges]",
@@ -23,6 +24,7 @@
 	"ob-create-wrong-mime": "Bilden har fel format, endast png eller svg är tillåtet.",
 	"ob-create-name-exists": "Märkets namn finns redan.",
 	"badgeview": "Mina märken",
+	"ob-view-proof": "länk till intyg",
 	"ob-view-proof-header": "Bevis",
 	"ob-view-evidence": "!!fuzzy!!länk till bevis",
 	"ob-view-evidence-header": "Bevis",
