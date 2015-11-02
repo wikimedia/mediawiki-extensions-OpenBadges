@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Elisardojm",
-			"Toliño"
+			"Toliño",
+			"Banjo"
 		]
 	},
 	"ob-desc": "Permite ao wiki converterse nun emisor de [http://openbadges.org/ OpenBadges]",
@@ -23,7 +24,10 @@
 	"ob-create-wrong-mime": "A imaxe ten un formato incorrecto; só están permitidos os formatos png e svg.",
 	"ob-create-name-exists": "O nome da medalla xa existe.",
 	"badgeview": "As miñas medallas",
+	"ob-view-proof": "ligazón a proba",
 	"ob-view-proof-header": "Proba",
+	"ob-view-name": "Nome da medalla",
+	"ob-view-image": "Ilustración da medalla",
 	"ob-view-evidence": "ligazón á evidencia",
 	"ob-view-evidence-header": "Evidencia",
 	"ob-view-no-evidence": "Ningunha",
