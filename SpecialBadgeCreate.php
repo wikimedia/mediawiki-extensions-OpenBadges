@@ -64,7 +64,7 @@ class SpecialBadgeCreate extends FormSpecialPage {
 	public function onSubmit( array $data ) {
 		// Inserts the new assertion into the database
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->begin();
+		$dbw->startAtomic( __METHOD__ );
 		$result = $dbw->insert(
 			'openbadges_class',
 			array(
@@ -75,7 +75,7 @@ class SpecialBadgeCreate extends FormSpecialPage {
 			),
 			__METHOD__
 		);
-		$dbw->commit();
+		$dbw->endAtomic( __METHOD__);
 		return $result;
 	}
 
