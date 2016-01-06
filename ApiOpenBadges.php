@@ -17,6 +17,7 @@ abstract class ApiOpenBadges extends ApiBase {
 	 * Given an image filename this returns the file url if a png
 	 * or a thumb-file url if an svg
 	 *
+	 * @param string $filename
 	 * @return string
 	 */
 	protected function imageUrl( $filename ) {
@@ -47,6 +48,8 @@ abstract class ApiOpenBadges extends ApiBase {
 
 	/**
 	 * Verify that the badge exists
+	 *
+	 * @param int $badgeID
 	 */
 	protected function dieOnBadBadge( $badgeID ) {
 		$res = $this->queryBadge( $badgeID );
@@ -57,6 +60,8 @@ abstract class ApiOpenBadges extends ApiBase {
 
 	/**
 	 * Verify that the recipient is suitable
+	 *
+	 * @param User $recipient
 	 */
 	protected function dieOnBadRecipient( User $recipient ) {
 		global $wgOpenBadgesRequireEmail;
@@ -74,6 +79,7 @@ abstract class ApiOpenBadges extends ApiBase {
 	/**
 	 * Run SQL query to get all info about a badge
 	 *
+	 * @param int $badgeID
 	 * @return ResultWrapper|bool
 	 */
 	protected function queryBadge( $badgeID ) {
@@ -89,6 +95,8 @@ abstract class ApiOpenBadges extends ApiBase {
 	/**
 	 * Run SQL query to get all relevant info for an issued badge
 	 *
+	 * @param int $badgeID
+	 * @param User $recipient
 	 * @return ResultWrapper|bool
 	 */
 	protected function queryIssuedBadge( $badgeID, User $recipient ) {

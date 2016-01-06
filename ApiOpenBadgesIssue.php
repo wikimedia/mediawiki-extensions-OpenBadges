@@ -58,6 +58,10 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 
 	/**
 	 * Verify that the user is allowed to make this action
+	 *
+	 * @param int $badgeID
+	 * @param User $recipient
+	 * @param string $evidenceUrl
 	 */
 	public function issueBadge( $badgeID, User $recipient, $evidenceUrl ) {
 		$dbw = wfGetDB( DB_MASTER );
@@ -80,6 +84,7 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	/**
 	 * Turn userId into a User object or die if invalid
 	 *
+	 * @param string|NULL $recipientName
 	 * @return User
 	 */
 	public function getRecipientFromName( $recipientName ) {
@@ -93,6 +98,8 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	/**
 	 * Check if the user has already been issued the badge
 	 *
+	 * @param User $recipient
+	 * @param int $badgeID
 	 * @return bool
 	 */
 	public function userAlreadyAwardedBadge( User $recipient, $badgeID ) {
@@ -105,6 +112,8 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 
 	/**
 	 * Verify that the user is allowed to make this action
+	 *
+	 * @param User $user
 	 */
 	public function dieOnBadUser( User $user ) {
 		if ( $user->isAnon() ) {
@@ -117,6 +126,8 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 
 	/**
 	 * Verify that the evidence is correctly formated
+	 *
+	 * @param string|NULL $url
 	 */
 	public function dieOnBadEvidence( $url ) {
 		if ( $url != '' && !SpecialBadgeIssue::isURL( $url ) ) {
@@ -126,6 +137,9 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 
 	/**
 	 * Format a sucessful response
+	 *
+	 * @param User $recipient
+	 * @param int $badgeID
 	 */
 	protected function markResultSuccess( User $recipient, $badgeID ) {
 		$this->getResult()->addValue( null, 'result', array(
@@ -136,15 +150,15 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	}
 
 	/**
-    * @deprecated since MediaWiki core 1.25
-    */
+	* @deprecated since MediaWiki core 1.25
+	*/
 	public function getDescription() {
 		return 'Issue an OpenBadge to a user.';
 	}
 
 	/**
-    * @deprecated since MediaWiki core 1.25
-    */
+	* @deprecated since MediaWiki core 1.25
+	*/
 	public function getParamDescription() {
 		return array(
 			'obl_badge_id' => 'OpenBadge to issue from this Wiki.',
