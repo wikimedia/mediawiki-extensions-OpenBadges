@@ -33,6 +33,8 @@
 	"ob-issue-type": "Badge",
 	"ob-issue-evidence": "Evidence URL",
 	"ob-db-user-not-found": "User doesn't exist.",
+	"ob-db-user-no-email": "User hasn't entered an e-mail.",
+	"ob-db-user-no-email-confirmation": "User hasn't confirmed their e-mail.",
 	"ob-db-evidence-not-url": "The evidence must be a URL.",
 	"ob-db-badge-not-found": "Badge doesn't exist.",
 	"ob-db-unknown-error": "Unknown database error.",
@@ -41,5 +43,9 @@
 	"apihelp-openbadges-description": "Get hosted assertion for an OpenBadge.",
 	"apihelp-openbadges-param-type": "Type of request.",
 	"apihelp-openbadges-param-obl_badge_id": "OpenBadge received from {{SITENAME}}.",
-	"apihelp-openbadges-param-obl_receiver": "User who received the OpenBadge."
+	"apihelp-openbadges-param-obl_receiver": "User id of the user who received the OpenBadge.",
+	"apihelp-openbadgesissue-description": "Issue an OpenBadge to a user.",
+	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge to issue from {{SITENAME}}.",
+	"apihelp-openbadgesissue-param-obl_receiver": "User name of the user who will receive the OpenBadge.",
+	"apihelp-openbadgesissue-param-obl_evidence_url": "Url to evidence for user meeting the OpenBadge criteria."	
 }

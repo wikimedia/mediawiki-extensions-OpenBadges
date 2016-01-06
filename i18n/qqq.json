@@ -39,6 +39,8 @@
 	"ob-issue-type": "Name or type of badge, form field to input the name of the badge that will be awarded\n{{Identical|Badge}}",
 	"ob-issue-evidence": "Evidence URL, form field to input the url of the evidence supporting the badge being awarded",
 	"ob-db-user-not-found": "Error message if user does not exist",
+	"ob-db-user-no-email": "Error message if user hasn't entered an e-mail",
+	"ob-db-user-no-email-confirmation": "Error message if user hasn't confirmed their e-mail",
 	"ob-db-evidence-not-url": "Error message if the evidence is not a URL",
 	"ob-db-badge-not-found": "Error message if badge does not exist",
 	"ob-db-unknown-error": "Error message for unknown database error",
@@ -46,6 +48,10 @@
 	"ob-issue-success": "Success message for badge issue",
 	"apihelp-openbadges-description": "{{doc-apihelp-description|openbadges}}",
 	"apihelp-openbadges-param-type": "{{doc-apihelp-param|openbadges|type}}",
-	"apihelp-openbadges-param-obl_badge_id": "{{doc-apihelp-param|openbadges|obl badge }}",
-	"apihelp-openbadges-param-obl_receiver": "{{doc-apihelp-param|openbadges|obl_receiver}}"
+	"apihelp-openbadges-param-obl_badge_id": "{{doc-apihelp-param|openbadges|obl_badge_id}}",
+	"apihelp-openbadges-param-obl_receiver": "{{doc-apihelp-param|openbadges|obl_receiver}}",
+	"apihelp-openbadgesissue-description": "{{doc-apihelp-description|openbadgesissue}}",
+	"apihelp-openbadgesissue-param-obl_badge_id": "{{doc-apihelp-param|openbadgesissue|obl_badge_id}}",
+	"apihelp-openbadgesissue-param-obl_receiver": "{{doc-apihelp-param|openbadgesissue|obl_receiver}}",
+	"apihelp-openbadgesissue-param-obl_evidence_url": "{{doc-apihelp-param|openbadgesissue|obl_evidence_url}}"
 }

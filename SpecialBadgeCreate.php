@@ -86,15 +86,15 @@ class SpecialBadgeCreate extends FormSpecialPage {
 	 */
 	 public function validateImage( $imageTitle, $allData ) {
 		 if ( $imageTitle == '' ) {
-			 return wfMessage( 'htmlform-required' )->text();
+			 return wfMessage( 'htmlform-required' );
 		 }
 		 $badgeFile = wfFindFile( $imageTitle );
 		 if ( $badgeFile === false ) {
-			 return wfMessage( 'ob-create-no-image' )->text();
+			 return wfMessage( 'ob-create-no-image' );
 		 }
 		 $mimetype = $badgeFile->getMimeType();
 		 if ( $mimetype != 'image/png' && $mimetype != 'image/svg+xml' ) {
-			 return wfMessage( 'ob-create-wrong-mime' )->text();
+			 return wfMessage( 'ob-create-wrong-mime' );
 		 }
 		 return true;
 	 }
@@ -106,7 +106,7 @@ class SpecialBadgeCreate extends FormSpecialPage {
 	 */
 	public function validateName( $badgeTitle, $allData ) {
 		if ( $badgeTitle == '' ) {
-			return wfMessage( 'htmlform-required' )->text();
+			return wfMessage( 'htmlform-required' );
 		}
 		$dbr = wfGetDB( DB_MASTER );
 		$badgeRow = $dbr->selectRow(
@@ -115,7 +115,7 @@ class SpecialBadgeCreate extends FormSpecialPage {
 			array( 'obl_name' => $badgeTitle )
 		);
 		if ( $badgeRow ) {
-			return wfMessage( 'ob-create-name-exists' )->text();
+			return wfMessage( 'ob-create-name-exists' );
 		}
 		return true;
 	 }

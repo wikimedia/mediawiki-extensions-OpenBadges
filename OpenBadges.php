@@ -36,12 +36,15 @@ $wgAutoloadClasses['SpecialBadgeCreate'] = __DIR__ . '/SpecialBadgeCreate.php';
 $wgAutoloadClasses['SpecialBadgeView'] = __DIR__ . '/SpecialBadgeView.php';
 $wgAutoloadClasses['BadgesPager'] = __DIR__ . '/SpecialBadgeView.php';
 $wgAutoloadClasses['ApiOpenBadges'] = __DIR__ . '/ApiOpenBadges.php';
+$wgAutoloadClasses['ApiOpenBadgesAssertions'] = __DIR__ . '/ApiOpenBadgesAssertions.php';
+$wgAutoloadClasses['ApiOpenBadgesIssue'] = __DIR__ . '/ApiOpenBadgesIssue.php';
 $wgMessagesDirs['OpenBadges'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['OpenBadges'] = __DIR__ . '/OpenBadges.i18n.php';
 $wgExtensionMessagesFiles['OpenBadgesAlias'] = __DIR__ . '/OpenBadges.i18n.alias.php';
 
 // Map module name to class name
-$wgAPIModules['openbadges'] = 'ApiOpenBadges';
+$wgAPIModules['openbadges'] = 'ApiOpenBadgesAssertions';
+$wgAPIModules['openbadgesissue'] = 'ApiOpenBadgesIssue';
 
 // Special pages
 $wgSpecialPages['BadgeIssue'] = 'SpecialBadgeIssue';
@@ -71,66 +74,11 @@ function createTable( DatabaseUpdater $dbU ) {
 	return true;
 }
 
-// /**
-//  * Add the OpenBadges JS module and variables to the output page. Also make sure a session
-//  * is started and a login token is set.
-//  *
-//  * @param User $user Current user that is logged in
-//  * @param OutputPage $out Output page to add scripts to
-//  */
-// function efPersonaAddScripts( User $user, OutputPage $out ) {
-// 	global $wgVersion;
+/* Configuration */
 
-// 	if ( !isset( $_SESSION ) ) {
-// 		wfSetupSession();
-// 	}
-// 	if ( !LoginForm::getLoginToken() ) {
-// 		LoginForm::setLoginToken();
-// 	}
+// Set default thumb width
+$wgOpenBadgesThumb = 400;
 
-// 	// Persona requires that IE compatibility mode be disabled
-// 	// Add the meta tag here in case MediaWiki core doesn't do it
-// 	$out->addMeta( 'http:X-UA-Compatible', 'IE=Edge' );
-
-// 	if ( ResourceLoader::inDebugMode() ) {
-// 		$out->addHeadItem( 'openbadges',
-// 			Html::linkedScript( 'https://login.persona.org/include.orig.js' ) );
-// 	} else {
-// 		$out->addHeadItem( 'persona',
-// 			Html::linkedScript( 'https://login.persona.org/include.js' ) );
-// 	}
-
-// 	if ( version_compare( $wgVersion, '1.20', '<' ) ) {
-// 		$out->addModules( 'ext.persona.old' );
-// 	} else {
-// 		$out->addModules( 'ext.persona' );
-// 	}
-
-// 	$out->addJsConfigVars( 'wgPersonaUserEmail',
-// 		$user->isEmailConfirmed() ? $user->getEmail() : null );
-// }
-
-// /**
-//  * Add the OpenBadges module to the OutputPage
-//  *
-//  * @param OutputPage &$out
-//  *
-//  * @return bool true
-//  */
-// function efAddOpenBadgesModule( OutputPage &$out ) {
-
-// 	// Only add the modules if user is logged in
-
-
-// 	$context = RequestContext::getMain();
-// 	efPersonaAddScripts( $context->getUser(), $out );
-
-// 	$out->addHTML( Html::input(
-// 		'wpLoginToken',
-// 		LoginForm::getLoginToken(),
-// 		'hidden'
-// 	) );
-
-// 	return true;
-// }
-
+// Set e-mail requirments for recipients
+$wgOpenBadgesRequireEmail = true;
+$wgOpenBadgesRequireEmailConfirmation = false;

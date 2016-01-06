@@ -94,7 +94,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 
 		// Inserts the new assertion into the database
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->startAtomic( __METHOD__);
+		$dbw->startAtomic( __METHOD__ );
 		$result = $dbw->insert(
 			'openbadges_assertion',
 			array(
@@ -115,18 +115,26 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	 * @return bool|string
 	 */
 	public function validateUser( $userName, $alldata ) {
+		global $wgOpenBadgesRequireEmail;
+		global $wgOpenBadgesRequireEmailConfirmation;
 		if ( $userName == '' ) {
-			return wfMessage( 'htmlform-required' )->text();
+			return wfMessage( 'htmlform-required' );
 		}
-		$dbr = wfGetDB( DB_MASTER );
-		$userRow = $dbr->selectRow(
-			'user',
-			'*',
-			array( 'user_name' => $userName )
-		);
-		if ( !$userRow ) {
-			return wfMessage( 'ob-db-user-not-found' )->text();
+		$recipient = User::newFromName( $userName );
+
+		// Check that recipient exists
+		if ( !$recipient || $recipient->getId() == 0 ) {
+			return wfMessage( 'ob-db-user-not-found' );
 		}
+
+		// Verify that the recipient e-mail settings are suitable
+		if ( $wgOpenBadgesRequireEmail && !$recipient->getEmail() ) {
+			return wfMessage( 'ob-db-user-no-email' );
+		}
+		if ( $wgOpenBadgesRequireEmailConfirmation && !$recipient->isEmailConfirmed() ) {
+			return wfMessage( 'ob-db-user-no-email-confirmation' );
+		}
+
 		return true;
 	}
 
@@ -140,7 +148,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 			return true;
 		}
 		elseif ( !SpecialBadgeIssue::isURL( $url ) ) {
-			return wfMessage( 'ob-db-evidence-not-url' )->text();
+			return wfMessage( 'ob-db-evidence-not-url' );
 		}
 		return true;
 	}
