@@ -36,6 +36,8 @@
 	"ob-issue-type": "Auszeichnung",
 	"ob-issue-evidence": "Beweis-URL",
 	"ob-db-user-not-found": "Der Benutzer ist nicht vorhanden.",
+	"ob-db-user-no-email": "Benutzer hat keine E-Mail-Adresse angegeben.",
+	"ob-db-user-no-email-confirmation": "Benutzer hat die E-Mail-Adresse nicht bestätigt.",
 	"ob-db-evidence-not-url": "Der Beweis muss ein URL sein.",
 	"ob-db-badge-not-found": "Auszeichnung ist nicht vorhanden.",
 	"ob-db-unknown-error": "Unbekannter Datenbankfehler.",
@@ -44,5 +46,5 @@
 	"apihelp-openbadges-description": "Die gehostete Behauptung für ein OpenBadge abrufen.",
 	"apihelp-openbadges-param-type": "Typ der Anfrage.",
 	"apihelp-openbadges-param-obl_badge_id": "OpenBadge von {{SITENAME}} erhalten.",
-	"apihelp-openbadges-param-obl_receiver": "Benutzer, der das OpenBadge erhalten hat."
+	"apihelp-openbadges-param-obl_receiver": "Kennung des Benutzers, der das OpenBadge erhalten hat."
 }
