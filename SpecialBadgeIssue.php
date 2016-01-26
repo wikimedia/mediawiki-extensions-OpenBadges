@@ -129,10 +129,10 @@ class SpecialBadgeIssue extends FormSpecialPage {
 
 		// Verify that the recipient e-mail settings are suitable
 		if ( $wgOpenBadgesRequireEmail && !$recipient->getEmail() ) {
-			return wfMessage( 'ob-db-user-no-email' );
+			return wfMessage( 'ob-db-user-no-email' )->params( $recipient )->parse();
 		}
 		if ( $wgOpenBadgesRequireEmailConfirmation && !$recipient->isEmailConfirmed() ) {
-			return wfMessage( 'ob-db-user-no-email-confirmation' );
+			return wfMessage( 'ob-db-user-no-email-confirmation' )->params( $recipient )->parse();
 		}
 
 		return true;
