@@ -36,8 +36,8 @@
 	"ob-issue-type": "Auszeichnung",
 	"ob-issue-evidence": "Beweis-URL",
 	"ob-db-user-not-found": "Der Benutzer ist nicht vorhanden.",
-	"ob-db-user-no-email": "Benutzer hat keine E-Mail-Adresse angegeben.",
-	"ob-db-user-no-email-confirmation": "Benutzer hat die E-Mail-Adresse nicht bestätigt.",
+	"ob-db-user-no-email": "{{GENDER:$1|Der Benutzer|Die Benutzerin}} hat keine E-Mail-Adresse angegeben.",
+	"ob-db-user-no-email-confirmation": "{{GENDER:$1|Der Benutzer|Die Benutzerin}} hat die E-Mail-Adresse nicht bestätigt.",
 	"ob-db-evidence-not-url": "Der Beweis muss ein URL sein.",
 	"ob-db-badge-not-found": "Auszeichnung ist nicht vorhanden.",
 	"ob-db-unknown-error": "Unbekannter Datenbankfehler.",
@@ -46,5 +46,9 @@
 	"apihelp-openbadges-description": "Die gehostete Behauptung für ein OpenBadge abrufen.",
 	"apihelp-openbadges-param-type": "Typ der Anfrage.",
 	"apihelp-openbadges-param-obl_badge_id": "OpenBadge von {{SITENAME}} erhalten.",
-	"apihelp-openbadges-param-obl_receiver": "Kennung des Benutzers, der das OpenBadge erhalten hat."
+	"apihelp-openbadges-param-obl_receiver": "Kennung des Benutzers, der das OpenBadge erhalten hat.",
+	"apihelp-openbadgesissue-description": "Vergibt ein OpenBadge an einen Benutzer.",
+	"apihelp-openbadgesissue-param-obl_badge_id": "Von {{SITENAME}} zu vergebendes OpenBadge.",
+	"apihelp-openbadgesissue-param-obl_receiver": "Name des Benutzers, der das OpenBadge erhalten soll.",
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL für den Nachweis, dass der Benutzer die OpenBadge-Kriterien erfüllt."
 }

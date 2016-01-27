@@ -35,6 +35,8 @@
 	"ob-issue-type": "Insignia",
 	"ob-issue-evidence": "URL de la evidencia",
 	"ob-db-user-not-found": "El usuario no existe.",
+	"ob-db-user-no-email": "El usuario no ha escrito una dirección de correo electrónico.",
+	"ob-db-user-no-email-confirmation": "El usuario no ha confirmado su dirección de correo electrónico.",
 	"ob-db-evidence-not-url": "La evidencia debe ser una dirección URL.",
 	"ob-db-badge-not-found": "La insignia no existe.",
 	"ob-db-unknown-error": "Error desconocido de la base de datos.",
@@ -43,5 +45,9 @@
 	"apihelp-openbadges-description": "Obtener la afirmación alojada para una OpenBadge.",
 	"apihelp-openbadges-param-type": "Tipo de solicitud.",
 	"apihelp-openbadges-param-obl_badge_id": "OpenBadge recibida desde {{SITENAME}}.",
-	"apihelp-openbadges-param-obl_receiver": "Usuario que recibió la OpenBadge."
+	"apihelp-openbadges-param-obl_receiver": "Identificador del usuario que recibió la OpenBadge.",
+	"apihelp-openbadgesissue-description": "Emitir una OpenBadge a un usuario.",
+	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge que se emitirá desde {{SITENAME}}.",
+	"apihelp-openbadgesissue-param-obl_receiver": "Nombre del usuario que recibirá la OpenBadge.",
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL de la evidencia de que el usuario cumple los criterios de la OpenBadge."
 }

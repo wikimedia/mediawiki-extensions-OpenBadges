@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Christian List"
+		]
+	},
+	"ob-db-user-no-email": "Brugeren har ikke anført en e-mail.",
+	"apihelp-openbadgesissue-param-obl_receiver": "Brugernavn for den bruger der skal modtage et OpenBadge."
+}

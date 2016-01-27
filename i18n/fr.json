@@ -39,6 +39,8 @@
 	"ob-issue-type": "Badge",
 	"ob-issue-evidence": "URL de l'indice",
 	"ob-db-user-not-found": "L'utilisateur n'existe pas.",
+	"ob-db-user-no-email": "L'utilisateur n'a pas saisi une adresse e-mail.",
+	"ob-db-user-no-email-confirmation": "L'utilisateur n'a pas confirmé leur adresse e-mail.",
 	"ob-db-evidence-not-url": "La preuve doit être une URL.",
 	"ob-db-badge-not-found": "Le badge n'existe pas.",
 	"ob-db-unknown-error": "Erreur inconnue de base de données.",
@@ -47,5 +49,9 @@
 	"apihelp-openbadges-description": "Récupérer une déclaration d'OpenBadge hébergée ici",
 	"apihelp-openbadges-param-type": "Type de demande.",
 	"apihelp-openbadges-param-obl_badge_id": "OpenBadge reçu de {{SITENAME}}.",
-	"apihelp-openbadges-param-obl_receiver": "L'utilisateur qui a reçu l'OpenBadge."
+	"apihelp-openbadges-param-obl_receiver": "Id de l'utilisateur qui a reçu le OpenBadge.",
+	"apihelp-openbadgesissue-description": "Délivrer un Openbadge à un utilisateur",
+	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge à produire de {{SITENAME}}.",
+	"apihelp-openbadgesissue-param-obl_receiver": "Id de l'utilisateur qui recevra l'OpenBadge.",
+	"apihelp-openbadgesissue-param-obl_evidence_url": "Url pour prouver que l’utilisateur correspond aux critères de OpenBadge."
 }

@@ -27,9 +27,11 @@
 	"ob-issue-type": "Odznaka",
 	"ob-issue-evidence": "URL dowodu",
 	"ob-db-user-not-found": "Użytkownik nie istnieje.",
+	"ob-db-user-no-email": "{{GENDER:$1|Użytkownik nie wprowadził|Użytkowniczka nie wprowadziła}} adresu e-mail.",
+	"ob-db-user-no-email-confirmation": "{{GENDER:$1|Użytkownik nie potwierdził|Użytkowniczka nie potwierdziła}} swojego adresu e-mail.",
 	"ob-db-evidence-not-url": "Dowód musi być adresem URL.",
 	"ob-db-badge-not-found": "Odznaka nie istnieje.",
 	"ob-db-unknown-error": "Nieznany błąd bazy danych.",
 	"apihelp-openbadges-param-type": "Typ zapytania",
-	"apihelp-openbadges-param-obl_receiver": "Użytkownik, który otrzymał OpenBadge."
+	"apihelp-openbadges-param-obl_receiver": "Identyfikator użytkownika, który otrzymał OpenBadge."
 }
