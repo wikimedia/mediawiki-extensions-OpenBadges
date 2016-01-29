@@ -4,5 +4,7 @@
 			"Vitorvicentevalente"
 		]
 	},
-	"ob-issue-user": "Nome de utilizador(a)"
+	"ob-issue-user": "Nome de utilizador(a)",
+	"ob-db-user-no-email": "{{GENDER:$1|O utilizador|A utilizadora|O(a) utilizador(a)}} não introduziu nenhum endereço de correio eletrónico.",
+	"ob-db-user-no-email-confirmation": "{{GENDER:$1|O utilizador|A utilizadora|O(a) utilizador(a)}} não confirmou o seu endereço de correio eletrónico."
 }

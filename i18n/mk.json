@@ -35,6 +35,8 @@
 	"ob-issue-type": "Значка",
 	"ob-issue-evidence": "доказна URL",
 	"ob-db-user-not-found": "Корисникот не постои.",
+	"ob-db-user-no-email": "{{GENDER:$1|Корисникот|Корисничката|Корисникот}} нема внесено е-пошта.",
+	"ob-db-user-no-email-confirmation": "{{GENDER:$1|Корисникот|Корисничката|Корисникот}} ја нема потврдено {{GENDER:$1|неговата|нејзината|неговата}} е-пошта.",
 	"ob-db-evidence-not-url": "Доказот мора да биде URL.",
 	"ob-db-badge-not-found": "Значката не постои.",
 	"ob-db-unknown-error": "Непозната грешка во базата.",
@@ -43,5 +45,9 @@
 	"apihelp-openbadges-description": "Дај вдомено уверение за OpenBadge.",
 	"apihelp-openbadges-param-type": "Тип на барање.",
 	"apihelp-openbadges-param-obl_badge_id": "Добиен OpenBadge од {{SITENAME}}.",
-	"apihelp-openbadges-param-obl_receiver": "Корисник што примил OpenBadge."
+	"apihelp-openbadges-param-obl_receiver": "Корисничка назнака на оној што примил OpenBadge.",
+	"apihelp-openbadgesissue-description": "Додели OpenBadge-значка на корисник",
+	"apihelp-openbadgesissue-param-obl_badge_id": "Добиен OpenBadge од {{SITENAME}}.",
+	"apihelp-openbadgesissue-param-obl_receiver": "Корисничко име на оној што ќе прими OpenBadge.",
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL за доказот дека корисникот ги задоволува условите за OpenBadge."
 }
