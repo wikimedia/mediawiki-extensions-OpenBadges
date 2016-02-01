@@ -35,6 +35,8 @@
 	"ob-issue-type": "Insinia",
 	"ob-issue-evidence": "URL de la evidencia",
 	"ob-db-user-not-found": "L'usuariu nun esiste.",
+	"ob-db-user-no-email": "{{GENDER:$1|L'usuariu|La usuaria}} nun escribió una direición de corréu electrónicu.",
+	"ob-db-user-no-email-confirmation": "{{GENDER:$1|L'usuariu|La usuaria}} nun confirmó {{GENDER:$1|la so}} direición de corréu.",
 	"ob-db-evidence-not-url": "La evidencia tien de ser una dirección URL.",
 	"ob-db-badge-not-found": "La insinia nun esiste.",
 	"ob-db-unknown-error": "Error desconocíu de la base de datos.",
@@ -43,5 +45,9 @@
 	"apihelp-openbadges-description": "Recibir l'afirmación agospiada pa una OpenBadge.",
 	"apihelp-openbadges-param-type": "Tipu de solicitú.",
 	"apihelp-openbadges-param-obl_badge_id": "OpenBadge recibida dende {{SITENAME}}.",
-	"apihelp-openbadges-param-obl_receiver": "Usuariu que recibió la OpenBadge."
+	"apihelp-openbadges-param-obl_receiver": "Identificador del usuariu que recibió la OpenBadge.",
+	"apihelp-openbadgesissue-description": "Dar una OpenBadge a un usuariu.",
+	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge a emitir dende {{SITENAME}}.",
+	"apihelp-openbadgesissue-param-obl_receiver": "Nome del usuariu que va recibir la OpenBadge.",
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL de la evidencia de que l'usuariu cumple los criterios de la OpenBadge."
 }
