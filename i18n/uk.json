@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Translatemyname",
-			"Ата"
+			"Ата",
+			"Piramidion"
 		]
 	},
 	"ob-desc": "Дозволяє вікі стати надавачем [http://openbadges.org/ OpenBadges]",
@@ -36,6 +37,8 @@
 	"ob-issue-type": "Відзнака",
 	"ob-issue-evidence": "URL-адреса свідчення",
 	"ob-db-user-not-found": "Користувач не існує.",
+	"ob-db-user-no-email": "{{GENDER:$1|Користувач не вказав|Користувачка не вказала}} своєї адреси електронної пошти.",
+	"ob-db-user-no-email-confirmation": "{{GENDER:$1|Користувач не підтвердив|Користувачка не підтвердила}} {{GENDER:$1|своєї}} адреси електронної пошти.",
 	"ob-db-evidence-not-url": "Свідчення має бути URL-адресою.",
 	"ob-db-badge-not-found": "Відзнака не існує.",
 	"ob-db-unknown-error": "Невідома помилка бази даних.",
@@ -44,5 +47,9 @@
 	"apihelp-openbadges-description": "Отримати розміщене твердження для OpenBadge.",
 	"apihelp-openbadges-param-type": "Тип запиту.",
 	"apihelp-openbadges-param-obl_badge_id": "OpenBadge отримано від {{GRAMMAR:genitive|{{SITENAME}}}}.",
-	"apihelp-openbadges-param-obl_receiver": "Користувач, який отримав OpenBadge."
+	"apihelp-openbadges-param-obl_receiver": "Ідентифікатор користувача, який отримав OpenBadge.",
+	"apihelp-openbadgesissue-description": "Видати OpenBadge користувачеві.",
+	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge, який має бути виданий від сайту {{SITENAME}}.",
+	"apihelp-openbadgesissue-param-obl_receiver": "Ім'я користувача, який отримає OpenBadge.",
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL, що має засвідчити те, що користувач відповідає критеріям OpenBadge."
 }
