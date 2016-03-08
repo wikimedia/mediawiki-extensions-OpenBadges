@@ -14,7 +14,7 @@
 	"ob-create-badge-name": "Nazwa odznaki",
 	"ob-create-badge-description": "Opis odznaki",
 	"ob-create-badge-image": "Plik obrazka odznaki",
-	"ob-create-success": "Odznaka została utworzona.",
+	"ob-create-success": "Utworzono odznakę.",
 	"ob-create-no-image": "Obrazek nie istnieje.",
 	"ob-create-wrong-mime": "Obrazek ma niewłaściwy format: dozwolony jest tylko png lub svg.",
 	"ob-create-name-exists": "Nazwa odznaki już istnieje.",
