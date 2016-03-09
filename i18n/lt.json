@@ -4,8 +4,10 @@
 			"Zygimantus"
 		]
 	},
+	"ob-create-success": "Ženklelis sukurtas.",
 	"ob-view-proof": "nuoroda į įrodymą",
 	"ob-view-name": "Ženklelio pavadinimas",
 	"ob-view-image": "Ženklelio iliustracija",
-	"ob-view-evidence": "nuorodą į įrodymą"
+	"ob-view-evidence": "nuorodą į įrodymą",
+	"ob-issue-success": "Ženklelis išduotas."
 }

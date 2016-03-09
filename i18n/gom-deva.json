@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vaishali Parab"
+			"Vaishali Parab",
+			"The Discoverer"
 		]
 	},
 	"ob-view-proof-header": "पुरावो",
-	"ob-issue-user": "उपेगकर्तो",
-	"ob-db-user-not-found": "उपेगकर्तो अस्तित्वात ना"
+	"ob-issue-user": "वापरपी",
+	"ob-db-user-not-found": "वापरपी अस्तित्वात ना"
 }
