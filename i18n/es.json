@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe"
+			"Macofe",
+			"Matiia"
 		]
 	},
 	"ob-desc": "Permite al wiki convertirse en un emisor de [http://openbadges.org/ OpenBadges]",
@@ -17,7 +18,7 @@
 	"ob-create-badge-description": "Descripción de la insignia",
 	"ob-create-badge-image": "Archivo de imagen de la insignia",
 	"ob-create-badge-criteria": "Criterios de la insignia",
-	"ob-create-success": "Insignia creada con éxito.",
+	"ob-create-success": "Insignia creada.",
 	"ob-create-no-image": "La imagen no existe.",
 	"ob-create-wrong-mime": "La imagen tiene un formato incorrecto. Solo se permiten png o svg.",
 	"ob-create-name-exists": "El nombre de la insignia ya existe.",
@@ -41,7 +42,7 @@
 	"ob-db-badge-not-found": "La insignia no existe.",
 	"ob-db-unknown-error": "Error desconocido de la base de datos.",
 	"ob-db-error-issued": "La insignia ya se ha emitido a este usuario.",
-	"ob-issue-success": "Insignia emitida con éxito.",
+	"ob-issue-success": "Insignia emitida.",
 	"apihelp-openbadges-description": "Obtener la afirmación alojada para una OpenBadge.",
 	"apihelp-openbadges-param-type": "Tipo de solicitud.",
 	"apihelp-openbadges-param-obl_badge_id": "OpenBadge recibida desde {{SITENAME}}.",
