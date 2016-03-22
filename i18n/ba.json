@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Айсар"
+			"Айсар",
+			"Янмурза Баки"
 		]
 	},
-	"ob-create-success": "Билдә яһалда.",
+	"ob-create-success": "Билдә яһалды.",
 	"ob-issue-success": "Билдә бирелде."
 }
