@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ananth subray"
+			"Ananth subray",
+			"రహ్మానుద్దీన్"
 		]
 	},
 	"action-createbadge": "ಬ್ಯಾಡ್ಜಗಳನ್ನು ಸೃಷ್ಟಿಸಿ",
@@ -23,7 +24,7 @@
 	"ob-view-no-evidence": "ಯಾವುದೂ ಇಲ್ಲ",
 	"badgeissue": "ಬ್ಯಾಡ್ಜನ್ನು ಕೊಡಿ",
 	"badge-issue-legend": "ಬ್ಯಾಡ್ಜನ್ನು ಬಳಕೆದಾರನಿಗೆ ಕೊಡಿ",
-	"ob-issue-user": "ಬಳಕೆದಾರ ಹೆಸರು",
+	"ob-issue-user": "ಬಳಕೆದಾರರ ಹೆಸರು",
 	"ob-issue-type": "ಬ್ಯಾಡ್ಜ್",
 	"ob-issue-evidence": "ಸಾಕ್ಷಿ ಯು ಆರ್ ಎಲ್",
 	"ob-db-user-not-found": "ಬಳಕೆದಾರ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.",
