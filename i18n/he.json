@@ -4,6 +4,8 @@
 			"Guycn2"
 		]
 	},
+	"action-createbadge": "ליצור תעודות",
 	"right-createbadge": "יצירת תעודות",
-	"right-issuebadge": "פרסום סמלים"
+	"right-viewbadge": "צפייה בסמלים",
+	"right-issuebadge": "פרסום תעודות"
 }
