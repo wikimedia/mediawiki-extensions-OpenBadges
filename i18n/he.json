@@ -4,10 +4,10 @@
 			"Guycn2"
 		]
 	},
-	"action-createbadge": "ליצור תעודות",
+	"action-createbadge": "ליצור סמלים",
 	"action-viewbadge": "לצפות בסמלים",
-	"action-issuebadge": "לפרסם תעודות",
-	"right-createbadge": "יצירת תעודות",
+	"action-issuebadge": "לפרסם סמלים",
+	"right-createbadge": "יצירת סמלים",
 	"right-viewbadge": "צפייה בסמלים",
-	"right-issuebadge": "פרסום תעודות"
+	"right-issuebadge": "פרסום סמלים"
 }
