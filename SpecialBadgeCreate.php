@@ -7,12 +7,9 @@
  */
 
 class SpecialBadgeCreate extends FormSpecialPage {
-	/** @var LoginForm **/
-	private $mLoginForm;
 
 	public function __construct() {
 		parent::__construct( 'BadgeCreate', 'createbadge' );
-		$this->mLoginForm = new LoginForm();
 	}
 
 	/**

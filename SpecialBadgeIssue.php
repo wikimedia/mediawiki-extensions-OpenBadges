@@ -7,12 +7,9 @@
  */
 
 class SpecialBadgeIssue extends FormSpecialPage {
-	/** @var LoginForm **/
-	private $mLoginForm;
 
 	public function __construct() {
 		parent::__construct( 'BadgeIssue', 'issuebadge' );
-		$this->mLoginForm = new LoginForm();
 	}
 
 	/**
