@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Hwangjy9",
-			"Revi"
+			"Revi",
+			"Ykhwong"
 		]
 	},
 	"action-createbadge": "배지 만들기",
@@ -17,7 +18,7 @@
 	"ob-create-badge-description": "배지 설명",
 	"ob-create-badge-image": "배지 이미지 파일",
 	"ob-create-badge-criteria": "배지 기준",
-	"ob-create-success": "배지를 성공적으로 만들었습니다.",
+	"ob-create-success": "배지를 만들었습니다.",
 	"ob-create-no-image": "이 그림은 존재하지 않습니다.",
 	"ob-create-wrong-mime": "사진이 잘못된 포맷입니다, png 또는 svg 포맷만이 허용됩니다.",
 	"ob-create-name-exists": "배지 이름이 이미 존재합니다.",
