@@ -8,7 +8,7 @@
 			"Umherirrender"
 		]
 	},
-	"ob-desc": "Short description of the openbadges extension (implements Mozilla OpenBadges)",
+	"ob-desc": "{{desc|name=OpenBadges|url=https://www.mediawiki.org/wiki/Extension:OpenBadges}}\nShort description of the openbadges extension (implements Mozilla OpenBadges)",
 	"action-createbadge": "Description of createbadge permission\n\n{{doc-action|createbadge}}",
 	"action-viewbadge": "Description of viewbadge permission\n\n{{doc-action|viewbadge}}",
 	"action-issuebadge": "Description of issuebadge permission\n\n{{doc-action|issuebadge}}",
