@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
-			"Cwlin0416"
+			"Cwlin0416",
+			"LNDDYL"
 		]
 	},
 	"ob-desc": "可讓 wiki 成為 [http://openbadges.org/ OpenBadges] 的頒發者",
@@ -24,13 +25,13 @@
 	"ob-create-name-exists": "徽章名稱已存在。",
 	"badgeview": "我的徽章",
 	"ob-view-proof-header": "聲明",
-	"ob-view-evidence-header": "證明",
+	"ob-view-evidence-header": "證據",
 	"ob-view-no-evidence": "無",
 	"badgeissue": "頒發徽章",
 	"badge-issue-legend": "頒發徽章給使用者",
 	"ob-issue-user": "使用者名稱",
 	"ob-issue-type": "徽章",
-	"ob-issue-evidence": "證明 URL",
+	"ob-issue-evidence": "證據網址",
 	"ob-db-user-not-found": "使用者不存在。",
 	"ob-db-evidence-not-url": "證明必須是一個 URL。",
 	"ob-db-badge-not-found": "徽章不存在。",
