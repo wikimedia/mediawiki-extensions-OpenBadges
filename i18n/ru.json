@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Putnik"
+			"Putnik",
+			"Kaganer"
 		]
 	},
 	"ob-desc": "Позволяет вики стать эмитентом [http://openbadges.org/ OpenBadges]",
@@ -31,7 +32,7 @@
 	"ob-view-no-evidence": "Нет",
 	"badgeissue": "Выдача значка",
 	"badge-issue-legend": "Выдать значок пользователю",
-	"ob-issue-user": "Имя пользователя",
+	"ob-issue-user": "Имя участника",
 	"ob-issue-type": "Значок",
 	"ob-issue-evidence": "URL-адрес доказательства",
 	"ob-db-user-not-found": "Пользователь не существует.",
