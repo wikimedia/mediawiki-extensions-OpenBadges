@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"StanProg"
+		]
+	},
+	"action-createbadge": "създаване на значки",
+	"action-viewbadge": "преглед на значките",
+	"action-issuebadge": "връчване на значки",
+	"right-createbadge": "Създаване на значки",
+	"right-viewbadge": "Преглед на значките",
+	"right-issuebadge": "Връчване на значки",
+	"badgecreate": "Създаване на значка",
+	"badge-create-legend": "Създаване на нова значка",
+	"ob-create-badge-name": "Наименование на значката",
+	"ob-create-badge-description": "Описание на значката",
+	"ob-create-badge-image": "Картинка на значката",
+	"ob-create-badge-criteria": "Критерии за значката",
+	"ob-create-success": "Значката е успешно създадена.",
+	"ob-create-name-exists": "Значка с такова име вече съществува.",
+	"badgeview": "Мои значки",
+	"ob-view-name": "Наименование на значката",
+	"ob-view-image": "Илюстрация на значката",
+	"badgeissue": "Връчване на значка",
+	"badge-issue-legend": "Връчване на значка на потребител",
+	"ob-issue-user": "Потребителско име",
+	"ob-issue-type": "Значка",
+	"ob-db-badge-not-found": "Значката не съществува.",
+	"ob-db-error-issued": "Значката е вече връчена на този потребител.",
+	"ob-issue-success": "Значката е успешно връчена."
+}

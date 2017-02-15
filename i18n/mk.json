@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"StanProg"
 		]
 	},
 	"ob-desc": "Овозможува едно вики да стане доделувач на значки [http://openbadges.org/ OpenBadges]",
@@ -17,7 +18,7 @@
 	"ob-create-badge-description": "Опис на значката",
 	"ob-create-badge-image": "Слика на значката",
 	"ob-create-badge-criteria": "Критериуми за значката",
-	"ob-create-success": "Значката е успешно создадена.",
+	"ob-create-success": "Значката е создадена.",
 	"ob-create-no-image": "Сликата не постои.",
 	"ob-create-wrong-mime": "Сликата е во погрешен формат. Се допуштаат само форматите PNG и SVG.",
 	"ob-create-name-exists": "Називот е зафатен.",
@@ -40,8 +41,8 @@
 	"ob-db-evidence-not-url": "Доказот мора да биде URL.",
 	"ob-db-badge-not-found": "Значката не постои.",
 	"ob-db-unknown-error": "Непозната грешка во базата.",
-	"ob-db-error-issued": "Значката е веќе доделена на друг корисник.",
-	"ob-issue-success": "Значката е успешно доделена.",
+	"ob-db-error-issued": "Значката е веќе доделена на овој корисник.",
+	"ob-issue-success": "Значката е доделена.",
 	"apihelp-openbadges-description": "Дај вдомено уверение за OpenBadge.",
 	"apihelp-openbadges-param-type": "Тип на барање.",
 	"apihelp-openbadges-param-obl_badge_id": "Добиен OpenBadge од {{SITENAME}}.",
