@@ -3,7 +3,8 @@
 		"authors": [
 			"Annamerida",
 			"Macofe",
-			"F3RaN"
+			"F3RaN",
+			"Fitoschido"
 		]
 	},
 	"action-issuebadge": "Emetre els distintius",
@@ -13,7 +14,7 @@
 	"badge-create-legend": "Crea un nou distintiu",
 	"ob-create-badge-name": "Nom de la insignia",
 	"ob-create-badge-description": "Descripció del distintiu",
-	"ob-create-badge-image": "Arxiu d'imatge del distintiu",
+	"ob-create-badge-image": "Fitxer d’imatge del distintiu",
 	"ob-create-badge-criteria": "Normes del distintiu",
 	"ob-create-success": "Distintiu creat correctament",
 	"ob-create-no-image": "La imatge no existeix",
