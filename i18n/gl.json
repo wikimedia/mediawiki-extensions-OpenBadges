@@ -45,10 +45,12 @@
 	"ob-db-error-issued": "Xa se enviou a medalla a este usuario.",
 	"ob-issue-success": "Enviouse a medalla.",
 	"apihelp-openbadges-description": "Obter a afirmación gardada para un OpenBadge.",
+	"apihelp-openbadges-summary": "Obter a afirmación gardada para un OpenBadge.",
 	"apihelp-openbadges-param-type": "Tipo de solicitude.",
 	"apihelp-openbadges-param-obl_badge_id": "OpenBadge recibida desde {{SITENAME}}.",
 	"apihelp-openbadges-param-obl_receiver": "Identificador do usuario que recibiu a OpenBadge.",
 	"apihelp-openbadgesissue-description": "Emitir una OpenBadge a un usuario.",
+	"apihelp-openbadgesissue-summary": "Emitir una OpenBadge a un usuario.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge que se emitirá desde {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Nome do usuario que recibirá a OpenBadge.",
 	"apihelp-openbadgesissue-param-obl_evidence_url": "URL da evidencia de que o usuario cumple os criterios da OpenBadge."
