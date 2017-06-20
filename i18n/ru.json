@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Putnik",
-			"Kaganer"
+			"Kaganer",
+			"Facenapalm"
 		]
 	},
 	"ob-desc": "Позволяет вики стать эмитентом [http://openbadges.org/ OpenBadges]",
@@ -44,10 +45,12 @@
 	"ob-db-error-issued": "Значок уже был выдан этому пользователю.",
 	"ob-issue-success": "Значок выдан.",
 	"apihelp-openbadges-description": "Получить подтверждение для OpenBadge.",
+	"apihelp-openbadges-summary": "Получить подтверждение для OpenBadge.",
 	"apihelp-openbadges-param-type": "Тип запроса.",
 	"apihelp-openbadges-param-obl_badge_id": "OpenBadge получен от {{SITENAME}}.",
 	"apihelp-openbadges-param-obl_receiver": "ID пользователя, который получил OpenBadge.",
-	"apihelp-openbadgesissue-description": "Выдать OpenBadge пользователю",
+	"apihelp-openbadgesissue-description": "Выдать OpenBadge пользователю.",
+	"apihelp-openbadgesissue-summary": "Выдать OpenBadge пользователю.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge для выдачи от {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Имя пользователя, который получит OpenBadge.",
 	"apihelp-openbadgesissue-param-obl_evidence_url": "URL-адрес, доказывающий, что пользователь соответствует критериям OpenBadge."
