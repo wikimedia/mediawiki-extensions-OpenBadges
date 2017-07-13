@@ -47,10 +47,12 @@
 	"ob-db-error-issued": "Le badge a déjà été délivré à cet utilisateur.",
 	"ob-issue-success": "Badge fourni.",
 	"apihelp-openbadges-description": "Récupérer une déclaration d'OpenBadge hébergée ici",
+	"apihelp-openbadges-summary": "Obtenir la déclaration hébergée pour un OpenBadge.",
 	"apihelp-openbadges-param-type": "Type de demande.",
 	"apihelp-openbadges-param-obl_badge_id": "OpenBadge reçu de {{SITENAME}}.",
 	"apihelp-openbadges-param-obl_receiver": "Id de l'utilisateur qui a reçu le OpenBadge.",
 	"apihelp-openbadgesissue-description": "Délivrer un Openbadge à un utilisateur",
+	"apihelp-openbadgesissue-summary": "Remettre un OpenBadge à un utilisateur.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge à produire de {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Id de l'utilisateur qui recevra l'OpenBadge.",
 	"apihelp-openbadgesissue-param-obl_evidence_url": "Url pour prouver que l’utilisateur correspond aux critères de OpenBadge."
