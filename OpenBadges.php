@@ -13,6 +13,12 @@
  * @license GNU General Public Licence 2.0 or later
  */
 
+// Ensure that the script cannot be executed outside of MediaWiki.
+if ( !defined( 'MEDIAWIKI' ) ) {
+	die( 'This is an extension to MediaWiki and cannot be run standalone.' );
+}
+
+// Display extension properties on MediaWiki.
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'OpenBadges',
@@ -20,12 +26,13 @@ $wgExtensionCredits['other'][] = array(
 		'chococookies',
 		'Don Yu',
 		'Stephen Zhou',
-		'Lokal_Profil'
+		'Lokal_Profil',
+		'...'
 	),
-	'version'  => '0.1',
+	'version'  => '0.2.0',
 	'url' => 'https://www.mediawiki.org/wiki/OpenBadges',
 	'descriptionmsg' => 'ob-desc',
-	'license-name' => 'GPL-2.0+',
+	'license-name' => 'GPL-2.0+'
 );
 
 /* Setup */
@@ -39,7 +46,6 @@ $wgAutoloadClasses['ApiOpenBadges'] = __DIR__ . '/ApiOpenBadges.php';
 $wgAutoloadClasses['ApiOpenBadgesAssertions'] = __DIR__ . '/ApiOpenBadgesAssertions.php';
 $wgAutoloadClasses['ApiOpenBadgesIssue'] = __DIR__ . '/ApiOpenBadgesIssue.php';
 $wgMessagesDirs['OpenBadges'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['OpenBadges'] = __DIR__ . '/OpenBadges.i18n.php';
 $wgExtensionMessagesFiles['OpenBadgesAlias'] = __DIR__ . '/OpenBadges.i18n.alias.php';
 
 // Map module name to class name
