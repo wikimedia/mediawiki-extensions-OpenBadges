@@ -44,10 +44,12 @@
 	"ob-db-error-issued": "徽章已分配给此用户。",
 	"ob-issue-success": "徽章已发布。",
 	"apihelp-openbadges-description": "获取用于OpenBadge的托管主张。",
+	"apihelp-openbadges-summary": "获取用于OpenBadge的托管主张。",
 	"apihelp-openbadges-param-type": "请求类型。",
 	"apihelp-openbadges-param-obl_badge_id": "从{{SITENAME}}收到的OpenBadge。",
 	"apihelp-openbadges-param-obl_receiver": "收到OpenBadge的用户的用户ID。",
 	"apihelp-openbadgesissue-description": "向一位用户发布OpenBadge。",
+	"apihelp-openbadgesissue-summary": "向一位用户发布OpenBadge。",
 	"apihelp-openbadgesissue-param-obl_badge_id": "要从{{SITENAME}}发布的OpenBadge。",
 	"apihelp-openbadgesissue-param-obl_receiver": "将收到OpenBadge的用户的用户名。",
 	"apihelp-openbadgesissue-param-obl_evidence_url": "证明用户满足OpenBadge标准的URL。"
