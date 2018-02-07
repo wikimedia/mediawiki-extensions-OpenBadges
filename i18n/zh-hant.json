@@ -3,7 +3,8 @@
 		"authors": [
 			"Liuxinyu970226",
 			"Cwlin0416",
-			"LNDDYL"
+			"LNDDYL",
+			"Kly"
 		]
 	},
 	"ob-desc": "可讓 wiki 成為 [http://openbadges.org/ OpenBadges] 的頒發者",
@@ -19,12 +20,16 @@
 	"ob-create-badge-description": "徽章描述",
 	"ob-create-badge-image": "徽章圖片檔",
 	"ob-create-badge-criteria": "徽章資格",
-	"ob-create-success": "已成功建立徽章。",
+	"ob-create-success": "已建立徽章。",
 	"ob-create-no-image": "該圖片並不存在。",
 	"ob-create-wrong-mime": "該圖片格式錯誤，僅允許使用 png 或 svg",
 	"ob-create-name-exists": "徽章名稱已存在。",
 	"badgeview": "我的徽章",
+	"ob-view-proof": "連結至檢驗",
 	"ob-view-proof-header": "聲明",
+	"ob-view-name": "徽章名稱",
+	"ob-view-image": "徽章圖像",
+	"ob-view-evidence": "連結至證明",
 	"ob-view-evidence-header": "證據",
 	"ob-view-no-evidence": "無",
 	"badgeissue": "頒發徽章",
@@ -33,13 +38,21 @@
 	"ob-issue-type": "徽章",
 	"ob-issue-evidence": "證據網址",
 	"ob-db-user-not-found": "使用者不存在。",
+	"ob-db-user-no-email": "{{GENDER:$1| 使用者}}未輸入電子郵件地址。",
+	"ob-db-user-no-email-confirmation": "{{GENDER:$1| 使用者}}未確認{{GENDER:$1|他|她|他們}}的電子郵件地址。",
 	"ob-db-evidence-not-url": "證明必須是一個 URL。",
 	"ob-db-badge-not-found": "徽章不存在。",
 	"ob-db-unknown-error": "不明的資料庫錯誤。",
 	"ob-db-error-issued": "該徽章已頒發給此使用者過。",
-	"ob-issue-success": "已成功頒發徽章。",
+	"ob-issue-success": "已頒發徽章。",
 	"apihelp-openbadges-description": "取得 OpenBadge 的託管聲明。",
+	"apihelp-openbadges-summary": "取得 OpenBadge 的託管聲明。",
 	"apihelp-openbadges-param-type": "請求類型。",
 	"apihelp-openbadges-param-obl_badge_id": "收到來自 {{SITENAME}} 的 OpenBadge。",
-	"apihelp-openbadges-param-obl_receiver": "收到 OpenBadge 的使用者。"
+	"apihelp-openbadges-param-obl_receiver": "收到 OpenBadge 的使用者 ID。",
+	"apihelp-openbadgesissue-description": "頒發 OpenBadge 給使用者。",
+	"apihelp-openbadgesissue-summary": "頒發 OpenBadge 給使用者。",
+	"apihelp-openbadgesissue-param-obl_badge_id": "要從 {{SITENAME}} 頒發的 OpenBadge。",
+	"apihelp-openbadgesissue-param-obl_receiver": "收到 OpenBadge 的使用者名稱。",
+	"apihelp-openbadgesissue-param-obl_evidence_url": "證明使用者符合 OpenBadge 標準的 URL。"
 }
