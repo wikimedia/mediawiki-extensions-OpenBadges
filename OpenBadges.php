@@ -32,7 +32,7 @@ $wgExtensionCredits['other'][] = array(
 	'version'  => '0.2.0',
 	'url' => 'https://www.mediawiki.org/wiki/OpenBadges',
 	'descriptionmsg' => 'ob-desc',
-	'license-name' => 'GPL-2.0+'
+	'license-name' => 'GPL-2.0-or-later'
 );
 
 /* Setup */
