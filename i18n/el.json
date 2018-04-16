@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"action-createbadge": "δημιουργία σημάτων",
+	"action-viewbadge": "προβολή σημάτων",
+	"action-issuebadge": "έκδοση σημάτων",
+	"right-createbadge": "Δημιουργία σημάτων",
+	"right-viewbadge": "Προβολή σημάτων",
+	"right-issuebadge": "Έκδοση σημάτων",
+	"badgecreate": "Δημιουργία σήματος",
+	"badge-create-legend": "Δημιουργία νέου σήματος",
+	"ob-create-badge-name": "Όνομα σήματος",
+	"ob-create-badge-description": "Περιγραφή σήματος",
+	"ob-create-badge-image": "Αρχείο εικόνας σήματος",
+	"ob-create-badge-criteria": "Κριτήρια σήματος",
+	"ob-create-success": "Το σήμα δημιουργήθηκε.",
+	"ob-create-no-image": "Αυτή η εικόνα δεν υπάρχει.",
+	"ob-create-name-exists": "Το όνομα σήματος υπάρχει ήδη.",
+	"badgeview": "Τα σήματά μου",
+	"ob-view-name": "Όνομα σήματος",
+	"ob-view-image": "Απεικόνιση σήματος",
+	"ob-view-no-evidence": "Κανένα",
+	"badgeissue": "Έκδοση σήματος",
+	"badge-issue-legend": "Έκδοση σημάτος προς ένα χρήστη",
+	"ob-issue-user": "Όνομα χρήστη",
+	"ob-issue-type": "Σήματα",
+	"ob-db-user-not-found": "Δεν υπάρχει χρήστης.",
+	"ob-db-badge-not-found": "Το σήμα δεν υπάρχει."
+}
