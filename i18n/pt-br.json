@@ -1,8 +1,40 @@
 {
 	"@metadata": {
 		"authors": [
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Eduardo Addad de Oliveira"
 		]
 	},
-	"ob-issue-user": "Nome de usuário"
+	"ob-desc": "Permite que a wiki se torne num emitente de medalhas abertas [http://openbadges.org/ OpenBadges].",
+	"action-createbadge": "criar medalhas",
+	"action-viewbadge": "ver medalhas",
+	"action-issuebadge": "emitir medalhas",
+	"right-createbadge": "Criar medalhas",
+	"right-viewbadge": "Ver medalhas",
+	"right-issuebadge": "Emitir medalhas",
+	"badgecreate": "Criar uma medalha",
+	"badge-create-legend": "Criar uma medalha nova",
+	"ob-create-badge-name": "Nome da medalha",
+	"ob-create-badge-description": "Descrição da medalha",
+	"ob-create-badge-image": "Arquivo de imagem da medalha",
+	"ob-create-badge-criteria": "Critérios da medalha",
+	"ob-create-success": "Medalha criada.",
+	"ob-create-no-image": "A imagem não existe.",
+	"ob-create-wrong-mime": "A imagem tem um formato incorreto; só são permitidos os formatos png e svg.",
+	"ob-create-name-exists": "O nome da medalha já existe.",
+	"badgeview": "As minhas medalhas",
+	"ob-view-proof": "hiperligação para a prova",
+	"ob-view-proof-header": "Prova",
+	"ob-view-name": "Nome da medalha",
+	"ob-view-image": "Ilustração da medalha",
+	"ob-view-evidence": "hiperligação para a prova",
+	"ob-view-evidence-header": "Prova",
+	"ob-view-no-evidence": "Nenhum",
+	"badgeissue": "Emitir uma medalha",
+	"badge-issue-legend": "Emitir uma medalha para um usuário",
+	"ob-issue-user": "Nome de usuário",
+	"ob-issue-type": "Medalha",
+	"ob-issue-evidence": "URL da prova",
+	"ob-db-user-not-found": "O usuário não existe.",
+	"ob-db-unknown-error": "Erro desconhecido da base de dados."
 }
