@@ -36,5 +36,7 @@
 	"ob-issue-type": "Medalha",
 	"ob-issue-evidence": "URL da prova",
 	"ob-db-user-not-found": "O usuário não existe.",
-	"ob-db-unknown-error": "Erro desconhecido da base de dados."
+	"ob-db-unknown-error": "Erro desconhecido da base de dados.",
+	"apihelp-openbadges-param-type": "Tipo de pedido.",
+	"apihelp-openbadges-param-obl_badge_id": "Medalha OpenBadge recebida da wiki {{SITENAME}}."
 }
