@@ -36,7 +36,21 @@
 	"ob-issue-type": "Medalha",
 	"ob-issue-evidence": "URL da prova",
 	"ob-db-user-not-found": "O usuário não existe.",
+	"ob-db-user-no-email": "{{GENDER:$1|O usuário|A usuária}} não introduziu nenhum endereço de e-mail.",
+	"ob-db-user-no-email-confirmation": "{{GENDER:$1|O usuário|A usuária}} não confirmou o seu endereço de e-mail.",
+	"ob-db-evidence-not-url": "A prova tem de ser um URL.",
+	"ob-db-badge-not-found": "A medalha não existe.",
 	"ob-db-unknown-error": "Erro desconhecido da base de dados.",
+	"ob-db-error-issued": "A medalha já foi emitida para este usuário.",
+	"ob-issue-success": "Medalha emitida.",
+	"apihelp-openbadges-description": "Obter a declaração alojada de uma medalha OpenBadge.",
+	"apihelp-openbadges-summary": "Obter a declaração alojada de uma medalha OpenBadge.",
 	"apihelp-openbadges-param-type": "Tipo de pedido.",
-	"apihelp-openbadges-param-obl_badge_id": "Medalha OpenBadge recebida da wiki {{SITENAME}}."
+	"apihelp-openbadges-param-obl_badge_id": "Medalha OpenBadge recebida da wiki {{SITENAME}}.",
+	"apihelp-openbadges-param-obl_receiver": "Identificador do usuário que recebeu a medalha OpenBadge.",
+	"apihelp-openbadgesissue-description": "Emitir uma medalha OpenBadge para um usuário.",
+	"apihelp-openbadgesissue-summary": "Emitir uma medalha OpenBadge para um usuário.",
+	"apihelp-openbadgesissue-param-obl_badge_id": "Medalha OpenBadge para ser emitida pela wiki {{SITENAME}}.",
+	"apihelp-openbadgesissue-param-obl_receiver": "Nome do usuário que irá receber a medalha OpenBadge.",
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL da prova de que o usuário cumpre os critérios da medalha OpenBadge."
 }
