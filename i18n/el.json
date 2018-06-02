@@ -31,5 +31,8 @@
 	"ob-issue-user": "Όνομα χρήστη",
 	"ob-issue-type": "Σήματα",
 	"ob-db-user-not-found": "Δεν υπάρχει χρήστης.",
-	"ob-db-badge-not-found": "Το σήμα δεν υπάρχει."
+	"ob-db-badge-not-found": "Το σήμα δεν υπάρχει.",
+	"ob-db-unknown-error": "Άγνωστο σφάλμα βάσης δεδομένων.",
+	"apihelp-openbadges-param-type": "Τύπος αιτήματος.",
+	"apihelp-openbadges-param-obl_badge_id": "OpenBadge που ελήφθη από το {{SITENAME}}."
 }
