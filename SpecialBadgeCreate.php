@@ -81,7 +81,7 @@ class SpecialBadgeCreate extends FormSpecialPage {
 	 *
 	 * error-msg|@bool
 	 */
-	 public function validateImage( $imageTitle, $allData ) {
+	 public static function validateImage( $imageTitle, $allData ) {
 		 if ( $imageTitle == '' ) {
 			 return wfMessage( 'htmlform-required' );
 		 }
@@ -101,7 +101,7 @@ class SpecialBadgeCreate extends FormSpecialPage {
 	 *
 	 * error-msg|@bool
 	 */
-	public function validateName( $badgeTitle, $allData ) {
+	public static function validateName( $badgeTitle, $allData ) {
 		if ( $badgeTitle == '' ) {
 			return wfMessage( 'htmlform-required' );
 		}

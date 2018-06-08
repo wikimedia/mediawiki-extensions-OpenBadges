@@ -14,7 +14,7 @@ class SpecialBadgeView extends SpecialPage {
 	/**
 	 * Shows the page to the user.
 	 */
-	public function execute() {
+	public function execute( $subpage ) {
 		$this->setHeaders();
 		$this->checkPermissions();
 		$this->outputHeader();
@@ -40,6 +40,8 @@ class SpecialBadgeView extends SpecialPage {
  * @ingroup SpecialPage Pager
  */
 class BadgesPager extends TablePager {
+
+	private $mFieldNames;
 
 	/**
 	 * Request all badges issued to the current user
@@ -110,7 +112,7 @@ class BadgesPager extends TablePager {
 	 * @throws MWException
 	 */
 	function formatValue( $field, $value ) {
-		global $wgScriptPath;
+		global $wgScriptPath, $wgCanonicalServer;
 		global $wgUser;
 		$apiUrl = $wgCanonicalServer . $wgScriptPath . '/api.php?';
 		$userId = $wgUser->getId();

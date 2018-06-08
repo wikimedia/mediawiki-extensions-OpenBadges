@@ -111,7 +111,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	 *
 	 * @return bool|string
 	 */
-	public function validateUser( $userName, $alldata ) {
+	public static function validateUser( $userName, $alldata ) {
 		global $wgOpenBadgesRequireEmail;
 		global $wgOpenBadgesRequireEmailConfirmation;
 		if ( $userName == '' ) {
@@ -140,7 +140,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	 *
 	 * @return bool|string
 	 */
-	public function validateEvidence( $url, $alldata ) {
+	public static function validateEvidence( $url, $alldata ) {
 		if ( $url == '' ) {
 			return true;
 		}
