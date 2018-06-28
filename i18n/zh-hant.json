@@ -5,7 +5,8 @@
 			"Cwlin0416",
 			"LNDDYL",
 			"Kly",
-			"Sanmosa"
+			"Sanmosa",
+			"A2093064"
 		]
 	},
 	"ob-desc": "可讓 wiki 成為 [http://openbadges.org/ OpenBadges] 的頒發者",
@@ -35,7 +36,7 @@
 	"ob-view-no-evidence": "無",
 	"badgeissue": "頒發徽章",
 	"badge-issue-legend": "頒發徽章給使用者",
-	"ob-issue-user": "用戶名",
+	"ob-issue-user": "使用者名稱",
 	"ob-issue-type": "徽章",
 	"ob-issue-evidence": "證據網址",
 	"ob-db-user-not-found": "使用者不存在。",
