@@ -154,7 +154,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	 *
 	 * @return bool
 	 */
-	public function isURL( $url ) {
+	public static function isURL( $url ) {
 		if ( substr( $url, 0, strlen( 'http://' ) ) === 'http://' ) {
 			return true;
 		} elseif ( substr( $url, 0, strlen( 'https://' ) ) === 'https://' ) {
@@ -170,7 +170,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	 *
 	 * @return Status
 	 */
-	public function validateFormFields( array $data ) {
+	public static function validateFormFields( array $data ) {
 		$fields = '*';
 
 		$dbr = wfGetDB( DB_MASTER );
