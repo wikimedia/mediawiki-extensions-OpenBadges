@@ -57,7 +57,6 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 			$this::returnIssuer();
 		}
 		// else case is handled automatically by API
-
 	}
 
 	/**

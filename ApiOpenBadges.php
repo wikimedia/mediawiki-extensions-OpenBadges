@@ -41,7 +41,6 @@ abstract class ApiOpenBadges extends ApiBase {
 			// you should never end up here, throw an error
 			$this->dieUsage( 'Illegal filetype for badge', 'imageerror' );
 		}
-
 	}
 
 	/**
