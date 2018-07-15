@@ -287,7 +287,7 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	 * @param array $call
 	 * @return string
 	 */
-	public function callToUrl( Array $call ) {
+	public function callToUrl( array $call ) {
 		global $wgCanonicalServer;
 		global $wgScriptPath;
 		$apiUrl = $wgCanonicalServer . $wgScriptPath . '/api.php?';
