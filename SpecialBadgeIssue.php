@@ -23,27 +23,27 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	 * @return array form fields
 	 */
 	public function getFormFields() {
-		return array(
-			'Name' => array(
+		return [
+			'Name' => [
 				'type' => 'text',
 				'label-message' => 'ob-issue-user',
 				'required' => true,
-				'filter-callback' => array( 'SpecialBadgeIssue', 'toDBkey' ),
-				'validation-callback' => array( 'SpecialBadgeIssue', 'validateUser' ),
-			),
-			'BadgeId' => array(
+				'filter-callback' => [ 'SpecialBadgeIssue', 'toDBkey' ],
+				'validation-callback' => [ 'SpecialBadgeIssue', 'validateUser' ],
+			],
+			'BadgeId' => [
 				'type' => 'select',
 				'label-message' => 'ob-issue-type',
 				'required' => true,
 				'options' => self::getAllBadges(),
-			),
-			'Evidence' => array(
+			],
+			'Evidence' => [
 				'type' => 'text',
 				'label-message' => 'ob-issue-evidence',
 				'required' => false,
-				'validation-callback' => array( 'SpecialBadgeIssue', 'validateEvidence' ),
-			),
-		);
+				'validation-callback' => [ 'SpecialBadgeIssue', 'validateEvidence' ],
+			],
+		];
 	}
 
 	/**
@@ -68,9 +68,9 @@ class SpecialBadgeIssue extends FormSpecialPage {
 		$dbr = wfGetDB( DB_MASTER );
 		$res = $dbr->select(
 			'openbadges_class',
-			array( 'obl_name', 'obl_badge_id' )
+			[ 'obl_name', 'obl_badge_id' ]
 		);
-		$names = array();
+		$names = [];
 		// MWDebug::log(print_r($res));
 		foreach ( $res as $row ) {
 			$names[$row->obl_name] = $row->obl_badge_id ;
@@ -94,12 +94,12 @@ class SpecialBadgeIssue extends FormSpecialPage {
 		$dbw->startAtomic( __METHOD__ );
 		$result = $dbw->insert(
 			'openbadges_assertion',
-			array(
+			[
 				'obl_timestamp' => $dbw->timestamp(),
 				'obl_receiver' => $status->value['Receiver'],
 				'obl_badge_id' => $status->value['BadgeId'],
 				'obl_badge_evidence' => $status->value['Evidence']
-			),
+			],
 			__METHOD__
 		);
 		$dbw->endAtomic( __METHOD__ );
@@ -179,13 +179,13 @@ class SpecialBadgeIssue extends FormSpecialPage {
 		$userRow = $dbr->selectRow(
 			'user',
 			$fields,
-			array( 'user_name' => $data['Name'] )
+			[ 'user_name' => $data['Name'] ]
 		);
 
 		$badgeRow = $dbr->selectRow(
 			'openbadges_class',
 			$fields,
-			array( 'obl_badge_id' => $data['BadgeId'] )
+			[ 'obl_badge_id' => $data['BadgeId'] ]
 		);
 
 		$evidence = $data['Evidence'] == '' ? null : $data['Evidence'];
@@ -195,20 +195,20 @@ class SpecialBadgeIssue extends FormSpecialPage {
 			$issued = $dbr->selectRow(
 				'openbadges_assertion',
 				$fields,
-				array(
+				[
 					'obl_badge_id' => $data['BadgeId'],
 					'obl_receiver' => $userRow->user_id,
-				)
+				]
 			);
 			if ( $issued ) {
 				$status = Status::newFatal( 'ob-db-error-issued' );
 			}
 			else {
-				$assertionRes = array(
+				$assertionRes = [
 					'Receiver' => $userRow->user_id,
 					'BadgeId' => $badgeRow->obl_badge_id,
 					'Evidence' => $evidence
-				);
+				];
 				$status = Status::newGood( $assertionRes );
 			}
 		}

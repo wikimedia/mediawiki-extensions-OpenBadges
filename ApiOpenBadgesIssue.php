@@ -19,20 +19,20 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	}
 
 	public function getAllowedParams() {
-		return array(
-			'obl_badge_id' => array(
+		return [
+			'obl_badge_id' => [
 				ApiBase::PARAM_TYPE => 'integer',
 				ApiBase::PARAM_REQUIRED => true
-			),
-			'obl_receiver' => array(
+			],
+			'obl_receiver' => [
 				ApiBase::PARAM_TYPE => 'user',
 				ApiBase::PARAM_REQUIRED => false
-			),
-			'obl_evidence_url' => array(
+			],
+			'obl_evidence_url' => [
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => false
-			)
-		);
+			]
+		];
 	}
 
 	public function execute() {
@@ -68,12 +68,12 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 		$dbw->startAtomic( __METHOD__ );
 		$result = $dbw->insert(
 			'openbadges_assertion',
-			array(
+			[
 				'obl_timestamp' => $dbw->timestamp(),
 				'obl_receiver' => $recipient->getId(),
 				'obl_badge_id' => $badgeID,
 				'obl_badge_evidence' => $evidenceUrl
-			),
+			],
 			__METHOD__
 		);
 		$dbw->endAtomic( __METHOD__ );
@@ -142,11 +142,11 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	 * @param int $badgeID
 	 */
 	protected function markResultSuccess( User $recipient, $badgeID ) {
-		$this->getResult()->addValue( null, 'result', array(
+		$this->getResult()->addValue( null, 'result', [
 			'success' => 1,
 			'recipient' => $recipient->getName(),
 			'badge' => $badgeID,
-		) );
+		] );
 	}
 
 	/**
@@ -160,10 +160,10 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	* @deprecated since MediaWiki core 1.25
 	*/
 	public function getParamDescription() {
-		return array(
+		return [
 			'obl_badge_id' => 'OpenBadge to issue from this Wiki.',
 			'obl_receiver' => 'User name of the user who will receive the OpenBadge.',
 			'obl_evidence_url' => 'Url to evidence for user meeting the OpenBadge criteria.'
-		);
+		];
 	}
 }

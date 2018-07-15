@@ -23,35 +23,35 @@ class SpecialBadgeCreate extends FormSpecialPage {
 	 * @return array form fields
 	 */
 	public function getFormFields() {
-		return array(
-			'Name' => array(
+		return [
+			'Name' => [
 				'label-message' => 'ob-create-badge-name',
 				'type' => 'text',
 				'required' => true,
-				'validation-callback' => array( 'SpecialBadgeCreate', 'validateName' ),
-				'filter-callback' => array( 'SpecialBadgeIssue', 'toDBkey' ),
-			),
-			'Image' => array(
+				'validation-callback' => [ 'SpecialBadgeCreate', 'validateName' ],
+				'filter-callback' => [ 'SpecialBadgeIssue', 'toDBkey' ],
+			],
+			'Image' => [
 				'label-message' => 'ob-create-badge-image',
 				'type' => 'text',
 				'required' => true,
-				'validation-callback' => array( 'SpecialBadgeCreate', 'validateImage' ),
-			),
-			'Description' => array(
+				'validation-callback' => [ 'SpecialBadgeCreate', 'validateImage' ],
+			],
+			'Description' => [
 				'label-message' => 'ob-create-badge-description',
 				'type' => 'textarea',
 				'required' => true,
 				'cols' => 30,
 				'rows' => 5,
-			),
-			'Criteria' => array(
+			],
+			'Criteria' => [
 				'label-message' => 'ob-create-badge-criteria',
 				'type' => 'textarea',
 				'required' => true,
 				'cols' => 30,
 				'rows' => 5,
-			),
-		);
+			],
+		];
 	}
 
 	/**
@@ -64,12 +64,12 @@ class SpecialBadgeCreate extends FormSpecialPage {
 		$dbw->startAtomic( __METHOD__ );
 		$result = $dbw->insert(
 			'openbadges_class',
-			array(
+			[
 				'obl_name' => $data['Name'],
 				'obl_description' => $data['Description'],
 				'obl_badge_image' => $data['Image'],
 				'obl_criteria' => $data['Criteria'],
-			),
+			],
 			__METHOD__
 		);
 		$dbw->endAtomic( __METHOD__);
@@ -109,7 +109,7 @@ class SpecialBadgeCreate extends FormSpecialPage {
 		$badgeRow = $dbr->selectRow(
 			'openbadges_class',
 			'*',
-			array( 'obl_name' => $badgeTitle )
+			[ 'obl_name' => $badgeTitle ]
 		);
 		if ( $badgeRow ) {
 			return wfMessage( 'ob-create-name-exists' );

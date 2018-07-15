@@ -33,10 +33,10 @@ abstract class ApiOpenBadges extends ApiBase {
 		}
 		elseif ( $mimetype == 'image/svg+xml' ) {
 			// need to get png thumb
-			$thumbCall = array(
+			$thumbCall = [
 				'f' => $file->getName(),
 				'width' => $wgOpenBadgesThumb
-			);
+			];
 			return $thumbUrl . http_build_query( $thumbCall );
 		}
 		else {
@@ -85,9 +85,9 @@ abstract class ApiOpenBadges extends ApiBase {
 	protected function queryBadge( $badgeID ) {
 		$dbr = wfGetDB( DB_SLAVE );
 		$res = $dbr->select(
-			array( 'openbadges_class' ),
+			[ 'openbadges_class' ],
 			'*',
-			array( 'obl_badge_id' => $badgeID )
+			[ 'obl_badge_id' => $badgeID ]
 		);
 		return $res;
 	}
@@ -102,21 +102,21 @@ abstract class ApiOpenBadges extends ApiBase {
 	protected function queryIssuedBadge( $badgeID, User $recipient ) {
 		$dbr = wfGetDB( DB_SLAVE );
 		$res = $dbr->select(
-			array( 'openbadges_assertion', 'openbadges_class' ),
+			[ 'openbadges_assertion', 'openbadges_class' ],
 			'*',
-			array(
+			[
 				'openbadges_assertion.obl_badge_id' => $badgeID,
 				'obl_receiver' => $recipient->getid(),
-			),
+			],
 			__METHOD__,
-			array(),
-			array(
-				'openbadges_class' => array(
-					'INNER JOIN', array (
+			[],
+			[
+				'openbadges_class' => [
+					'INNER JOIN',  [
 						'openbadges_assertion.obl_badge_id=openbadges_class.obl_badge_id'
-					)
-				)
-			)
+					]
+				]
+			]
 		);
 		return $res;
 	}

@@ -10,25 +10,25 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	}
 
 	public function getAllowedParams() {
-		return array(
-			'type' => array(
-				ApiBase::PARAM_TYPE => array(
+		return [
+			'type' => [
+				ApiBase::PARAM_TYPE => [
 					'assertion',
 					'badge',
 					'issuer',
 					'criteria'
-				),
+				],
 				ApiBase::PARAM_REQUIRED => true
-			),
-			'obl_badge_id' => array(
+			],
+			'obl_badge_id' => [
 				ApiBase::PARAM_TYPE => 'integer',
 				ApiBase::PARAM_REQUIRED => false
-			),
-			'obl_receiver' => array(
+			],
+			'obl_receiver' => [
 				ApiBase::PARAM_TYPE => 'integer',
 				ApiBase::PARAM_REQUIRED => false
-			)
-		);
+			]
+		];
 	}
 
 	public function execute() {
@@ -89,9 +89,9 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 		global $wgCanonicalServer;
 		$dbr = wfGetDB( DB_SLAVE );
 		$res = $dbr->select(
-			array( 'openbadges_class' ),
+			[ 'openbadges_class' ],
 			'obl_criteria',
-			array( 'obl_badge_id = ' . $badgeID )
+			[ 'obl_badge_id = ' . $badgeID ]
 		);
 		$this->getResult()->addValue( null, 'criteria', $res->current()->obl_criteria );
 	}
@@ -134,11 +134,11 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 		// add information about the recipient user
 		$hashAlgo = "sha256";
 		$hashedEmail = hash( $hashAlgo, $recipient->getEmail() );
-		$this->getResult()->addValue( null, 'recipient', array(
+		$this->getResult()->addValue( null, 'recipient', [
 				'type' => 'email',
 				'hashed' => true,
 				'identity' => $hashAlgo . '$' . $hashedEmail,
-			)
+			]
 		);
 
 		// get evidence based on which the badge was issued
@@ -162,10 +162,10 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 		$this->getResult()->addValue( null, 'badge', $this->classUrl( $badgeID ) );
 
 		// set how the badge will be verified
-		$this->getResult()->addValue( null, 'verify', array(
+		$this->getResult()->addValue( null, 'verify', [
 				'type' => 'hosted',
 				'url' => $assertionUrl,
-			)
+			]
 		);
 
 		// only a baked image should be provided here
@@ -225,13 +225,13 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	 * @return string
 	 */
 	public function assertionUrl( $badgeID, User $recipient ) {
-		$call = array(
+		$call = [
 			'action' => 'openbadges',
 			'format' => 'json',
 			'type' => 'assertion',
 			'obl_badge_id' => $badgeID,
 			'obl_receiver' => $recipient->getId()
-		);
+		];
 		return $this->callToUrl( $call );
 	}
 
@@ -242,12 +242,12 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	 * @return string
 	 */
 	public function classUrl( $badgeID ) {
-		$call = array(
+		$call = [
 			'action' => 'openbadges',
 			'format' => 'json',
 			'type' => 'badge',
 			'obl_badge_id' => $badgeID
-		);
+		];
 		return $this->callToUrl( $call );
 	}
 
@@ -258,12 +258,12 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	 * @return string
 	 */
 	public function criteriaUrl( $badgeID ) {
-		$call = array(
+		$call = [
 			'action' => 'openbadges',
 			'format' => 'json',
 			'type' => 'criteria',
 			'obl_badge_id' => $badgeID
-		);
+		];
 		return $this->callToUrl( $call );
 	}
 
@@ -273,11 +273,11 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	 * @return string
 	 */
 	public function issuerUrl() {
-		$call = array(
+		$call = [
 			'action' => 'openbadges',
 			'format' => 'json',
 			'type' => 'issuer'
-		);
+		];
 		return $this->callToUrl( $call );
 	}
 
@@ -305,10 +305,10 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	* @deprecated since MediaWiki core 1.25
 	*/
 	public function getParamDescription() {
-		return array(
+		return [
 			'type' => 'Type of request',
 			'obl_badge_id' => 'OpenBadge received from this Wiki',
 			'obl_receiver' => 'User id of the user who received the OpenBadge.',
-		);
+		];
 	}
 }

@@ -6,11 +6,11 @@
  * @ingroup Extensions
  */
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'BadgeCreate' => array( 'BadgeCreate' ),
-	'BadgeIssue' => array( 'BadgeIssue' ),
-	'BadgeView' => array( 'BadgeView' ),
-);
+$specialPageAliases['en'] = [
+	'BadgeCreate' => [ 'BadgeCreate' ],
+	'BadgeIssue' => [ 'BadgeIssue' ],
+	'BadgeView' => [ 'BadgeView' ],
+];

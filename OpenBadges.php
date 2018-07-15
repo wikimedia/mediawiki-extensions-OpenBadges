@@ -19,21 +19,21 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 // Display extension properties on MediaWiki.
-$wgExtensionCredits['other'][] = array(
+$wgExtensionCredits['other'][] = [
 	'path' => __FILE__,
 	'name' => 'OpenBadges',
-	'author' => array(
+	'author' => [
 		'chococookies',
 		'Don Yu',
 		'Stephen Zhou',
 		'Lokal_Profil',
 		'...'
-	),
+	],
 	'version'  => '0.2.0',
 	'url' => 'https://www.mediawiki.org/wiki/OpenBadges',
 	'descriptionmsg' => 'ob-desc',
 	'license-name' => 'GPL-2.0-or-later'
-);
+];
 
 /* Setup */
 

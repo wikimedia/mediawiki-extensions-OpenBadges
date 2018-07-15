@@ -52,19 +52,19 @@ class BadgesPager extends TablePager {
 		global $wgUser;
 		$userId = $wgUser->getId();
 
-		return array(
-			'tables' => array( 'openbadges_assertion', 'openbadges_class' ),
-			'fields' => array(
+		return [
+			'tables' => [ 'openbadges_assertion', 'openbadges_class' ],
+			'fields' => [
 				'obl_name',
 				'obl_badge_image',
 				'openbadges_assertion.obl_badge_id AS badge_id',
-				'obl_badge_evidence' ),
+				'obl_badge_evidence' ],
 			'conds' => 'obl_receiver = ' . $userId,
-			'join_conds' => array(
-				'openbadges_class' => array(
+			'join_conds' => [
+				'openbadges_class' => [
 					'INNER JOIN',
-					'openbadges_assertion.obl_badge_id = openbadges_class.obl_badge_id' ) )
-		);
+					'openbadges_assertion.obl_badge_id = openbadges_class.obl_badge_id' ] ]
+		];
 	}
 
 	/**
@@ -79,7 +79,7 @@ class BadgesPager extends TablePager {
 	 * @return bool
 	 */
 	function isFieldSortable( $field ) {
-		$sortable = array( 'obl_name', 'obl_badge_evidence' );
+		$sortable = [ 'obl_name', 'obl_badge_evidence' ];
 		return in_array( $field, $sortable );
 	}
 
@@ -95,12 +95,12 @@ class BadgesPager extends TablePager {
 	 */
 	function getFieldNames() {
 		if ( !$this->mFieldNames ) {
-			$this->mFieldNames = array(
+			$this->mFieldNames = [
 				'obl_name' => $this->msg( 'ob-view-name' )->text(),
 				'obl_badge_image' => $this->msg( 'ob-view-image' )->text(),
 				'badge_id' => $this->msg( 'ob-view-proof-header' )->text(),
 				'obl_badge_evidence' => $this->msg( 'ob-view-evidence-header' )->text(),
-			);
+			];
 		}
 		return $this->mFieldNames;
 	}
@@ -122,20 +122,20 @@ class BadgesPager extends TablePager {
 				return htmlspecialchars( $value );
 			case 'obl_badge_image':
 				$file = wfFindFile( $value );
-				$badgeImage = $file->transform( array( 'width' => 180, 'height' => 360 ) );
-				$thumb = $badgeImage->toHtml( array( 'desc-link' => true ) );
+				$badgeImage = $file->transform( [ 'width' => 180, 'height' => 360 ] );
+				$thumb = $badgeImage->toHtml( [ 'desc-link' => true ] );
 				return $thumb;
 			case 'badge_id':
-				$assertCall = array(
+				$assertCall = [
 					'action' => 'openbadges',
 					'format' => 'json',
 					'type' => 'assertion',
 					'obl_badge_id' => $value,
 					'obl_receiver' => $userId
-				);
+				];
 				$assertLink = Html::rawElement(
 					'a',
-					array( 'href' => $apiUrl . http_build_query( $assertCall ) ),
+					[ 'href' => $apiUrl . http_build_query( $assertCall ) ],
 					wfMessage( 'ob-view-proof' )->text()
 				);
 				return $assertLink;
@@ -146,7 +146,7 @@ class BadgesPager extends TablePager {
 				else {
 					$evidenceLink = Html::rawElement(
 						'a',
-						array( 'href' => $value ),
+						[ 'href' => $value ],
 						wfMessage( 'ob-view-evidence' )->text()
 					);
 					return $evidenceLink;
