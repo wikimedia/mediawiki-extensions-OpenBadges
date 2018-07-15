@@ -6,10 +6,7 @@
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingDocumentationPublic" />
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingParamTag" />
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingReturn" />
-		<exclude name="MediaWiki.Commenting.FunctionComment.SyntaxAlignedDocClose" />
-		<exclude name="MediaWiki.Commenting.FunctionComment.SyntaxAlignedDocStar" />
 		<exclude name="MediaWiki.Commenting.FunctionComment.WrongStyle" />
-		<exclude name="MediaWiki.Commenting.LicenseComment.InvalidLicenseTag" />
 		<exclude name="MediaWiki.ControlStructures.IfElseStructure.SpaceBeforeElse" />
 		<exclude name="MediaWiki.NamingConventions.PrefixedGlobalFunctions.wfPrefix" />
 		<exclude name="MediaWiki.Usage.DeprecatedConstantUsage.DB_SLAVE" />

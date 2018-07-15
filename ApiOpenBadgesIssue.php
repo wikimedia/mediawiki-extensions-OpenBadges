@@ -150,15 +150,15 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	}
 
 	/**
-	* @deprecated since MediaWiki core 1.25
-	*/
+	 * @deprecated since MediaWiki core 1.25
+	 */
 	public function getDescription() {
 		return 'Issue an OpenBadge to a user.';
 	}
 
 	/**
-	* @deprecated since MediaWiki core 1.25
-	*/
+	 * @deprecated since MediaWiki core 1.25
+	 */
 	public function getParamDescription() {
 		return [
 			'obl_badge_id' => 'OpenBadge to issue from this Wiki.',

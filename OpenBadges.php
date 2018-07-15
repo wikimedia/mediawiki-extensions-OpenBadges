@@ -10,7 +10,7 @@
  * @file
  * @ingroup Extensions
  * @author chococookies, and the rest
- * @license GNU General Public Licence 2.0 or later
+ * @license GPL-2.0-or-later
  */
 
 // Ensure that the script cannot be executed outside of MediaWiki.

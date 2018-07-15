@@ -295,15 +295,15 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	}
 
 	/**
-	* @deprecated since MediaWiki core 1.25
-	*/
+	 * @deprecated since MediaWiki core 1.25
+	 */
 	public function getDescription() {
 		return 'Get hosted assertion for an OpenBadge.';
 	}
 
 	/**
-	* @deprecated since MediaWiki core 1.25
-	*/
+	 * @deprecated since MediaWiki core 1.25
+	 */
 	public function getParamDescription() {
 		return [
 			'type' => 'Type of request',
