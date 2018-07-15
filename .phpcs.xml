@@ -11,8 +11,6 @@
 		<exclude name="MediaWiki.VariableAnalysis.UnusedGlobalVariables.UnusedGlobal$wgCanonicalServer" />
 		<exclude name="MediaWiki.VariableAnalysis.UnusedGlobalVariables.UnusedGlobal$wgSitename" />
 		<exclude name="Squiz.Scope.MethodScope.Missing" />
-		<exclude name="Squiz.WhiteSpace.ScopeClosingBrace.Indent" />
-		<exclude name="Squiz.WhiteSpace.SemicolonSpacing.Incorrect" />
 	</rule>
 	<file>.</file>
 	<arg name="extensions" value="php,php5,inc"/>

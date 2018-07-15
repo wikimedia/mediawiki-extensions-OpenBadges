@@ -115,7 +115,7 @@ class SpecialBadgeCreate extends FormSpecialPage {
 			return wfMessage( 'ob-create-name-exists' );
 		}
 		return true;
-	 }
+	}
 
 	public function onSuccess() {
 		$this->getOutput()->addWikiMsg( 'ob-create-success' );

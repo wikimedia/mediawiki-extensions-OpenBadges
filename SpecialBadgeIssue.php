@@ -73,7 +73,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 		$names = [];
 		// MWDebug::log(print_r($res));
 		foreach ( $res as $row ) {
-			$names[$row->obl_name] = $row->obl_badge_id ;
+			$names[$row->obl_name] = $row->obl_badge_id;
 		}
 		return $names;
 	}
@@ -217,7 +217,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 			if ( $status->isOK() ) {
 				$status->fatal( 'ob-db-unknown-error' );
 			}
-		}
+	}
 
 		return $status;
 	}
