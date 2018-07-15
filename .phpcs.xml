@@ -10,7 +10,6 @@
 		<exclude name="MediaWiki.NamingConventions.PrefixedGlobalFunctions.wfPrefix" />
 		<exclude name="MediaWiki.VariableAnalysis.UnusedGlobalVariables.UnusedGlobal$wgCanonicalServer" />
 		<exclude name="MediaWiki.VariableAnalysis.UnusedGlobalVariables.UnusedGlobal$wgSitename" />
-		<exclude name="Squiz.Classes.SelfMemberReference.NotUsed" />
 		<exclude name="Squiz.Scope.MethodScope.Missing" />
 		<exclude name="Squiz.WhiteSpace.ScopeClosingBrace.Indent" />
 		<exclude name="Squiz.WhiteSpace.SemicolonSpacing.Incorrect" />

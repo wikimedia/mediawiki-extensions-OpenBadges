@@ -143,7 +143,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	public static function validateEvidence( $url, $alldata ) {
 		if ( $url == '' ) {
 			return true;
-		} elseif ( !SpecialBadgeIssue::isURL( $url ) ) {
+		} elseif ( !self::isURL( $url ) ) {
 			return wfMessage( 'ob-db-evidence-not-url' );
 		}
 		return true;
