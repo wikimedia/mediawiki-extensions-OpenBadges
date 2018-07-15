@@ -126,7 +126,7 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 		$this->getResult()->addValue( null, 'id', $assertionUrl );
 
 		// get the unique identifier for this assertion
-		$this->getResult()->addValue( null, 'uid', $res->current()->obl_id	 );
+		$this->getResult()->addValue( null, 'uid', $res->current()->obl_id );
 
 		// add information about the recipient user
 		$hashAlgo = "sha256";
@@ -168,9 +168,9 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 		// only a baked image should be provided here
 		// get the url to the badge image
 		// $this->getResult()->addValue(
-		//	null,
-		//	'image',
-		//	$this->imageUrl( $res->current()->obl_badge_image )
+		// null,
+		// 'image',
+		// $this->imageUrl( $res->current()->obl_badge_image )
 		// );
 	}
 

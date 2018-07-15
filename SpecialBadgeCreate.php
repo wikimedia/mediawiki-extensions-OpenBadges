@@ -72,7 +72,7 @@ class SpecialBadgeCreate extends FormSpecialPage {
 			],
 			__METHOD__
 		);
-		$dbw->endAtomic( __METHOD__);
+		$dbw->endAtomic( __METHOD__ );
 		return $result;
 	}
 
@@ -116,7 +116,6 @@ class SpecialBadgeCreate extends FormSpecialPage {
 		}
 		return true;
 	 }
-
 
 	public function onSuccess() {
 		$this->getOutput()->addWikiMsg( 'ob-create-success' );

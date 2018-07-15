@@ -10,11 +10,6 @@
 		<exclude name="MediaWiki.NamingConventions.PrefixedGlobalFunctions.wfPrefix" />
 		<exclude name="MediaWiki.VariableAnalysis.UnusedGlobalVariables.UnusedGlobal$wgCanonicalServer" />
 		<exclude name="MediaWiki.VariableAnalysis.UnusedGlobalVariables.UnusedGlobal$wgSitename" />
-		<exclude name="MediaWiki.WhiteSpace.MultipleEmptyLines.MultipleEmptyLines" />
-		<exclude name="MediaWiki.WhiteSpace.OpeningKeywordParenthesis.WrongWhitespaceBeforeParenthesis" />
-		<exclude name="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment.SingleSpaceBeforeSingleLineComment" />
-		<exclude name="MediaWiki.WhiteSpace.SpaceyParenthesis.SingleSpaceBeforeCloseParenthesis" />
-		<exclude name="MediaWiki.WhiteSpace.SpaceyParenthesis.SpaceBeforeOpeningParenthesis" />
 		<exclude name="PSR2.Files.EndFileNewline.NoneFound" />
 		<exclude name="PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose" />
 		<exclude name="Squiz.Classes.SelfMemberReference.NotUsed" />
