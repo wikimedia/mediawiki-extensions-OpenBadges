@@ -30,16 +30,14 @@ abstract class ApiOpenBadges extends ApiBase {
 
 		if ( $mimetype == 'image/png' ) {
 			return $file->getCanonicalUrl();
-		}
-		elseif ( $mimetype == 'image/svg+xml' ) {
+		} elseif ( $mimetype == 'image/svg+xml' ) {
 			// need to get png thumb
 			$thumbCall = [
 				'f' => $file->getName(),
 				'width' => $wgOpenBadgesThumb
 			];
 			return $thumbUrl . http_build_query( $thumbCall );
-		}
-		else {
+		} else {
 			// you should never end up here, throw an error
 			$this->dieUsage( 'Illegal filetype for badge', 'imageerror' );
 		}
@@ -69,8 +67,7 @@ abstract class ApiOpenBadges extends ApiBase {
 		if ( $wgOpenBadgesRequireEmail && !$recipient->getEmail() ) {
 			$this->dieUsage( 'The badge recipient has not set ' .
 				'their e-mail address', 'noemail' );
-		}
-		elseif ( $wgOpenBadgesRequireEmailConfirmation && !$recipient->isEmailConfirmed() ) {
+		} elseif ( $wgOpenBadgesRequireEmailConfirmation && !$recipient->isEmailConfirmed() ) {
 			$this->dieUsage( 'The badge recipient has not confirmed ' .
 				'their e-mail address', 'noemailconfirmed' );
 		}

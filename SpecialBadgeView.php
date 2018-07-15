@@ -142,8 +142,7 @@ class BadgesPager extends TablePager {
 			case 'obl_badge_evidence':
 				if ( empty( $value ) ) {
 					return wfMessage( 'ob-view-no-evidence' )->text();
-				}
-				else {
+				} else {
 					$evidenceLink = Html::rawElement(
 						'a',
 						[ 'href' => $value ],

@@ -143,8 +143,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	public static function validateEvidence( $url, $alldata ) {
 		if ( $url == '' ) {
 			return true;
-		}
-		elseif ( !SpecialBadgeIssue::isURL( $url ) ) {
+		} elseif ( !SpecialBadgeIssue::isURL( $url ) ) {
 			return wfMessage( 'ob-db-evidence-not-url' );
 		}
 		return true;
@@ -158,8 +157,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	public function isURL( $url ) {
 		if ( substr( $url, 0, strlen( 'http://' ) ) === 'http://' ) {
 			return true;
-		}
-		elseif ( substr( $url, 0, strlen( 'https://' ) ) === 'https://' ) {
+		} elseif ( substr( $url, 0, strlen( 'https://' ) ) === 'https://' ) {
 			return true;
 		}
 		return false;
@@ -202,8 +200,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 			);
 			if ( $issued ) {
 				$status = Status::newFatal( 'ob-db-error-issued' );
-			}
-			else {
+			} else {
 				$assertionRes = [
 					'Receiver' => $userRow->user_id,
 					'BadgeId' => $badgeRow->obl_badge_id,
@@ -213,7 +210,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 			}
 		}
 		// Error handling
-		else {
+ else {
 			$status = Status::newGood();
 
 			// Error case was not caught, error unknown

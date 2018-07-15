@@ -49,14 +49,11 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 			}
 			$recipient = User::newFromId( $params['obl_receiver'] );
 			$this::returnBadgeAssertion( $badgeID, $recipient );
-		}
-		elseif ( $requestType == 'badge' ) {
+		} elseif ( $requestType == 'badge' ) {
 			$this::returnBadgeClass( $badgeID );
-		}
-		elseif ( $requestType == 'criteria' ) {
+		} elseif ( $requestType == 'criteria' ) {
 			$this::returnCriteria( $badgeID );
-		}
-		elseif ( $requestType == 'issuer' ) {
+		} elseif ( $requestType == 'issuer' ) {
 			$this::returnIssuer();
 		}
 		// else case is handled automatically by API
