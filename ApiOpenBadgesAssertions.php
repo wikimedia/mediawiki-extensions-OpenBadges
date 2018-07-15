@@ -84,7 +84,7 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	public function returnCriteria( $badgeID ) {
 		global $wgSitename;
 		global $wgCanonicalServer;
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select(
 			[ 'openbadges_class' ],
 			'obl_criteria',
