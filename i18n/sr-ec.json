@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Milicevic01"
+			"Milicevic01",
+			"BadDog"
 		]
 	},
+	"action-createbadge": "правите значке",
+	"action-viewbadge": "прегледате значке",
 	"ob-view-proof-header": "Доказ"
 }
