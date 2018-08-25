@@ -136,7 +136,7 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	}
 
 	/**
-	 * Format a sucessful response
+	 * Format a successful response
 	 *
 	 * @param User $recipient
 	 * @param int $badgeID
