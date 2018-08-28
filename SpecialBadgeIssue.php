@@ -174,11 +174,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 		$fields = '*';
 
 		$dbr = wfGetDB( DB_MASTER );
-		$userRow = $dbr->selectRow(
-			'user',
-			$fields,
-			[ 'user_name' => $data['Name'] ]
-		);
+		$user = User::newFromName( $data['Name'] );
 
 		$badgeRow = $dbr->selectRow(
 			'openbadges_class',
@@ -188,21 +184,21 @@ class SpecialBadgeIssue extends FormSpecialPage {
 
 		$evidence = $data['Evidence'] == '' ? null : $data['Evidence'];
 
-		if ( $userRow && $badgeRow ) {
+		if ( $user->getId() && $badgeRow ) {
 			// check if same badge-user combo already issued
 			$issued = $dbr->selectRow(
 				'openbadges_assertion',
 				$fields,
 				[
 					'obl_badge_id' => $data['BadgeId'],
-					'obl_receiver' => $userRow->user_id,
+					'obl_receiver' => $user->getId(),
 				]
 			);
 			if ( $issued ) {
 				$status = Status::newFatal( 'ob-db-error-issued' );
 			} else {
 				$assertionRes = [
-					'Receiver' => $userRow->user_id,
+					'Receiver' => $user->getId(),
 					'BadgeId' => $badgeRow->obl_badge_id,
 					'Evidence' => $evidence
 				];
