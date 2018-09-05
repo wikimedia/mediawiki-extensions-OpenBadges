@@ -131,6 +131,7 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 		$hashAlgo = "sha256";
 		$hashedEmail = hash( $hashAlgo, $recipient->getEmail() );
 		$this->getResult()->addValue( null, 'recipient', [
+				ApiResult::META_BC_BOOLS => [ 'hashed' ],
 				'type' => 'email',
 				'hashed' => true,
 				'identity' => $hashAlgo . '$' . $hashedEmail,
