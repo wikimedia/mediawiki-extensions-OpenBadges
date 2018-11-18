@@ -49,5 +49,17 @@
 	"apihelp-openbadgesissue-summary": "Issue an OpenBadge to a user.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge to issue from {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "User name of the user who will receive the OpenBadge.",
-	"apihelp-openbadgesissue-param-obl_evidence_url": "URL to evidence for user meeting the OpenBadge criteria."
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL to evidence for user meeting the OpenBadge criteria.",
+	"apierror-openbadges-imageerror": "Illegal filetype for badge",
+	"apierror-openbadges-inputerror-nobadgeid": "No badge found for this id",
+	"apierror-openbadges-noemail": "The badge recipient has not set their e-mail address",
+	"apierror-openbadges-noemailconfirmed": "The badge recipient has not confirmed their e-mail address",
+	"apierror-openbadges-noobl_badge_id": "obl_badge_id parameter must be set for any type other than issuer",
+	"apierror-openbadges-noobl_receiver": "The obl_receiver parameter must be set for type assertion",
+	"apierror-openbadges-inputerror-noassertion": "No badge assertion found for this badge and user",
+	"apierror-openbadges-inputerror-badgeidnotfound": "Badge id not found",
+	"apierror-openbadges-inputerror-norecipient": "Could not find a recipient with that id",
+	"apierror-openbadges-notloggedin": "Anonymous users cannot issue badges",
+	"apierror-openbadges-notissuebadgeright": "The 'issuebadge' right is required to issue badges",
+	"apierror-openbadges-badevidence": "Evidence must be blank or an url"
 }

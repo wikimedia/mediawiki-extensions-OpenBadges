@@ -38,14 +38,14 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 
 		// obl_badge_id is only optional for issuer
 		if ( !$badgeID && $requestType != 'issuer' ) {
-			$this->dieUsage( 'The obl_badge_id parameter must be ' .
-				'set for any type other than issuer', 'noobl_badge_id' );
+			$this->dieWithError( 'apierror-openbadges-noobl_badge_id',
+				'noobl_badge_id' );
 		}
 
 		if ( $requestType == 'assertion' ) {
 			if ( !$params['obl_receiver'] ) {
-				$this->dieUsage( 'The obl_receiver parameter must be ' .
-					'set for type assertion', 'noobl_receiver' );
+				$this->dieWithError( 'apierror-openbadges-noobl_receiver',
+					'noobl_receiver' );
 			}
 			$recipient = User::newFromId( $params['obl_receiver'] );
 			$this::returnBadgeAssertion( $badgeID, $recipient );
@@ -109,7 +109,7 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 
 		// return error if no hits
 		if ( $res->current() == 0 ) {
-			$this->dieUsage( 'No badge assertion found for this badge and user', 'inputerror' );
+			$this->dieWithError( 'apierror-openbadges-inputerror-noassertion', 'inputerror' );
 			return;
 		}
 
@@ -185,7 +185,7 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 
 		// return error if no hits
 		if ( $res->current() == 0 ) {
-			$this->dieUsage( 'Badge id not found', 'inputerror' );
+			$this->dieWithError( 'apierror-openbadges-inputerror-badgeidnotfound', 'inputerror' );
 			return;
 		}
 

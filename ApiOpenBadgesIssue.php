@@ -90,7 +90,7 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	public function getRecipientFromName( $recipientName ) {
 		$recipient = User::newFromName( $recipientName );
 		if ( !$recipient || $recipient->getId() == 0 ) {
-			$this->dieUsage( 'Could not find a recipient with that id', 'inputerror' );
+			$this->dieWithError( 'apierror-openbadges-inputerror-norecipient', 'inputerror' );
 		}
 		return $recipient;
 	}
@@ -117,9 +117,9 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	 */
 	public function dieOnBadUser( User $user ) {
 		if ( $user->isAnon() ) {
-			$this->dieUsage( 'Anonymous users cannot issue badges', 'notloggedin' );
+			$this->dieWithError( 'apierror-openbadges-notloggedin', 'notloggedin' );
 		} elseif ( !$user->isAllowed( 'issuebadge' ) ) {
-			$this->dieUsage( "The 'issuebadge' right is required to issue badges",
+			$this->dieWithError( 'apierror-openbadges-notissuebadgeright',
 				'notissuebadgeright' );
 		}
 	}
@@ -131,7 +131,7 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	 */
 	public function dieOnBadEvidence( $url ) {
 		if ( $url != '' && !SpecialBadgeIssue::isURL( $url ) ) {
-			$this->dieUsage( 'Evidence must be blank or an url', 'badEvidence' );
+			$this->dieWithError( 'apierror-openbadges-badevidence', 'badEvidence' );
 		}
 	}
 

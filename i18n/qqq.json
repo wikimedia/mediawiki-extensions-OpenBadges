@@ -55,5 +55,17 @@
 	"apihelp-openbadgesissue-summary": "{{doc-apihelp-summary|openbadgesissue}}",
 	"apihelp-openbadgesissue-param-obl_badge_id": "{{doc-apihelp-param|openbadgesissue|obl_badge_id}}",
 	"apihelp-openbadgesissue-param-obl_receiver": "{{doc-apihelp-param|openbadgesissue|obl_receiver}}",
-	"apihelp-openbadgesissue-param-obl_evidence_url": "{{doc-apihelp-param|openbadgesissue|obl_evidence_url}}"
+	"apihelp-openbadgesissue-param-obl_evidence_url": "{{doc-apihelp-param|openbadgesissue|obl_evidence_url}}",
+	"apierror-openbadges-imageerror": "{{doc-apierror}}",
+	"apierror-openbadges-inputerror-nobadgeid": "{{doc-apierror}}",
+	"apierror-openbadges-noemail": "{{doc-apierror}}",
+	"apierror-openbadges-noemailconfirmed": "{{doc-apierror}}",
+	"apierror-openbadges-noobl_badge_id": "{{doc-apierror}}",
+	"apierror-openbadges-noobl_receiver": "{{doc-apierror}}",
+	"apierror-openbadges-inputerror-noassertion": "{{doc-apierror}}",
+	"apierror-openbadges-inputerror-badgeidnotfound": "{{doc-apierror}}",
+	"apierror-openbadges-inputerror-norecipient": "{{doc-apierror}}",
+	"apierror-openbadges-notloggedin": "{{doc-apierror}}",
+	"apierror-openbadges-notissuebadgeright": "{{doc-apierror}}",
+	"apierror-openbadges-badevidence": "{{doc-apierror}}"
 }

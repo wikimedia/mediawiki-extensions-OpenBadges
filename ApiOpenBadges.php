@@ -39,7 +39,7 @@ abstract class ApiOpenBadges extends ApiBase {
 			return $thumbUrl . http_build_query( $thumbCall );
 		} else {
 			// you should never end up here, throw an error
-			$this->dieUsage( 'Illegal filetype for badge', 'imageerror' );
+			$this->dieWithError( 'apierror-openbadges-imageerror', 'imageerror' );
 		}
 	}
 
@@ -51,7 +51,7 @@ abstract class ApiOpenBadges extends ApiBase {
 	protected function dieOnBadBadge( $badgeID ) {
 		$res = $this->queryBadge( $badgeID );
 		if ( $res->current() == 0 ) {
-			$this->dieUsage( 'No badge found for this id', 'inputerror' );
+			$this->dieWithError( 'apierror-openbadges-inputerror-nobadgeid', 'inputerror' );
 		}
 	}
 
@@ -64,11 +64,10 @@ abstract class ApiOpenBadges extends ApiBase {
 		global $wgOpenBadgesRequireEmail;
 		global $wgOpenBadgesRequireEmailConfirmation;
 		if ( $wgOpenBadgesRequireEmail && !$recipient->getEmail() ) {
-			$this->dieUsage( 'The badge recipient has not set ' .
-				'their e-mail address', 'noemail' );
+			$this->dieWithError( 'apierror-openbadges-noemail', 'noemail' );
 		} elseif ( $wgOpenBadgesRequireEmailConfirmation && !$recipient->isEmailConfirmed() ) {
-			$this->dieUsage( 'The badge recipient has not confirmed ' .
-				'their e-mail address', 'noemailconfirmed' );
+			$this->dieWithError( 'apierror-openbadges-noemailconfirmed',
+				'noemailconfirmed' );
 		}
 	}
 
