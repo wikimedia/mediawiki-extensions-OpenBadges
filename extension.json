@@ -1,0 +1,80 @@
+{
+	"name": "OpenBadges",
+	"version": "0.3.0",
+	"author": [
+		"chococookies",
+		"Don Yu",
+		"Stephen Zhou",
+		"Lokal_Profil",
+		"..."
+	],
+	"url": "https://www.mediawiki.org/wiki/OpenBadges",
+	"descriptionmsg": "ob-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"APIModules": {
+		"openbadges": "ApiOpenBadgesAssertions",
+		"openbadgesissue": "ApiOpenBadgesIssue"
+	},
+	"AvailableRights": [
+		"createbadge",
+		"issuebadge",
+		"viewbadge"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"issuebadge": true,
+			"createbadge": true
+		},
+		"user": {
+			"viewbadge": true
+		}
+	},
+	"SpecialPages": {
+		"BadgeIssue": "SpecialBadgeIssue",
+		"BadgeCreate": "SpecialBadgeCreate",
+		"BadgeView": "SpecialBadgeView"
+	},
+	"MessagesDirs": {
+		"OpenBadges": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"OpenBadgesAlias": "OpenBadges.i18n.alias.php"
+	},
+	"AutoloadClasses": {
+		"SpecialBadgeIssue": "SpecialBadgeIssue.php",
+		"SpecialBadgeCreate": "SpecialBadgeCreate.php",
+		"SpecialBadgeView": "SpecialBadgeView.php",
+		"BadgesPager": "SpecialBadgeView.php",
+		"ApiOpenBadges": "ApiOpenBadges.php",
+		"ApiOpenBadgesAssertions": "ApiOpenBadgesAssertions.php",
+		"ApiOpenBadgesIssue": "ApiOpenBadgesIssue.php",
+		"OpenBadgesHooks": "OpenBadgesHooks.php"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "OpenBadgesHooks::onLoadExtensionSchemaUpdates"
+	},
+	"config": {
+		"OpenBadgesThumb": {
+			"value": 400,
+			"description": "Default thumb width (integer).",
+			"public": true
+		},
+		"OpenBadgesRequireEmail": {
+			"value": true,
+			"description": "Badge recipient must have an email (boolean).",
+			"public": true
+		},
+		"OpenBadgesRequireEmailConfirmation": {
+			"value": false,
+			"description": "Badge recipient must have a confirmed email (boolean).",
+			"public": true
+		}
+	},
+	"manifest_version": 2
+}
