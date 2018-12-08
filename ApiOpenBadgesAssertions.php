@@ -81,8 +81,6 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	 * @param int $badgeID
 	 */
 	public function returnCriteria( $badgeID ) {
-		global $wgSitename;
-		global $wgCanonicalServer;
 		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select(
 			[ 'openbadges_class' ],
@@ -102,9 +100,6 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	 * @param User $recipient
 	 */
 	public function returnBadgeAssertion( $badgeID, User $recipient ) {
-		global $wgCanonicalServer;
-		global $wgScriptPath;
-		$apiUrl = $wgCanonicalServer . $wgScriptPath . '/api.php?';
 		$res = $this->queryIssuedBadge( $badgeID, $recipient );
 
 		// return error if no hits
