@@ -50,5 +50,17 @@
 	"apihelp-openbadgesissue-description": "Vergibt ein OpenBadge an einen Benutzer.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "Von {{SITENAME}} zu vergebendes OpenBadge.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Name des Benutzers, der das OpenBadge erhalten soll.",
-	"apihelp-openbadgesissue-param-obl_evidence_url": "URL für den Nachweis, dass der Benutzer die OpenBadge-Kriterien erfüllt."
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL für den Nachweis, dass der Benutzer die OpenBadge-Kriterien erfüllt.",
+	"apierror-openbadges-imageerror": "Ungültiger Dateityp für die Auszeichnung",
+	"apierror-openbadges-inputerror-nobadgeid": "Für diese Kennung wurde keine Auszeichnung gefunden",
+	"apierror-openbadges-noemail": "Der Auszeichnungsempfänger hat seine E-Mail-Adresse nicht festgelegt",
+	"apierror-openbadges-noemailconfirmed": "Der Auszeichnungsempfänger hat seine E-Mail-Adresse nicht bestätigt",
+	"apierror-openbadges-noobl_badge_id": "Der Parameter obl_badge_id muss für jeden Typ außer den Herausgeber festgelegt werden",
+	"apierror-openbadges-noobl_receiver": "Der Parameter obl_receiver muss für die Typbehauptung festgelegt werden",
+	"apierror-openbadges-inputerror-noassertion": "Für diese Auszeichnung und diesen Benutzer wurde keine Auszeichnungsbehauptung gefunden",
+	"apierror-openbadges-inputerror-badgeidnotfound": "Auszeichnungskennung nicht gefunden",
+	"apierror-openbadges-inputerror-norecipient": "Es konnte kein Empfänger mit dieser Kennung gefunden werden",
+	"apierror-openbadges-notloggedin": "Anonyme Benutzer können keine Auszeichnungen vergeben",
+	"apierror-openbadges-notissuebadgeright": "Die Berechtigung „issuebadge“ ist zum Vergeben von Auszeichnungen erforderlich",
+	"apierror-openbadges-badevidence": "Der Nachweis muss leer oder eine URL sein"
 }

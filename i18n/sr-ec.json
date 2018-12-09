@@ -7,5 +7,9 @@
 	},
 	"action-createbadge": "правите значке",
 	"action-viewbadge": "прегледате значке",
-	"ob-view-proof-header": "Доказ"
+	"ob-view-proof-header": "Доказ",
+	"apierror-openbadges-imageerror": "Неважећи тип датотеке за значку",
+	"apierror-openbadges-inputerror-nobadgeid": "Није пронађена значка са овим ID-јем",
+	"apierror-openbadges-inputerror-badgeidnotfound": "ID значке није пронађен",
+	"apierror-openbadges-badevidence": "Доказ мора а буде празан или URL адреса"
 }

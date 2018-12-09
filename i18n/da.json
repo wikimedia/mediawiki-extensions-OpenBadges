@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Christian List"
+			"Christian List",
+			"Saederup92"
 		]
 	},
 	"ob-db-user-no-email": "Brugeren har ikke anført en e-mail.",
-	"apihelp-openbadgesissue-param-obl_receiver": "Brugernavn for den bruger der skal modtage et OpenBadge."
+	"apihelp-openbadgesissue-param-obl_receiver": "Brugernavn for den bruger der skal modtage et OpenBadge.",
+	"apierror-openbadges-inputerror-norecipient": "Kunne ikke finde en modtager med dette ID"
 }

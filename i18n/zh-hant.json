@@ -56,5 +56,17 @@
 	"apihelp-openbadgesissue-summary": "頒發 OpenBadge 給使用者。",
 	"apihelp-openbadgesissue-param-obl_badge_id": "要從 {{SITENAME}} 頒發的 OpenBadge。",
 	"apihelp-openbadgesissue-param-obl_receiver": "收到 OpenBadge 的使用者名稱。",
-	"apihelp-openbadgesissue-param-obl_evidence_url": "證明使用者符合 OpenBadge 標準的 URL。"
+	"apihelp-openbadgesissue-param-obl_evidence_url": "證明使用者符合 OpenBadge 標準的 URL。",
+	"apierror-openbadges-imageerror": "用於徽章的無效檔案類型",
+	"apierror-openbadges-inputerror-nobadgeid": "沒有用於此 ID 的徽章",
+	"apierror-openbadges-noemail": "徽章接受者尚未設定電子郵件地址",
+	"apierror-openbadges-noemailconfirmed": "徽章接受者尚未確認電子郵件地址",
+	"apierror-openbadges-noobl_badge_id": "必須替頒發者以外的類型設定 obl_badge_id 參數",
+	"apierror-openbadges-noobl_receiver": "必須替類型聲明設定 obl_receiver 參數",
+	"apierror-openbadges-inputerror-noassertion": "查無此徽章和使用者的徽章聲明",
+	"apierror-openbadges-inputerror-badgeidnotfound": "查無徽章 ID",
+	"apierror-openbadges-inputerror-norecipient": "查無帶有該 ID 的接受者",
+	"apierror-openbadges-notloggedin": "不能頒發徽章給匿名使用者",
+	"apierror-openbadges-notissuebadgeright": "頒發徽章需要「issuebadge」權限",
+	"apierror-openbadges-badevidence": "證明必須為留空或是一個 URL"
 }

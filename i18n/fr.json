@@ -55,5 +55,17 @@
 	"apihelp-openbadgesissue-summary": "Remettre un OpenBadge à un utilisateur.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge à produire de {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Id de l'utilisateur qui recevra l'OpenBadge.",
-	"apihelp-openbadgesissue-param-obl_evidence_url": "Url pour prouver que l’utilisateur correspond aux critères de OpenBadge."
+	"apihelp-openbadgesissue-param-obl_evidence_url": "Url pour prouver que l’utilisateur correspond aux critères de OpenBadge.",
+	"apierror-openbadges-imageerror": "Type de fichier illégal pour un badge",
+	"apierror-openbadges-inputerror-nobadgeid": "Aucun badge trouvé pour cet ID",
+	"apierror-openbadges-noemail": "Le destinataire du badge n'a pas initialisé sont adresse courriel",
+	"apierror-openbadges-noemailconfirmed": "Le destinataire du badge n'a pas confirmé sont adresse courriel",
+	"apierror-openbadges-noobl_badge_id": "Le paramètre obl_badge_id doit être fixé pour tous les types différents de l'émetteur",
+	"apierror-openbadges-noobl_receiver": "Le paramètre obl_receiver doit être fixé pour une assertion de type",
+	"apierror-openbadges-inputerror-noassertion": "Aucune assertion de badge trouvée pour ce badge et cet utilisateur",
+	"apierror-openbadges-inputerror-badgeidnotfound": "ID de badge non trouvé",
+	"apierror-openbadges-inputerror-norecipient": "Aucun destinataire trouvé avec cet ID",
+	"apierror-openbadges-notloggedin": "Les utilisateurs anonymes ne peuvent pas générer de badge",
+	"apierror-openbadges-notissuebadgeright": "Le droit 'issuebadge' est nécessaire pour générer des badges",
+	"apierror-openbadges-badevidence": "L'évidence doit être vide ou valoir une URL"
 }
