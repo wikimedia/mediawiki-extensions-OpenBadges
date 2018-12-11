@@ -52,5 +52,17 @@
 	"apihelp-openbadgesissue-summary": "Emitir uma medalha OpenBadge para um usuário.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "Medalha OpenBadge para ser emitida pela wiki {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Nome do usuário que irá receber a medalha OpenBadge.",
-	"apihelp-openbadgesissue-param-obl_evidence_url": "URL da prova de que o usuário cumpre os critérios da medalha OpenBadge."
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL da prova de que o usuário cumpre os critérios da medalha OpenBadge.",
+	"apierror-openbadges-imageerror": "Tipo de arquivo ilegal para distintivo",
+	"apierror-openbadges-inputerror-nobadgeid": "Nenhum selo encontrado para este id",
+	"apierror-openbadges-noemail": "O destinatário do selo não definiu seu endereço de e-mail",
+	"apierror-openbadges-noemailconfirmed": "O destinatário do selo não confirmou seu endereço de e-mail",
+	"apierror-openbadges-noobl_badge_id": "parâmetro obl_badge_id deve ser definido para qualquer tipo que não seja o emissor",
+	"apierror-openbadges-noobl_receiver": "O parâmetro obl_receiver deve ser definido para asserção de tipo",
+	"apierror-openbadges-inputerror-noassertion": "Nenhuma declaração de selo encontrado para este selo e usuário",
+	"apierror-openbadges-inputerror-badgeidnotfound": "ID do selo não encontrado",
+	"apierror-openbadges-inputerror-norecipient": "Não foi possível encontrar um destinatário com esse is",
+	"apierror-openbadges-notloggedin": "Usuários anônimos não podem emitir selos",
+	"apierror-openbadges-notissuebadgeright": "A regra'issuebadge' é necessário para emitir selos",
+	"apierror-openbadges-badevidence": "A evidência deve estar em branco ou um URL"
 }

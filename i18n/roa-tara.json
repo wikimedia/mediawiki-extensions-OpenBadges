@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"apierror-openbadges-imageerror": "Tipe de gile illegale pu distindive",
+	"apierror-openbadges-inputerror-badgeidnotfound": "ID d'u distindive non acchiate"
+}

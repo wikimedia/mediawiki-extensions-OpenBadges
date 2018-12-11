@@ -51,5 +51,17 @@
 	"apihelp-openbadgesissue-summary": "إصدار OpenBadge لمستخدم.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge للإصدار من {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "اسم المستخدم للمستخدم الذي سيحصل على OpenBadge.",
-	"apihelp-openbadgesissue-param-obl_evidence_url": "مسار لدليل على المستخدمين الذين يستوفون معايير OpenBadge."
+	"apihelp-openbadgesissue-param-obl_evidence_url": "مسار لدليل على المستخدمين الذين يستوفون معايير OpenBadge.",
+	"apierror-openbadges-imageerror": "نوع ملف غير لائق للشارة",
+	"apierror-openbadges-inputerror-nobadgeid": "لم يتم العثور على شارة لهذا المعرف",
+	"apierror-openbadges-noemail": "لم يقم مستلم الشارة بتعيين عنوان البريد الإلكتروني الخاص به",
+	"apierror-openbadges-noemailconfirmed": "لم يؤكد مستلم الشارة عنوان البريد الإلكتروني الخاص به",
+	"apierror-openbadges-noobl_badge_id": "يجب تعيين الوسيط obl_badge_id لأي نوع آخر غير المُصدَر",
+	"apierror-openbadges-noobl_receiver": "يجب تعيين الوسيط لتأكيد النوع",
+	"apierror-openbadges-inputerror-noassertion": "لم يتم العثور على شارة توكيد لهذه الشارة والمستخدم",
+	"apierror-openbadges-inputerror-badgeidnotfound": "لم يتم العثور على معرف الشارة",
+	"apierror-openbadges-inputerror-norecipient": "تعذر العثور على مستلم بهذا المعرف",
+	"apierror-openbadges-notloggedin": "لا يمكن للمستخدمين المجهولين إصدار الشارات",
+	"apierror-openbadges-notissuebadgeright": "مطلوبة صلاحية \"إصدار شارة\" لإصدار الشارات",
+	"apierror-openbadges-badevidence": "يجب أن تكون الأدلة فارغة أو مسارا"
 }

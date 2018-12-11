@@ -52,5 +52,12 @@
 	"apihelp-openbadgesissue-summary": "Додели OpenBadge-значка на корисник",
 	"apihelp-openbadgesissue-param-obl_badge_id": "Добиен OpenBadge од {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Корисничко име на оној што ќе прими OpenBadge.",
-	"apihelp-openbadgesissue-param-obl_evidence_url": "URL за доказот дека корисникот ги задоволува условите за OpenBadge."
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL за доказот дека корисникот ги задоволува условите за OpenBadge.",
+	"apierror-openbadges-imageerror": "Недопуштен податотечен тип за значка",
+	"apierror-openbadges-inputerror-nobadgeid": "Не најдов значка со таа назнака",
+	"apierror-openbadges-noemail": "Добитникот на значката нема зададено своја е-пошта",
+	"apierror-openbadges-noemailconfirmed": "Добитникот на значката ја нема потврдено својата е-пошта",
+	"apierror-openbadges-noobl_badge_id": "Мора да биде зададен параметарот obl_badge_id за секој вид освен доделувач",
+	"apierror-openbadges-notloggedin": "Анонимните корисници не можат да доделуваат значки",
+	"apierror-openbadges-notissuebadgeright": "Се бара правото „issuebadge“ за доделување на значки"
 }
