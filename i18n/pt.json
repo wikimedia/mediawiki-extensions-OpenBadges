@@ -52,5 +52,17 @@
 	"apihelp-openbadgesissue-summary": "Emitir uma medalha OpenBadge para um utilizador.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "Medalha OpenBadge para ser emitida pela wiki {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Nome do utilizador que irá receber a medalha OpenBadge.",
-	"apihelp-openbadgesissue-param-obl_evidence_url": "URL da prova de que o utilizador cumpre os critérios da medalha OpenBadge."
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL da prova de que o utilizador cumpre os critérios da medalha OpenBadge.",
+	"apierror-openbadges-imageerror": "Tipo de ficheiro ilegal para uma medalha",
+	"apierror-openbadges-inputerror-nobadgeid": "Não foi encontrada nenhuma medalha para este identificador",
+	"apierror-openbadges-noemail": "O recebedor da medalha não definiu um endereço de correio eletrónico",
+	"apierror-openbadges-noemailconfirmed": "O recebedor da medalha não confirmou o endereço de correio eletrónico",
+	"apierror-openbadges-noobl_badge_id": "O parâmetro obl_badge_id tem de ser definido para todos os tipos, exceto emitente",
+	"apierror-openbadges-noobl_receiver": "O parâmetro obl_receiver tem de ser definido para o tipo asserção",
+	"apierror-openbadges-inputerror-noassertion": "Não foi encontrada nenhuma asserção de medalha para esta medalha e utilizador",
+	"apierror-openbadges-inputerror-badgeidnotfound": "O identificador da medalha não foi encontrado",
+	"apierror-openbadges-inputerror-norecipient": "Não foi encontrado nenhum recebedor com esse identificador",
+	"apierror-openbadges-notloggedin": "Os utilizadores anónimos não podem emitir medalhas",
+	"apierror-openbadges-notissuebadgeright": "Para emitir medalhas é necessário o privilégio 'issuebadge' (emitir medalha)",
+	"apierror-openbadges-badevidence": "A prova tem de estar em branco ou conter um URL"
 }

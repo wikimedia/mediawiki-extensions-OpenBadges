@@ -3,7 +3,8 @@
 		"authors": [
 			"Putnik",
 			"Kaganer",
-			"Facenapalm"
+			"Facenapalm",
+			"Vlad5250"
 		]
 	},
 	"ob-desc": "Позволяет вики стать эмитентом [http://openbadges.org/ OpenBadges]",
@@ -53,5 +54,15 @@
 	"apihelp-openbadgesissue-summary": "Выдать OpenBadge пользователю.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge для выдачи от {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Имя пользователя, который получит OpenBadge.",
-	"apihelp-openbadgesissue-param-obl_evidence_url": "URL-адрес, доказывающий, что пользователь соответствует критериям OpenBadge."
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL-адрес, доказывающий, что пользователь соответствует критериям OpenBadge.",
+	"apierror-openbadges-imageerror": "Недопустимый тип файла для значка",
+	"apierror-openbadges-inputerror-nobadgeid": "Не найден значок с таким ID",
+	"apierror-openbadges-noemail": "Получатель значка не указал электронную почту",
+	"apierror-openbadges-noemailconfirmed": "Получатель значка не подтвердил электронную почту",
+	"apierror-openbadges-noobl_badge_id": "Необходимо задать параметр obl_badge_id для каждого типа, кроме issuer",
+	"apierror-openbadges-inputerror-badgeidnotfound": "Не найден ID значка",
+	"apierror-openbadges-inputerror-norecipient": "Невозможно найти получателя с таким ID",
+	"apierror-openbadges-notloggedin": "Анонимные пользователи не могут создавать значки",
+	"apierror-openbadges-notissuebadgeright": "Требуется право «issuebadge» для выпуска значков",
+	"apierror-openbadges-badevidence": "Доказательство должно быть пустым или URL"
 }

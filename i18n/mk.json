@@ -58,6 +58,9 @@
 	"apierror-openbadges-noemail": "Добитникот на значката нема зададено своја е-пошта",
 	"apierror-openbadges-noemailconfirmed": "Добитникот на значката ја нема потврдено својата е-пошта",
 	"apierror-openbadges-noobl_badge_id": "Мора да биде зададен параметарот obl_badge_id за секој вид освен доделувач",
+	"apierror-openbadges-inputerror-badgeidnotfound": "Не ја пронајдов назнаката на значката",
+	"apierror-openbadges-inputerror-norecipient": "Не можев да пронајдам добитник со таа назнака",
 	"apierror-openbadges-notloggedin": "Анонимните корисници не можат да доделуваат значки",
-	"apierror-openbadges-notissuebadgeright": "Се бара правото „issuebadge“ за доделување на значки"
+	"apierror-openbadges-notissuebadgeright": "Се бара правото „issuebadge“ за доделување на значки",
+	"apierror-openbadges-badevidence": "Доказот мора да биде празен или URL"
 }
