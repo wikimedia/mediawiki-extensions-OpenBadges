@@ -53,5 +53,17 @@
 	"apihelp-openbadgesissue-summary": "Видати OpenBadge користувачеві.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge, який має бути виданий від сайту {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Ім'я користувача, який отримає OpenBadge.",
-	"apihelp-openbadgesissue-param-obl_evidence_url": "URL, що має засвідчити те, що користувач відповідає критеріям OpenBadge."
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL, що має засвідчити те, що користувач відповідає критеріям OpenBadge.",
+	"apierror-openbadges-imageerror": "Неприпустимий тип файлу для значка",
+	"apierror-openbadges-inputerror-nobadgeid": "Не знайдено значка для цього ідентифікатора",
+	"apierror-openbadges-noemail": "Отримувач значка не вказав свою електронну адресу",
+	"apierror-openbadges-noemailconfirmed": "Отримувач значка не підтвердив свою електронну адресу",
+	"apierror-openbadges-noobl_badge_id": "У значенні параметра obl_badge_id має бути вказано будь-який тип, окрім надавача",
+	"apierror-openbadges-noobl_receiver": "Параметр obl_receiver має бути встановлено для твердження про тип",
+	"apierror-openbadges-inputerror-noassertion": "Для цього значка й користувача не знайдено твердження про значок",
+	"apierror-openbadges-inputerror-badgeidnotfound": "Ідентифікатор значка не знайдено",
+	"apierror-openbadges-inputerror-norecipient": "Не вдалося знайти отримувача з таким ідентифікатором",
+	"apierror-openbadges-notloggedin": "Анонімні користувачі не можуть надавати значки",
+	"apierror-openbadges-notissuebadgeright": "Для можливості надавання значків необхідне право 'issuebadge'",
+	"apierror-openbadges-badevidence": "Доказ має бути порожнім або URL-адресою"
 }
