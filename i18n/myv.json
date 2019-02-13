@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rueter"
+		]
+	},
+	"action-createbadge": "шкамс тешкскеть",
+	"action-issuebadge": "нолдамс тешкскеть",
+	"right-viewbadge": "Ванномс тешкскеть",
+	"badgecreate": "Шкамс тешкске",
+	"ob-create-badge-name": "Тешкскенть лемезэ",
+	"ob-create-badge-image": "Тешкскенть фотокувфайлазо",
+	"ob-create-success": "Тешкскесь шказь.",
+	"ob-create-name-exists": "Тешкскень лемесь уш ули.",
+	"ob-view-name": "Тешкскенть лемезэ",
+	"badgeissue": "Нолдамс тешкске",
+	"ob-issue-type": "Тешкске",
+	"ob-db-badge-not-found": "Тешкскесь арась.",
+	"ob-db-error-issued": "Тешкскесь уш максозь те ломанентень."
+}
