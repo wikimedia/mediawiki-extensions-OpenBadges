@@ -48,6 +48,7 @@
 	"apihelp-openbadges-param-obl_badge_id": "OpenBadge von {{SITENAME}} erhalten.",
 	"apihelp-openbadges-param-obl_receiver": "Kennung des Benutzers, der das OpenBadge erhalten hat.",
 	"apihelp-openbadgesissue-description": "Vergibt ein OpenBadge an einen Benutzer.",
+	"apihelp-openbadgesissue-summary": "Vergibt einen OpenBadge an einen Benutzer.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "Von {{SITENAME}} zu vergebendes OpenBadge.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Name des Benutzers, der das OpenBadge erhalten soll.",
 	"apihelp-openbadgesissue-param-obl_evidence_url": "URL für den Nachweis, dass der Benutzer die OpenBadge-Kriterien erfüllt.",
