@@ -9,10 +9,6 @@
 
 abstract class ApiOpenBadges extends ApiBase {
 
-	public function getVersion() {
-		return __CLASS__ . ': $Id$';
-	}
-
 	/**
 	 * Given an image filename this returns the file url if a png
 	 * or a thumb-file url if an svg
