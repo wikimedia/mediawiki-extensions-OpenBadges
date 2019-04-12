@@ -6,7 +6,9 @@
 			"Shirayuki"
 		]
 	},
+	"action-createbadge": "バッジの作成",
 	"action-viewbadge": "バッジの閲覧",
+	"right-createbadge": "バッジを作成",
 	"right-viewbadge": "バッジを閲覧",
 	"ob-create-no-image": "画像が存在しません。",
 	"ob-create-wrong-mime": "この画像のフォーマットは正しくありません。pngかsvgのみが許可されています。",
