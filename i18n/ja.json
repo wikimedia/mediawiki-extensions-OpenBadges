@@ -16,6 +16,6 @@
 	"ob-view-name": "バッジ名",
 	"ob-view-evidence": "証拠へのリンク",
 	"ob-issue-user": "利用者名",
-	"ob-db-user-not-found": "ユーザーが存在しません。",
+	"ob-db-user-not-found": "利用者が存在しません。",
 	"ob-db-unknown-error": "不明なデータベースエラー。"
 }
