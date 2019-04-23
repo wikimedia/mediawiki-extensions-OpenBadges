@@ -3,9 +3,12 @@
 		"authors": [
 			"FabianRM",
 			"Sjoerddebruin",
-			"Siebrand"
+			"Siebrand",
+			"Mainframe98"
 		]
 	},
 	"ob-view-name": "Badgenaam",
-	"ob-view-evidence-header": "Bewijs"
+	"ob-view-evidence-header": "Bewijs",
+	"ob-view-no-evidence": "Geen",
+	"ob-issue-user": "Gebruikersnaam"
 }
