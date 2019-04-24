@@ -10,5 +10,6 @@
 	"ob-view-name": "Badgenaam",
 	"ob-view-evidence-header": "Bewijs",
 	"ob-view-no-evidence": "Geen",
-	"ob-issue-user": "Gebruikersnaam"
+	"ob-issue-user": "Gebruikersnaam",
+	"ob-db-user-not-found": "Gebruiker bestaat niet"
 }
