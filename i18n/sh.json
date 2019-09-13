@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"action-createbadge": "pravljenje značka",
+	"action-viewbadge": "pregled značka",
+	"action-issuebadge": "dodjela značka",
+	"right-createbadge": "Učinjenje značka",
+	"right-viewbadge": "Pregled značka",
+	"right-issuebadge": "Dodjela značka",
+	"badgecreate": "Pravljenje značke",
+	"badge-create-legend": "Pravljenje nove značke",
+	"ob-create-no-image": "Slika ne postoji.",
+	"ob-view-proof-header": "Dokaz",
+	"ob-view-evidence-header": "Proof",
+	"ob-view-no-evidence": "Ništa",
+	"badgeissue": "Dodijeli značku",
+	"badge-issue-legend": "Dodijeli značku korisniku",
+	"ob-issue-user": "Korisničko ime",
+	"ob-issue-type": "Značka",
+	"ob-db-user-not-found": "Korisnik ne postoji.",
+	"apierror-openbadges-notloggedin": "Anonimni korisnici ne mogu dodjeliti značke",
+	"apierror-openbadges-notissuebadgeright": "Zahtijevano pravo „issuebadge“ za dodjelu značka"
+}
