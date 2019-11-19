@@ -285,22 +285,4 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 		$apiUrl = $wgCanonicalServer . $wgScriptPath . '/api.php?';
 		return $apiUrl . http_build_query( $call );
 	}
-
-	/**
-	 * @deprecated since MediaWiki core 1.25
-	 */
-	public function getDescription() {
-		return 'Get hosted assertion for an OpenBadge.';
-	}
-
-	/**
-	 * @deprecated since MediaWiki core 1.25
-	 */
-	public function getParamDescription() {
-		return [
-			'type' => 'Type of request',
-			'obl_badge_id' => 'OpenBadge received from this Wiki',
-			'obl_receiver' => 'User id of the user who received the OpenBadge.',
-		];
-	}
 }
