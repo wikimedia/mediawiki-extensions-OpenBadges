@@ -47,13 +47,13 @@
 		"OpenBadgesAlias": "OpenBadges.i18n.alias.php"
 	},
 	"AutoloadClasses": {
-		"SpecialBadgeIssue": "SpecialBadgeIssue.php",
-		"SpecialBadgeCreate": "SpecialBadgeCreate.php",
-		"SpecialBadgeView": "SpecialBadgeView.php",
-		"BadgesPager": "SpecialBadgeView.php",
-		"ApiOpenBadges": "ApiOpenBadges.php",
-		"ApiOpenBadgesAssertions": "ApiOpenBadgesAssertions.php",
-		"ApiOpenBadgesIssue": "ApiOpenBadgesIssue.php",
+		"SpecialBadgeIssue": "specials/SpecialBadgeIssue.php",
+		"SpecialBadgeCreate": "specials/SpecialBadgeCreate.php",
+		"SpecialBadgeView": "specials/SpecialBadgeView.php",
+		"BadgesPager": "specials/SpecialBadgeView.php",
+		"ApiOpenBadges": "api/ApiOpenBadges.php",
+		"ApiOpenBadgesAssertions": "api/ApiOpenBadgesAssertions.php",
+		"ApiOpenBadgesIssue": "api/ApiOpenBadgesIssue.php",
 		"OpenBadgesHooks": "OpenBadgesHooks.php"
 	},
 	"Hooks": {
