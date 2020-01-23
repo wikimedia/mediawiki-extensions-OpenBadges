@@ -49,8 +49,7 @@ class BadgesPager extends TablePager {
 	 * @return array
 	 */
 	function getQueryInfo() {
-		global $wgUser;
-		$userId = $wgUser->getId();
+		$userId = $this->getUser()->getId();
 
 		return [
 			'tables' => [ 'openbadges_assertion', 'openbadges_class' ],
@@ -113,9 +112,8 @@ class BadgesPager extends TablePager {
 	 */
 	function formatValue( $field, $value ) {
 		global $wgScriptPath, $wgCanonicalServer;
-		global $wgUser;
 		$apiUrl = $wgCanonicalServer . $wgScriptPath . '/api.php?';
-		$userId = $wgUser->getId();
+		$userId = $this->getUser()->getId();
 
 		switch ( $field ) {
 			case 'obl_name':
