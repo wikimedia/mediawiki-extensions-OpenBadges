@@ -16,9 +16,9 @@ class OpenBadgesHooks {
 	 */
 	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
 		$updater->addExtensionTable( 'openbadges_class',
-			__DIR__ . '/sql/OpenBadgesClass.sql' );
+			__DIR__ . '/../sql/OpenBadgesClass.sql' );
 		$updater->addExtensionTable( 'openbadges_assertion',
-			__DIR__ . '/sql/OpenBadgesAssertion.sql' );
+			__DIR__ . '/../sql/OpenBadgesAssertion.sql' );
 		return true;
 	}
 }

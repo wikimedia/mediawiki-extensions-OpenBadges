@@ -54,7 +54,7 @@
 		"ApiOpenBadges": "includes/api/ApiOpenBadges.php",
 		"ApiOpenBadgesAssertions": "includes/api/ApiOpenBadgesAssertions.php",
 		"ApiOpenBadgesIssue": "includes/api/ApiOpenBadgesIssue.php",
-		"OpenBadgesHooks": "OpenBadgesHooks.php"
+		"OpenBadgesHooks": "includes/OpenBadgesHooks.php"
 	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "OpenBadgesHooks::onLoadExtensionSchemaUpdates"
