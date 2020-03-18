@@ -50,7 +50,7 @@
 		"SpecialBadgeIssue": "includes/specials/SpecialBadgeIssue.php",
 		"SpecialBadgeCreate": "includes/specials/SpecialBadgeCreate.php",
 		"SpecialBadgeView": "includes/specials/SpecialBadgeView.php",
-		"BadgesPager": "includes/specials/SpecialBadgeView.php",
+		"BadgesPager": "includes/specials/BadgesPager.php",
 		"ApiOpenBadges": "includes/api/ApiOpenBadges.php",
 		"ApiOpenBadgesAssertions": "includes/api/ApiOpenBadgesAssertions.php",
 		"ApiOpenBadgesIssue": "includes/api/ApiOpenBadgesIssue.php",
