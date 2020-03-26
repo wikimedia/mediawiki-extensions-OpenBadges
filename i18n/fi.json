@@ -6,5 +6,5 @@
 		]
 	},
 	"ob-issue-user": "Käyttäjänimi",
-	"ob-db-user-no-email": "Käyttäjä ei ole määrittänyt sähköpostiosoitetta."
+	"ob-db-user-no-email": "{{GENDER:$1|Käyttäjä}} ei ole määrittänyt sähköpostiosoitetta."
 }
