@@ -6,6 +6,8 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\MediaWikiServices;
+
 class SpecialBadgeCreate extends FormSpecialPage {
 
 	public function __construct() {
@@ -85,7 +87,13 @@ class SpecialBadgeCreate extends FormSpecialPage {
 		 if ( $imageTitle == '' ) {
 			 return wfMessage( 'htmlform-required' );
 		 }
-		 $badgeFile = wfFindFile( $imageTitle );
+		 if ( method_exists( MediaWikiServices::class, 'getRepoGroup' ) ) {
+			 // MediaWiki 1.34+
+			 $badgeFile = MediaWikiServices::getInstance()->getRepoGroup()
+				 ->findFile( $imageTitle );
+		 } else {
+			 $badgeFile = wfFindFile( $imageTitle );
+		 }
 		 if ( $badgeFile === false ) {
 			 return wfMessage( 'ob-create-no-image' );
 		 }
