@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Garam",
 			"Hwangjy9",
 			"Revi",
-			"Ykhwong",
-			"Garam"
+			"Ykhwong"
 		]
 	},
 	"action-createbadge": "배지 만들기",

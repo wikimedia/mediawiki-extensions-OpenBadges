@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Vitorvicentevalente"
 		]
 	},
 	"ob-desc": "Permite que a wiki se torne num emitente de medalhas abertas [http://openbadges.org/ OpenBadges].",

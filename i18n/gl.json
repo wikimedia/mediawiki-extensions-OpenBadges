@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Banjo",
 			"Elisardojm",
-			"Toliño",
-			"Banjo"
+			"Toliño"
 		]
 	},
 	"ob-desc": "Permite ao wiki converterse nun emisor de [http://openbadges.org/ OpenBadges]",

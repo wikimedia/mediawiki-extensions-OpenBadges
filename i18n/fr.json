@@ -2,11 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Dcausse",
-			"Windes",
-			"TomT0m",
-			"Wladek92",
 			"Gomoko",
-			"Thibaut120094"
+			"Thibaut120094",
+			"TomT0m",
+			"Windes",
+			"Wladek92"
 		]
 	},
 	"ob-desc": "Autoriser le wiki à devenir un  émetteur de [http://openbadges.org/ OpenBadges]",

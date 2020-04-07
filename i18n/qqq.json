@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"chococookies",
-			"Lokal_Profil",
 			"Liuxinyu970226",
+			"Lokal_Profil",
 			"Siebrand",
-			"Umherirrender"
+			"Umherirrender",
+			"chococookies"
 		]
 	},
 	"ob-desc": "{{desc|name=OpenBadges|url=https://www.mediawiki.org/wiki/Extension:OpenBadges}}\nShort description of the openbadges extension (implements Mozilla OpenBadges)",

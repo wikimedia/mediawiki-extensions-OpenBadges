@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Felipe L. Ewald",
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Felipe L. Ewald"
 		]
 	},
 	"ob-desc": "Permite que a wiki se torne num emitente de medalhas abertas [http://openbadges.org/ OpenBadges].",
