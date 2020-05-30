@@ -204,16 +204,15 @@ class SpecialBadgeIssue extends FormSpecialPage {
 				];
 				$status = Status::newGood( $assertionRes );
 			}
-		}
-		// Error handling
- else {
+		} else {
+			// Error handling
 			$status = Status::newGood();
 
 			// Error case was not caught, error unknown
 			if ( $status->isOK() ) {
 				$status->fatal( 'ob-db-unknown-error' );
 			}
-	}
+		}
 
 		return $status;
 	}
