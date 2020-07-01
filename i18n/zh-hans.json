@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
+			"沈澄心",
 			"飞舞回堂前"
 		]
 	},
@@ -37,7 +38,7 @@
 	"ob-issue-evidence": "证明URL",
 	"ob-db-user-not-found": "用户不存在。",
 	"ob-db-user-no-email": "{{GENDER:$1|用户}}没有输入电子邮件地址。",
-	"ob-db-user-no-email-confirmation": "{{GENDER:$1|用户}}没有确认{{GENDER:$1|他|她|他}}的电子邮件。",
+	"ob-db-user-no-email-confirmation": "{{GENDER:$1|用户}}没有确认其电子邮件地址。",
 	"ob-db-evidence-not-url": "证明必须是一个URL。",
 	"ob-db-badge-not-found": "徽章不存在。",
 	"ob-db-unknown-error": "未知的数据库错误。",
