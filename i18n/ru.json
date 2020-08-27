@@ -4,6 +4,7 @@
 			"Facenapalm",
 			"Kaganer",
 			"Putnik",
+			"Sunpriat",
 			"Vlad5250"
 		]
 	},
@@ -39,7 +40,7 @@
 	"ob-issue-evidence": "URL-адрес доказательства",
 	"ob-db-user-not-found": "Пользователь не существует.",
 	"ob-db-user-no-email": "{{GENDER:$1|Пользователь}} не указал адрес электронной почты.",
-	"ob-db-user-no-email-confirmation": "{{GENDER:$1|Пользователь}} не подтвердил {{GENDER:$1|свой}} адрес электронной почты.",
+	"ob-db-user-no-email-confirmation": "{{GENDER:$1|Пользователь}} не подтвердил{{GENDER:$1||а}} {{GENDER:$1|его|её|свой}} адрес электронной почты.",
 	"ob-db-evidence-not-url": "Доказательство должно быть URL-адресом.",
 	"ob-db-badge-not-found": "Значок не существует.",
 	"ob-db-unknown-error": "Неизвестная ошибка базы данных.",
