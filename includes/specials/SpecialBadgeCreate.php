@@ -81,7 +81,9 @@ class SpecialBadgeCreate extends FormSpecialPage {
 	/**
 	 * Validates that a file exists
 	 *
-	 * error-msg|@bool
+	 * @param string $imageTitle
+	 * @param array $allData
+	 * @return Message|true
 	 */
 	 public static function validateImage( $imageTitle, $allData ) {
 		 if ( $imageTitle == '' ) {
@@ -107,7 +109,9 @@ class SpecialBadgeCreate extends FormSpecialPage {
 	/**
 	 * Validates that a badge name does't exists
 	 *
-	 * error-msg|@bool
+	 * @param string $badgeTitle
+	 * @param array $allData
+	 * @return Message|true
 	 */
 	public static function validateName( $badgeTitle, $allData ) {
 		if ( $badgeTitle == '' ) {
@@ -125,10 +129,12 @@ class SpecialBadgeCreate extends FormSpecialPage {
 		return true;
 	}
 
+	/** @inheritDoc */
 	public function onSuccess() {
 		$this->getOutput()->addWikiMsg( 'ob-create-success' );
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'other';
 	}

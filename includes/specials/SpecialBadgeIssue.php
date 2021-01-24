@@ -49,7 +49,9 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	/**
 	 * Converts the suggested title to the needed db form
 	 *
-	 * @return string
+	 * @param string $title
+	 * @param array $alldata
+	 * @return string|void
 	 */
 	static function toDBkey( $title, $alldata ) {
 		if ( !$title ) {
@@ -109,7 +111,9 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	/**
 	 * Check if the user exists
 	 *
-	 * @return bool|string
+	 * @param string $userName
+	 * @param array $alldata
+	 * @return Message|true
 	 */
 	public static function validateUser( $userName, $alldata ) {
 		global $wgOpenBadgesRequireEmail;
@@ -138,7 +142,9 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	/**
 	 * Check if the evidence is a URL or empty
 	 *
-	 * @return bool|string
+	 * @param string $url
+	 * @param array $alldata
+	 * @return Message|true
 	 */
 	public static function validateEvidence( $url, $alldata ) {
 		if ( $url == '' ) {
@@ -152,6 +158,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	/**
 	 * Check if string starts with https or http protocol
 	 *
+	 * @param string $url
 	 * @return bool
 	 */
 	public static function isURL( $url ) {
@@ -168,6 +175,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	 * the relevant Open Badge assertion fields if it does. Otherwise, returns
 	 * an error Status.
 	 *
+	 * @param array $data
 	 * @return Status
 	 */
 	public static function validateFormFields( array $data ) {
@@ -217,10 +225,12 @@ class SpecialBadgeIssue extends FormSpecialPage {
 		return $status;
 	}
 
+	/** @inheritDoc */
 	public function onSuccess() {
 		$this->getOutput()->addWikiMsg( 'ob-issue-success' );
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'other';
 	}

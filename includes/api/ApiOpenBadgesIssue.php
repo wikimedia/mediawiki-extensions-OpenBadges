@@ -5,19 +5,25 @@
 
 class ApiOpenBadgesIssue extends ApiOpenBadges {
 
+	/** @inheritDoc */
 	public function needsToken() {
 		return 'csrf';
 	}
 
-	// Writes to the OpenBadges database and in the future log tables.
+	/**
+	 * Writes to the OpenBadges database and in the future log tables.
+	 * @inheritDoc
+	 */
 	public function isWriteMode() {
 		return true;
 	}
 
+	/** @inheritDoc */
 	public function getTokenSalt() {
 		return '';
 	}
 
+	/** @inheritDoc */
 	public function getAllowedParams() {
 		return [
 			'obl_badge_id' => [
@@ -84,7 +90,7 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	/**
 	 * Turn userId into a User object or die if invalid
 	 *
-	 * @param string|NULL $recipientName
+	 * @param string|null $recipientName
 	 * @return User
 	 */
 	public function getRecipientFromName( $recipientName ) {

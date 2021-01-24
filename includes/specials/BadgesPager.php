@@ -7,6 +7,7 @@ use MediaWiki\MediaWikiServices;
  */
 class BadgesPager extends TablePager {
 
+	/** @var string[] */
 	private $mFieldNames;
 
 	/**

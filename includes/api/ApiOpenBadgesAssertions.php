@@ -5,10 +5,12 @@
 
 class ApiOpenBadgesAssertions extends ApiOpenBadges {
 
+	/** @inheritDoc */
 	public function isReadMode() {
 		return true;
 	}
 
+	/** @inheritDoc */
 	public function getAllowedParams() {
 		return [
 			'type' => [

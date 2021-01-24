@@ -13,6 +13,7 @@ class SpecialBadgeView extends SpecialPage {
 
 	/**
 	 * Shows the page to the user.
+	 * @param string|null $subpage
 	 */
 	public function execute( $subpage ) {
 		$this->setHeaders();
