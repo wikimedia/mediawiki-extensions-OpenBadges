@@ -133,7 +133,7 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	/**
 	 * Verify that the evidence is correctly formated
 	 *
-	 * @param string|NULL $url
+	 * @param string|null $url
 	 */
 	public function dieOnBadEvidence( $url ) {
 		if ( $url != '' && !SpecialBadgeIssue::isURL( $url ) ) {
