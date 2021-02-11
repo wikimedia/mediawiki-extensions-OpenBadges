@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"badge-create-legend": "Ustvarite novo značko.",
+	"ob-create-success": "Značka je ustvarjena.",
+	"ob-create-name-exists": "Ime značke že obstaja",
+	"ob-view-name": "Ime značke",
+	"ob-view-image": "Ilustracija značke",
+	"badge-issue-legend": "Podelite uporabniku značko.",
+	"ob-issue-type": "Značka",
+	"ob-issue-success": "Značka je podeljena.",
+	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge za dodelitev iz projekta {{SITENAME}}.",
+	"apierror-openbadges-imageerror": "Neveljavna vrsta datoteke za značko",
+	"apierror-openbadges-inputerror-noassertion": "Za to značko in uporabnika ni bil najden noben zadetek"
+}
