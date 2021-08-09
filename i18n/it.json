@@ -6,6 +6,7 @@
 		]
 	},
 	"ob-create-success": "Distintivo creato.",
+	"ob-view-no-evidence": "Nessuno",
 	"ob-issue-user": "Nome utente",
 	"ob-db-user-no-email": "{{GENDER:$1|L'utente}} non ha inserito un indirizzo di posta elettronica.",
 	"ob-db-user-no-email-confirmation": "{{GENDER:$1|L'utente}} non ha confermato il suo indirizzo di posta elettronica.",
