@@ -19,17 +19,20 @@ class BadgesPager extends TablePager {
 		$userId = $this->getUser()->getId();
 
 		return [
-			'tables' => [ 'openbadges_assertion', 'openbadges_class' ],
+			'tables' => [
+				'assertion' => 'openbadges_assertion',
+				'class' => 'openbadges_class'
+			],
 			'fields' => [
 				'obl_name',
 				'obl_badge_image',
-				'openbadges_assertion.obl_badge_id AS badge_id',
+				'badge_id' => 'assertion.obl_badge_id',
 				'obl_badge_evidence' ],
 			'conds' => 'obl_receiver = ' . $userId,
 			'join_conds' => [
 				'openbadges_class' => [
 					'INNER JOIN',
-					'openbadges_assertion.obl_badge_id = openbadges_class.obl_badge_id' ] ]
+					'assertion.obl_badge_id = class.obl_badge_id' ] ]
 		];
 	}
 
