@@ -4,12 +4,29 @@
 			"FabianRM",
 			"Mainframe98",
 			"Siebrand",
-			"Sjoerddebruin"
+			"Sjoerddebruin",
+			"Danieldegroot2"
 		]
 	},
+	"action-createbadge": "badges aan te maken",
+	"action-viewbadge": "badges te bekijken",
+	"right-createbadge": "Badges aanmaken",
+	"right-viewbadge": "Badges bekijken",
+	"badgecreate": "Een badge aanmaken",
+	"badge-create-legend": "Een nieuwe badge aanmaken",
+	"ob-create-badge-name": "Badgenaam",
+	"ob-create-badge-description": "Badgebeschrijving",
+	"ob-create-success": "Badge aangemaakt.",
+	"ob-create-name-exists": "Badgenaam bestaat al.",
+	"badgeview": "Mijn badges.",
 	"ob-view-name": "Badgenaam",
 	"ob-view-evidence-header": "Bewijs",
 	"ob-view-no-evidence": "Geen",
 	"ob-issue-user": "Gebruikersnaam",
-	"ob-db-user-not-found": "Gebruiker bestaat niet"
+	"ob-issue-type": "Badge",
+	"ob-db-user-not-found": "Gebruiker bestaat niet",
+	"ob-db-badge-not-found": "Badge bestaat niet.",
+	"ob-db-unknown-error": "Onbekende database-fout.",
+	"apierror-openbadges-inputerror-nobadgeid": "Geen badge gevonden voor dit id",
+	"apierror-openbadges-inputerror-badgeidnotfound": "Badge-id niet gevonden"
 }
