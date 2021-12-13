@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
 		]
 	},
-	"ob-desc": "Wikinin [http://openbadges.org/ OpenBadges] yayıncısı olmasına izin verir",
+	"ob-desc": "Vikinin [http://openbadges.org/ OpenBadges] soruncusu olmasına izin verir",
 	"action-createbadge": "rozet oluştur",
 	"action-viewbadge": "rozetleri görüntüle",
 	"action-issuebadge": "rozet verin",
