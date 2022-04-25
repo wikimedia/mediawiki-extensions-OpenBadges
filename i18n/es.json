@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Macofe",
-			"Matiia"
+			"Matiia",
+			"DiegoAmbrocio"
 		]
 	},
 	"ob-desc": "Permite al wiki convertirse en un emisor de [http://openbadges.org/ OpenBadges]",
@@ -50,5 +51,9 @@
 	"apihelp-openbadgesissue-description": "Emitir una OpenBadge a un usuario.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge que se emitirá desde {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Nombre del usuario que recibirá la OpenBadge.",
-	"apihelp-openbadgesissue-param-obl_evidence_url": "URL de la evidencia de que el usuario cumple los criterios de la OpenBadge."
+	"apihelp-openbadgesissue-param-obl_evidence_url": "URL de la evidencia de que el usuario cumple los criterios de la OpenBadge.",
+	"apierror-openbadges-inputerror-badgeidnotfound": "No se ha encontrado el identificador de la placa",
+	"apierror-openbadges-inputerror-norecipient": "No se ha podido encontrar un destinatario con esa identificación",
+	"apierror-openbadges-notloggedin": "Los usuarios anónimos no pueden emitir insignias",
+	"apierror-openbadges-badevidence": "Las pruebas deben estar en blanco o ser una url"
 }
