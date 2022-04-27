@@ -4,5 +4,16 @@
 			"Mehtab ahmed"
 		]
 	},
-	"ob-view-no-evidence": "ڪوبہ نہ"
+	"ob-create-badge-name": "بيج نالو",
+	"ob-create-badge-description": "بيج تشريح",
+	"ob-create-badge-image": "بيج عڪس جو فائيل",
+	"ob-create-badge-criteria": "بيج ڪسوٽي",
+	"ob-create-success": "بيج سرجيو ويو.",
+	"ob-view-name": "بيج نالو",
+	"ob-view-image": "بيج جي شڪل",
+	"ob-view-no-evidence": "ڪوبہ نہ",
+	"badgeissue": "ڪو بيج جاري ڪريو",
+	"ob-issue-type": "بيج",
+	"ob-db-badge-not-found": "بيج وجود نٿو رکي.",
+	"ob-issue-success": "بيج جاري ڪيو ويو."
 }
