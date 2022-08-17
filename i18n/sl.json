@@ -10,6 +10,7 @@
 	"ob-view-name": "Ime značke",
 	"ob-view-image": "Ilustracija značke",
 	"badge-issue-legend": "Podelite uporabniku značko.",
+	"ob-issue-user": "Uporabniško ime",
 	"ob-issue-type": "Značka",
 	"ob-issue-success": "Značka je podeljena.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge za dodelitev iz projekta {{SITENAME}}.",
