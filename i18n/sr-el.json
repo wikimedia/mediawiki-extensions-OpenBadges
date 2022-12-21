@@ -4,5 +4,11 @@
 			"Milicevic01"
 		]
 	},
-	"ob-view-proof-header": "Dokaz"
+	"action-createbadge": "pravite značke",
+	"action-viewbadge": "pregledate značke",
+	"ob-view-proof-header": "Dokaz",
+	"apierror-openbadges-imageerror": "Nevažeći tip datoteke za značku",
+	"apierror-openbadges-inputerror-nobadgeid": "Nije pronađena značka sa ovim ID-jem",
+	"apierror-openbadges-inputerror-badgeidnotfound": "ID značke nije pronađen",
+	"apierror-openbadges-badevidence": "Dokaz mora a bude prazan ili URL adresa"
 }
