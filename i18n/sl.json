@@ -16,6 +16,7 @@
 	"ob-issue-type": "Značka",
 	"ob-db-user-not-found": "Uporabnik ne obstaja.",
 	"ob-db-badge-not-found": "Značka ne obstaja.",
+	"ob-db-unknown-error": "Neznana napaka podatkovne zbirke.",
 	"ob-issue-success": "Značka je podeljena.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge za dodelitev iz projekta {{SITENAME}}.",
 	"apierror-openbadges-imageerror": "Neveljavna vrsta datoteke za značko",
