@@ -4,6 +4,8 @@
 			"Eleassar"
 		]
 	},
+	"action-viewbadge": "ogled značk",
+	"right-viewbadge": "Ogled značk",
 	"badge-create-legend": "Ustvarite novo značko.",
 	"ob-create-success": "Značka je ustvarjena.",
 	"ob-create-no-image": "Ta slika ne obstaja.",
