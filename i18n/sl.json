@@ -8,6 +8,7 @@
 	"right-viewbadge": "Ogled značk",
 	"badge-create-legend": "Ustvarite novo značko.",
 	"ob-create-badge-description": "Opis značke",
+	"ob-create-badge-image": "Datoteka slike značke",
 	"ob-create-success": "Značka je ustvarjena.",
 	"ob-create-no-image": "Ta slika ne obstaja.",
 	"ob-create-name-exists": "Ime značke že obstaja",

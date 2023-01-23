@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Justman10000",
 			"Metalhead64",
 			"Purodha"
 		]
@@ -44,6 +45,7 @@
 	"ob-db-error-issued": "Die Auszeichnung wurde bereits an diesen Benutzer vergeben.",
 	"ob-issue-success": "Auszeichnung erfolgreich vergeben.",
 	"apihelp-openbadges-description": "Die gehostete Behauptung für ein OpenBadge abrufen.",
+	"apihelp-openbadges-summary": "Bekomme eine gehostete Bestätigung für ein OpenBadge.",
 	"apihelp-openbadges-param-type": "Typ der Anfrage.",
 	"apihelp-openbadges-param-obl_badge_id": "OpenBadge von {{SITENAME}} erhalten.",
 	"apihelp-openbadges-param-obl_receiver": "Kennung des Benutzers, der das OpenBadge erhalten hat.",
