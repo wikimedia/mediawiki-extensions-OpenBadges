@@ -27,5 +27,6 @@
 	"apihelp-openbadges-param-type": "Vrsta zahtevka.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge za dodelitev iz projekta {{SITENAME}}.",
 	"apierror-openbadges-imageerror": "Neveljavna vrsta datoteke za značko",
-	"apierror-openbadges-inputerror-noassertion": "Za to značko in uporabnika ni bil najden noben zadetek"
+	"apierror-openbadges-inputerror-noassertion": "Za to značko in uporabnika ni bil najden noben zadetek",
+	"apierror-openbadges-inputerror-badgeidnotfound": "ID značke ni bil najden"
 }
