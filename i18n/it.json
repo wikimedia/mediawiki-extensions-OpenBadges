@@ -11,7 +11,6 @@
 	"ob-db-user-no-email": "{{GENDER:$1|L'utente}} non ha inserito un indirizzo di posta elettronica.",
 	"ob-db-user-no-email-confirmation": "{{GENDER:$1|L'utente}} non ha confermato il suo indirizzo di posta elettronica.",
 	"apihelp-openbadges-param-obl_receiver": "ID utente dell'utente che ha ricevuto l'OpenBadge.",
-	"apihelp-openbadgesissue-description": "Rilascia un OpenBadge a un utente.",
 	"apihelp-openbadgesissue-summary": "Rilascia un OpenBadge a un utente.",
 	"apihelp-openbadgesissue-param-obl_badge_id": "OpenBadge per rilasciare da {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Nome utente dell'utente che riceverà l'OpenBadge."
