@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"ob-desc": "Pinapahintulutan ang wiki na maging isang tagapagbigay ng [http://openbadges.org/ OpenBadges]",
+	"action-createbadge": "lumikha ng tsapa",
+	"action-viewbadge": "tingnan ang mga tsapa",
+	"action-issuebadge": "pagkakaloob ng mga tsapa",
+	"right-createbadge": "Lumikha ng mga tsapa",
+	"right-viewbadge": "Tingnan ang mga tsapa",
+	"right-issuebadge": "Ipagkaloob ang mga tsapa (badges)",
+	"badgecreate": "Lumikha ng isang tsapa",
+	"badge-create-legend": "Lumikha ng panibagong tsapa",
+	"ob-create-badge-name": "Pangalan ng tsapa",
+	"ob-create-badge-description": "Pagkakalarawan ng tsapa",
+	"ob-create-badge-image": "Talakasan (file) ng larawan ng tsapa",
+	"ob-create-badge-criteria": "Kriterya ng tsapa",
+	"ob-create-success": "Matagumpay na nalikha ang tsapa.",
+	"ob-create-no-image": "Hindi umiiral ang larawan.",
+	"ob-create-name-exists": "Umiiral na ang pangalan ng tsapa.",
+	"badgeview": "Ang aking mga tsapa",
+	"ob-view-proof-header": "Katibayan",
+	"ob-view-evidence-header": "Katibayan",
+	"ob-view-no-evidence": "Wala",
+	"badgeissue": "Magkaloob ng tsapa",
+	"badge-issue-legend": "Ipagkaloob ang tsapa sa isang tagagamit",
+	"ob-issue-user": "Pangalan ng tagagamit",
+	"ob-issue-type": "Tsapa",
+	"ob-issue-evidence": "Katibayang pang-URL",
+	"ob-db-user-not-found": "Hindi umiiral ang tagagamit.",
+	"ob-db-evidence-not-url": "Ang katibayan ay URL dapat.",
+	"ob-db-badge-not-found": "Hindi umiiral ang tsapa.",
+	"ob-db-unknown-error": "May mali sa di-kilalang base ng datos",
+	"ob-db-error-issued": "Naipagkaloob na ang tsapa sa tagagamit na ito.",
+	"ob-issue-success": "Matagumpay na ipinagkaloob ang tsapa.",
+	"apihelp-openbadges-param-type": "Uri ng hiling.",
+	"apihelp-openbadges-param-obl_badge_id": "OpenBadge ay natanggap mula sa {{SITENAME}}.",
+	"apihelp-openbadges-param-obl_receiver": "Tagagamit na nakatanggap ng OpenBadge."
+}
