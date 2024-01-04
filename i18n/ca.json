@@ -5,12 +5,14 @@
 			"F3RaN",
 			"Fitoschido",
 			"Jmarchn",
-			"Macofe"
+			"Macofe",
+			"SMP"
 		]
 	},
-	"action-issuebadge": "Emetre els distintius",
-	"right-createbadge": "Crea distintius",
-	"right-issuebadge": "Problema de distintius",
+	"action-createbadge": "crear distintius",
+	"action-issuebadge": "emetre distintius",
+	"right-createbadge": "Crear distintius",
+	"right-issuebadge": "Emetre distintius",
 	"badgecreate": "Crear un distintiu",
 	"badge-create-legend": "Crea un nou distintiu",
 	"ob-create-badge-name": "Nom de la insignia",
