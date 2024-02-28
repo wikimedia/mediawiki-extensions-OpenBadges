@@ -7,7 +7,8 @@
 			"LNDDYL",
 			"Liuxinyu970226",
 			"Sanmosa",
-			"Xiplus"
+			"Xiplus",
+			"Winston Sung"
 		]
 	},
 	"ob-desc": "可讓 wiki 成為 [http://openbadges.org/ OpenBadges] 的頒發者",
@@ -18,7 +19,7 @@
 	"right-viewbadge": "檢視徽章",
 	"right-issuebadge": "頒發徽章",
 	"badgecreate": "建立徽章",
-	"badge-create-legend": "建立新徽章",
+	"badge-create-legend": "新增徽章",
 	"ob-create-badge-name": "徽章名稱",
 	"ob-create-badge-description": "徽章描述",
 	"ob-create-badge-image": "徽章圖片檔",
