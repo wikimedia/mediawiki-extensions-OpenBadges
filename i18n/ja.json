@@ -3,7 +3,8 @@
 		"authors": [
 			"Runequest77",
 			"Shirayuki",
-			"Sujiniku"
+			"Sujiniku",
+			"Chqaz"
 		]
 	},
 	"action-createbadge": "バッジの作成",
@@ -17,5 +18,6 @@
 	"ob-view-evidence": "証拠へのリンク",
 	"ob-issue-user": "利用者名",
 	"ob-db-user-not-found": "利用者が存在しません。",
-	"ob-db-unknown-error": "不明なデータベースエラー。"
+	"ob-db-unknown-error": "不明なデータベースエラー。",
+	"apihelp-openbadges-param-type": "リクエストの種類"
 }
