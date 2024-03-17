@@ -110,7 +110,7 @@ abstract class ApiOpenBadges extends ApiBase {
 			[],
 			[
 				'openbadges_class' => [
-					'INNER JOIN',  [
+					'INNER JOIN', [
 						'openbadges_assertion.obl_badge_id=openbadges_class.obl_badge_id'
 					]
 				]

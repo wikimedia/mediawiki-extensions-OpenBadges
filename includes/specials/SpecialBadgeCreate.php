@@ -85,26 +85,26 @@ class SpecialBadgeCreate extends FormSpecialPage {
 	 * @param array $allData
 	 * @return Message|true
 	 */
-	 public static function validateImage( $imageTitle, $allData ) {
-		 if ( $imageTitle == '' ) {
-			 return wfMessage( 'htmlform-required' );
-		 }
-		 if ( method_exists( MediaWikiServices::class, 'getRepoGroup' ) ) {
-			 // MediaWiki 1.34+
-			 $badgeFile = MediaWikiServices::getInstance()->getRepoGroup()
-				 ->findFile( $imageTitle );
-		 } else {
-			 $badgeFile = wfFindFile( $imageTitle );
-		 }
-		 if ( $badgeFile === false ) {
-			 return wfMessage( 'ob-create-no-image' );
-		 }
-		 $mimetype = $badgeFile->getMimeType();
-		 if ( $mimetype != 'image/png' && $mimetype != 'image/svg+xml' ) {
-			 return wfMessage( 'ob-create-wrong-mime' );
-		 }
-		 return true;
-	 }
+	public static function validateImage( $imageTitle, $allData ) {
+		if ( $imageTitle == '' ) {
+			return wfMessage( 'htmlform-required' );
+		}
+		if ( method_exists( MediaWikiServices::class, 'getRepoGroup' ) ) {
+			// MediaWiki 1.34+
+			$badgeFile = MediaWikiServices::getInstance()->getRepoGroup()
+				->findFile( $imageTitle );
+		} else {
+			$badgeFile = wfFindFile( $imageTitle );
+		}
+		if ( $badgeFile === false ) {
+			return wfMessage( 'ob-create-no-image' );
+		}
+		$mimetype = $badgeFile->getMimeType();
+		if ( $mimetype != 'image/png' && $mimetype != 'image/svg+xml' ) {
+			return wfMessage( 'ob-create-wrong-mime' );
+		}
+		return true;
+	}
 
 	/**
 	 * Validates that a badge name does't exists
