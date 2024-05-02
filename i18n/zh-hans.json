@@ -54,5 +54,7 @@
 	"apihelp-openbadgesissue-param-obl_evidence_url": "证明用户满足OpenBadge标准的URL。",
 	"apierror-openbadges-imageerror": "徽章文件类型非法",
 	"apierror-openbadges-inputerror-nobadgeid": "未找到此ID的徽章",
+	"apierror-openbadges-noemail": "徽章接收者尚未设置电子邮件地址",
+	"apierror-openbadges-noemailconfirmed": "徽章接收者尚未确认电子邮件地址",
 	"apierror-openbadges-inputerror-badgeidnotfound": "找不到徽章ID"
 }
