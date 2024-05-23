@@ -4,7 +4,8 @@
 			"Garam",
 			"Hwangjy9",
 			"Revi",
-			"Ykhwong"
+			"Ykhwong",
+			"Suleiman the Magnificent Television"
 		]
 	},
 	"action-createbadge": "배지 만들기",
@@ -24,7 +25,10 @@
 	"ob-create-wrong-mime": "사진이 잘못된 포맷입니다, png 또는 svg 포맷만이 허용됩니다.",
 	"ob-create-name-exists": "배지 이름이 이미 존재합니다.",
 	"badgeview": "내 배지",
+	"ob-view-proof-header": "증거",
 	"ob-view-name": "배지 이름",
+	"ob-view-evidence-header": "증거",
+	"ob-view-no-evidence": "없음",
 	"ob-issue-user": "사용자 이름",
 	"ob-issue-type": "배지"
 }
