@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"LittlePaw365",
 			"Liuxinyu970226",
 			"沈澄心",
 			"飞舞回堂前"
@@ -13,8 +14,8 @@
 	"right-createbadge": "创建徽章",
 	"right-viewbadge": "查看徽章",
 	"right-issuebadge": "发布徽章",
-	"badgecreate": "创建一个徽章",
-	"badge-create-legend": "创建一个新的徽章",
+	"badgecreate": "创建徽章",
+	"badge-create-legend": "创建新徽章",
 	"ob-create-badge-name": "徽章名",
 	"ob-create-badge-description": "徽章描述",
 	"ob-create-badge-image": "徽章图片文件",
@@ -31,8 +32,8 @@
 	"ob-view-evidence": "链接至证明",
 	"ob-view-evidence-header": "证明",
 	"ob-view-no-evidence": "无",
-	"badgeissue": "发布一个徽章",
-	"badge-issue-legend": "将徽章发布至一个用户",
+	"badgeissue": "颁发徽章",
+	"badge-issue-legend": "颁发徽章给用户",
 	"ob-issue-user": "用户名",
 	"ob-issue-type": "徽章",
 	"ob-issue-evidence": "证明URL",
