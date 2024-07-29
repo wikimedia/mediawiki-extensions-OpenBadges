@@ -1,8 +1,47 @@
 {
 	"@metadata": {
 		"authors": [
-			"Leduyquang753"
+			"Leduyquang753",
+			"SongNgu.xyz"
 		]
 	},
+	"ob-desc": "Cho phép wiki trở thành nhà cung cấp huy hiệu [http://openbadges.org/ OpenBadges]",
+	"action-createbadge": "tạo huy hiệu",
+	"action-viewbadge": "xem huy hiệu",
+	"action-issuebadge": "cấp huy hiệu",
+	"right-createbadge": "Tạo huy hiệu",
+	"right-viewbadge": "Xem huy hiệu",
+	"right-issuebadge": "Cấp huy hiệu",
+	"badgecreate": "Tạo huy hiệu",
+	"badge-create-legend": "Tạo một huy hiệu mới",
+	"ob-create-badge-name": "Tên huy hiệu",
+	"ob-create-badge-description": "Miêu tả",
+	"ob-create-badge-image": "Hình ảnh huy hiệu",
+	"ob-create-badge-criteria": "Điều kiện để nhận",
+	"ob-create-success": "Huy hiệu đã  được tạo.",
+	"ob-create-no-image": "Tập tin hình ảnh không tồn tại",
+	"ob-create-wrong-mime": "Tập tin hình ảnh có định dạng sai, chỉ png hoặc svg được chấp nhận.",
+	"ob-create-name-exists": "Huy hiệu có tên tương tự đã tồn tại.",
+	"badgeview": "Huy hiệu của tôi",
+	"ob-view-proof": "liên kết xác minh",
+	"ob-view-proof-header": "Bằng chứng",
+	"ob-view-name": "Tên huy hiệu",
+	"ob-view-image": "Hình ảnh huy hiệu",
+	"ob-view-evidence": "liên kết xác minh",
+	"ob-view-evidence-header": "Bằng chứng",
+	"ob-view-no-evidence": "Không có",
+	"badgeissue": "Cấp huy hiệu",
+	"badge-issue-legend": "Cấp huy hiệu cho một người dùng",
+	"ob-issue-user": "Tên người dùng",
+	"ob-issue-type": "Huy hiệu",
+	"ob-issue-evidence": "Liên kết bao gồm bằng chứng",
+	"ob-db-user-not-found": "Người dùng không tồn tại.",
+	"ob-db-user-no-email": "{{GENDER:$1|Người dùng}} chưa thêm địa chỉ thư điện tử vào tài khoản.",
+	"ob-db-user-no-email-confirmation": "{{GENDER:$1|Người dùng}} chưa xác nhận địa chỉ email của {{GENDER:$1|anh ấy|cô ấy|họ}}.",
+	"ob-db-evidence-not-url": "Bằng chứng phải là một liên kết.",
+	"ob-db-badge-not-found": "Huy hiệu này không tồn tại.",
+	"ob-db-unknown-error": "Lỗi cơ sở dữ liệu không rõ.",
+	"ob-db-error-issued": "Huy hiệu này đã được cấp cho người dùng này rồi.",
+	"ob-issue-success": "Đã cấp huy hiệu.",
 	"apierror-openbadges-badevidence": "Bằng chứng phải để trống hoặc là một URL"
 }
