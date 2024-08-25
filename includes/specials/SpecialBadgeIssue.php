@@ -67,7 +67,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	 * @return array
 	 */
 	public function getAllBadges() {
-		$dbr = wfGetDB( DB_MASTER );
+		$dbr = wfGetDB( DB_PRIMARY );
 		$res = $dbr->select(
 			'openbadges_class',
 			[ 'obl_name', 'obl_badge_id' ]
@@ -92,7 +92,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 		}
 
 		// Inserts the new assertion into the database
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 		$result = $dbw->insert(
 			'openbadges_assertion',
@@ -181,7 +181,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	public static function validateFormFields( array $data ) {
 		$fields = '*';
 
-		$dbr = wfGetDB( DB_MASTER );
+		$dbr = wfGetDB( DB_PRIMARY );
 		$user = User::newFromName( $data['Name'] );
 
 		$badgeRow = $dbr->selectRow(

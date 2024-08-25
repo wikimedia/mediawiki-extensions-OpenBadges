@@ -70,7 +70,7 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	 * @param string $evidenceUrl
 	 */
 	public function issueBadge( $badgeID, User $recipient, $evidenceUrl ) {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 		$result = $dbw->insert(
 			'openbadges_assertion',
