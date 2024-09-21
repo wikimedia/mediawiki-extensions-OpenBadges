@@ -81,7 +81,7 @@ abstract class ApiOpenBadges extends ApiBase {
 	 * @return ResultWrapper|bool
 	 */
 	protected function queryBadge( $badgeID ) {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $dbr->select(
 			[ 'openbadges_class' ],
 			'*',
@@ -98,7 +98,7 @@ abstract class ApiOpenBadges extends ApiBase {
 	 * @return ResultWrapper|bool
 	 */
 	protected function queryIssuedBadge( $badgeID, User $recipient ) {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $dbr->select(
 			[ 'openbadges_assertion', 'openbadges_class' ],
 			'*',

@@ -3,6 +3,8 @@
  * OpenBadges API module to issue badges
  */
 
+use MediaWiki\MediaWikiServices;
+
 class ApiOpenBadgesIssue extends ApiOpenBadges {
 
 	/** @inheritDoc */
@@ -70,7 +72,7 @@ class ApiOpenBadgesIssue extends ApiOpenBadges {
 	 * @param string $evidenceUrl
 	 */
 	public function issueBadge( $badgeID, User $recipient, $evidenceUrl ) {
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 		$result = $dbw->insert(
 			'openbadges_assertion',

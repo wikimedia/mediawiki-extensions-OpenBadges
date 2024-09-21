@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\MediaWikiServices;
+
 /**
  * OpenBadges special page to issue new badges to users
  *
@@ -67,7 +70,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	 * @return array
 	 */
 	public function getAllBadges() {
-		$dbr = wfGetDB( DB_PRIMARY );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$res = $dbr->select(
 			'openbadges_class',
 			[ 'obl_name', 'obl_badge_id' ]
@@ -92,7 +95,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 		}
 
 		// Inserts the new assertion into the database
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 		$result = $dbw->insert(
 			'openbadges_assertion',
@@ -181,7 +184,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	public static function validateFormFields( array $data ) {
 		$fields = '*';
 
-		$dbr = wfGetDB( DB_PRIMARY );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$user = User::newFromName( $data['Name'] );
 
 		$badgeRow = $dbr->selectRow(

@@ -62,7 +62,7 @@ class SpecialBadgeCreate extends FormSpecialPage {
 	 */
 	public function onSubmit( array $data ) {
 		// Inserts the new assertion into the database
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 		$result = $dbw->insert(
 			'openbadges_class',
@@ -117,7 +117,7 @@ class SpecialBadgeCreate extends FormSpecialPage {
 		if ( $badgeTitle == '' ) {
 			return wfMessage( 'htmlform-required' );
 		}
-		$dbr = wfGetDB( DB_PRIMARY );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$badgeRow = $dbr->selectRow(
 			'openbadges_class',
 			'*',
