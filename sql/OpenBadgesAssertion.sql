@@ -11,10 +11,10 @@ CREATE TABLE /*_*/openbadges_assertion (
   obl_timestamp binary(14) NOT NULL,
 
   -- User id of the receiver
-  obl_receiver int(10) unsigned NOT NULL REFERENCES user(user_id),
+  obl_receiver int(10) unsigned NOT NULL REFERENCES /*_*/user(user_id),
 
   -- URL of the badge for the receiver
-  obl_badge_id int NOT NULL REFERENCES openbadges_class(obl_badge_id),
+  obl_badge_id int NOT NULL REFERENCES /*_*/openbadges_class(obl_badge_id),
 
   -- Evidence for receiving the badge, if any
   obl_badge_evidence varchar(255),
