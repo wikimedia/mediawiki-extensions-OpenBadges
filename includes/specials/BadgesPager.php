@@ -106,7 +106,7 @@ class BadgesPager extends TablePager {
 					'obl_badge_id' => $value,
 					'obl_receiver' => $userId
 				];
-				$assertLink = Html::rawElement(
+				$assertLink = Html::element(
 					'a',
 					[ 'href' => $apiUrl . http_build_query( $assertCall ) ],
 					wfMessage( 'ob-view-proof' )->text()
@@ -114,9 +114,9 @@ class BadgesPager extends TablePager {
 				return $assertLink;
 			case 'obl_badge_evidence':
 				if ( empty( $value ) ) {
-					return wfMessage( 'ob-view-no-evidence' )->text();
+					return wfMessage( 'ob-view-no-evidence' )->escaped();
 				} else {
-					$evidenceLink = Html::rawElement(
+					$evidenceLink = Html::element(
 						'a',
 						[ 'href' => $value ],
 						wfMessage( 'ob-view-evidence' )->text()
