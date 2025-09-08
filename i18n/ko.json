@@ -22,7 +22,7 @@
 	"ob-create-badge-image": "휘장 영상 파일",
 	"ob-create-badge-criteria": "배지 기준",
 	"ob-create-success": "배지를 만들었습니다.",
-	"ob-create-no-image": "이 그림은 존재하지 않습니다.",
+	"ob-create-no-image": "그림이 존재하지 않습니다.",
 	"ob-create-wrong-mime": "사진이 잘못된 포맷입니다, png 또는 svg 포맷만이 허용됩니다.",
 	"ob-create-name-exists": "배지 이름이 이미 존재합니다.",
 	"badgeview": "내 배지",
@@ -34,5 +34,6 @@
 	"ob-view-evidence-header": "증거",
 	"ob-view-no-evidence": "없음",
 	"ob-issue-user": "사용자 이름",
-	"ob-issue-type": "배지"
+	"ob-issue-type": "배지",
+	"ob-db-user-not-found": "사용자가 존재하지 않습니다."
 }
