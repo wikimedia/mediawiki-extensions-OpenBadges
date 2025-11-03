@@ -13,7 +13,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.35.3"
+		"MediaWiki": ">= 1.40"
 	},
 	"APIModules": {
 		"openbadges": "ApiOpenBadgesAssertions",
