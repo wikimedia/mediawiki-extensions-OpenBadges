@@ -28,7 +28,7 @@ class BadgesPager extends TablePager {
 				'obl_badge_image',
 				'badge_id' => 'assertion.obl_badge_id',
 				'obl_badge_evidence' ],
-			'conds' => 'obl_receiver = ' . $userId,
+			'conds' => [ 'obl_receiver' => $userId ],
 			'join_conds' => [
 				'openbadges_class' => [
 					'INNER JOIN',
