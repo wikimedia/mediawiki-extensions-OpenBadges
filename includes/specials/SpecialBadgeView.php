@@ -21,6 +21,7 @@ class SpecialBadgeView extends SpecialPage {
 		$this->outputHeader();
 
 		$pager = new BadgesPager();
+		$pager->setContext( $this->getContext() );
 		$html = $this->getOutput();
 		$html->addHTML(
 			$pager->getNavigationBar() . '<ol>' .
