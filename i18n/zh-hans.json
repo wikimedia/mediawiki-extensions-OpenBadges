@@ -4,7 +4,8 @@
 			"LittlePaw365",
 			"Liuxinyu970226",
 			"沈澄心",
-			"飞舞回堂前"
+			"飞舞回堂前",
+			"GuoPC"
 		]
 	},
 	"ob-desc": "允许wiki成为[http://openbadges.org/ OpenBadges]发行者",
@@ -25,8 +26,8 @@
 	"ob-create-wrong-mime": "图片格式错误，只允许png或svg格式。",
 	"ob-create-name-exists": "徽章名已存在。",
 	"badgeview": "我的徽章",
-	"ob-view-proof": "链接至试验",
-	"ob-view-proof-header": "试验",
+	"ob-view-proof": "链接至检验",
+	"ob-view-proof-header": "检验",
 	"ob-view-name": "徽章名称",
 	"ob-view-image": "徽章插图",
 	"ob-view-evidence": "链接至证明",
@@ -45,7 +46,7 @@
 	"ob-db-unknown-error": "未知的数据库错误。",
 	"ob-db-error-issued": "徽章已分配给此用户。",
 	"ob-issue-success": "徽章已发布。",
-	"apihelp-openbadges-summary": "获取用于OpenBadge的托管主张。",
+	"apihelp-openbadges-summary": "获取OpenBadge的托管断言。",
 	"apihelp-openbadges-param-type": "请求类型。",
 	"apihelp-openbadges-param-obl_badge_id": "从{{SITENAME}}收到的OpenBadge。",
 	"apihelp-openbadges-param-obl_receiver": "收到OpenBadge的用户的用户ID。",
@@ -57,5 +58,12 @@
 	"apierror-openbadges-inputerror-nobadgeid": "未找到此ID的徽章",
 	"apierror-openbadges-noemail": "徽章接收者尚未设置电子邮件地址",
 	"apierror-openbadges-noemailconfirmed": "徽章接收者尚未确认电子邮件地址",
-	"apierror-openbadges-inputerror-badgeidnotfound": "找不到徽章ID"
+	"apierror-openbadges-noobl_badge_id": "必须为颁发者以外的类型设置obl_badge_id参数",
+	"apierror-openbadges-noobl_receiver": "必须为类型断言设置obl_receiver参数",
+	"apierror-openbadges-inputerror-noassertion": "未找到此徽章和用户的徽章断言",
+	"apierror-openbadges-inputerror-badgeidnotfound": "找不到徽章ID",
+	"apierror-openbadges-inputerror-norecipient": "找不到具有该ID的接收者",
+	"apierror-openbadges-notloggedin": "不能颁发徽章给匿名用户",
+	"apierror-openbadges-notissuebadgeright": "颁发徽章需要“issuebadge”权限",
+	"apierror-openbadges-badevidence": "证明必须留空或是一个URL"
 }
