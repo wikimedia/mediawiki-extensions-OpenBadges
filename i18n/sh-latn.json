@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
@@ -22,5 +23,5 @@
 	"ob-issue-type": "Značka",
 	"ob-db-user-not-found": "Korisnik ne postoji.",
 	"apierror-openbadges-notloggedin": "Anonimni korisnici ne mogu dodjeliti značke",
-	"apierror-openbadges-notissuebadgeright": "Zahtijevano pravo „issuebadge“ za dodjelu značka"
+	"apierror-openbadges-notissuebadgeright": "Zahtijevano pravo \"issuebadge\" za dodjelu značka"
 }
