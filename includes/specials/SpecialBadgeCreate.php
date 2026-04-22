@@ -11,7 +11,12 @@ use MediaWiki\MediaWikiServices;
 class SpecialBadgeCreate extends FormSpecialPage {
 
 	public function __construct() {
-		parent::__construct( 'BadgeCreate', 'createbadge' );
+		parent::__construct( 'BadgeCreate' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'createbadge';
 	}
 
 	/**

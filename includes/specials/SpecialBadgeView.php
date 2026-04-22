@@ -8,7 +8,12 @@
 
 class SpecialBadgeView extends SpecialPage {
 	public function __construct() {
-		parent::__construct( 'BadgeView', 'viewbadge' );
+		parent::__construct( 'BadgeView' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'viewbadge';
 	}
 
 	/**

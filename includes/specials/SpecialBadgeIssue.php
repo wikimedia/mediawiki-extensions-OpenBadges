@@ -13,7 +13,12 @@ use MediaWiki\Title\Title;
 class SpecialBadgeIssue extends FormSpecialPage {
 
 	public function __construct() {
-		parent::__construct( 'BadgeIssue', 'issuebadge' );
+		parent::__construct( 'BadgeIssue' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'issuebadge';
 	}
 
 	/**
