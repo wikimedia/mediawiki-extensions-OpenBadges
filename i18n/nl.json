@@ -55,7 +55,7 @@
 	"apihelp-openbadgesissue-param-obl_badge_id": "De OpenBadge om uit te geven via {{SITENAME}}.",
 	"apihelp-openbadgesissue-param-obl_receiver": "Gebruikersnaam van de gebruiker die de OpenBadge ontvangt.",
 	"apihelp-openbadgesissue-param-obl_evidence_url": "URL naar bewijsmateriaal dat de gebruiker voldoet aan de OpenBadge-criteria.",
-	"apierror-openbadges-imageerror": "Ongeldig bestandstype voor badge",
+	"apierror-openbadges-imageerror": "Onjuist bestandstype voor badge",
 	"apierror-openbadges-inputerror-nobadgeid": "Geen badge gevonden voor dit id",
 	"apierror-openbadges-noemail": "De badge-ontvanger heeft geen e-mailadres ingesteld",
 	"apierror-openbadges-noemailconfirmed": "De ontvanger van de badge heeft het eigen e-mailadres niet bevestigd",
