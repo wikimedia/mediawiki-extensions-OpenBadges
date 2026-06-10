@@ -38,7 +38,7 @@
 	"badge-issue-legend": "Een badge aan een gebruiker uitgeven",
 	"ob-issue-user": "Gebruikersnaam",
 	"ob-issue-type": "Badge",
-	"ob-issue-evidence": "URL naar bewijsmateriaal",
+	"ob-issue-evidence": "Bewijs-url",
 	"ob-db-user-not-found": "Gebruiker bestaat niet",
 	"ob-db-user-no-email": "{{GENDER:$1|De gebruiker}} heeft geen e-mailadres ingevoerd.",
 	"ob-db-user-no-email-confirmation": "{{GENDER:$1|De gebruiker}} heeft {{GENDER:$1|zijn|haar|het eigen}} e-mailadres niet bevestigd.",
