@@ -3,7 +3,8 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"NenhumaFênix"
 		]
 	},
 	"ob-desc": "Permite que a wiki se torne num emitente de medalhas abertas [http://openbadges.org/ OpenBadges].",
@@ -37,8 +38,8 @@
 	"ob-issue-type": "Medalha",
 	"ob-issue-evidence": "URL da prova",
 	"ob-db-user-not-found": "O usuário não existe.",
-	"ob-db-user-no-email": "{{GENDER:$1|O usuário|A usuária}} não introduziu nenhum endereço de e-mail.",
-	"ob-db-user-no-email-confirmation": "{{GENDER:$1|O usuário|A usuária}} não confirmou o seu endereço de e-mail.",
+	"ob-db-user-no-email": "{{GENDER:$1|O usuário|A usuária|Usuário(a)}} não introduziu nenhum endereço de e-mail.",
+	"ob-db-user-no-email-confirmation": "{{GENDER:$1|O usuário|A usuária|Usuário(a)}} não confirmou o seu endereço de e-mail.",
 	"ob-db-evidence-not-url": "A prova tem de ser um URL.",
 	"ob-db-badge-not-found": "A medalha não existe.",
 	"ob-db-unknown-error": "Erro desconhecido da base de dados.",
