@@ -1,4 +1,8 @@
 <?php
+
+use MediaWiki\FileRepo\RepoGroup;
+use Wikimedia\Rdbms\IConnectionProvider;
+
 /**
  * OpenBadges special page to add new badge types to the database.
  *
@@ -6,11 +10,12 @@
  * @ingroup Extensions
  */
 
-use MediaWiki\MediaWikiServices;
-
 class SpecialBadgeCreate extends FormSpecialPage {
 
-	public function __construct() {
+	public function __construct(
+		private readonly IConnectionProvider $dbProvider,
+		private readonly RepoGroup $repoGroup,
+	) {
 		parent::__construct( 'BadgeCreate' );
 	}
 
@@ -35,14 +40,14 @@ class SpecialBadgeCreate extends FormSpecialPage {
 				'label-message' => 'ob-create-badge-name',
 				'type' => 'text',
 				'required' => true,
-				'validation-callback' => [ 'SpecialBadgeCreate', 'validateName' ],
-				'filter-callback' => [ 'SpecialBadgeIssue', 'toDBkey' ],
+				'validation-callback' => $this->validateName( ... ),
+				'filter-callback' => SpecialBadgeIssue::toDBkey( ... ),
 			],
 			'Image' => [
 				'label-message' => 'ob-create-badge-image',
 				'type' => 'text',
 				'required' => true,
-				'validation-callback' => [ 'SpecialBadgeCreate', 'validateImage' ],
+				'validation-callback' => $this->validateImage( ... ),
 			],
 			'Description' => [
 				'label-message' => 'ob-create-badge-description',
@@ -67,7 +72,7 @@ class SpecialBadgeCreate extends FormSpecialPage {
 	 */
 	public function onSubmit( array $data ) {
 		// Inserts the new assertion into the database
-		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$dbw = $this->dbProvider->getPrimaryDatabase();
 		$dbw->startAtomic( __METHOD__ );
 		$result = $dbw->insert(
 			'openbadges_class',
@@ -90,12 +95,11 @@ class SpecialBadgeCreate extends FormSpecialPage {
 	 * @param array $allData
 	 * @return Message|true
 	 */
-	public static function validateImage( $imageTitle, $allData ) {
+	public function validateImage( $imageTitle, $allData ) {
 		if ( $imageTitle == '' ) {
 			return wfMessage( 'htmlform-required' );
 		}
-		$badgeFile = MediaWikiServices::getInstance()->getRepoGroup()
-			->findFile( $imageTitle );
+		$badgeFile = $this->repoGroup->findFile( $imageTitle );
 		if ( $badgeFile === false ) {
 			return wfMessage( 'ob-create-no-image' );
 		}
@@ -113,11 +117,11 @@ class SpecialBadgeCreate extends FormSpecialPage {
 	 * @param array $allData
 	 * @return Message|true
 	 */
-	public static function validateName( $badgeTitle, $allData ) {
+	public function validateName( $badgeTitle, $allData ) {
 		if ( $badgeTitle == '' ) {
 			return wfMessage( 'htmlform-required' );
 		}
-		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$dbr = $this->dbProvider->getPrimaryDatabase();
 		$badgeRow = $dbr->selectRow(
 			'openbadges_class',
 			'*',

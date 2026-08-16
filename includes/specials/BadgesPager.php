@@ -1,7 +1,7 @@
 <?php
 
+use MediaWiki\FileRepo\RepoGroup;
 use MediaWiki\Html\Html;
-use MediaWiki\MediaWikiServices;
 
 /**
  * @ingroup SpecialPage Pager
@@ -10,6 +10,12 @@ class BadgesPager extends TablePager {
 
 	/** @var string[] */
 	private $mFieldNames;
+
+	public function __construct(
+		private readonly RepoGroup $repoGroup,
+	) {
+		parent::__construct();
+	}
 
 	/**
 	 * Request all badges issued to the current user
@@ -90,7 +96,7 @@ class BadgesPager extends TablePager {
 			case 'obl_name':
 				return htmlspecialchars( $value );
 			case 'obl_badge_image':
-				$file = MediaWikiServices::getInstance()->getRepoGroup()->findFile( $value );
+				$file = $this->repoGroup->findFile( $value );
 				$badgeImage = $file->transform( [ 'width' => 180, 'height' => 360 ] );
 				$thumb = $badgeImage->toHtml( [ 'desc-link' => true ] );
 				return $thumb;

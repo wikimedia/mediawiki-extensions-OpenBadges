@@ -34,9 +34,25 @@
 		}
 	},
 	"SpecialPages": {
-		"BadgeIssue": "SpecialBadgeIssue",
-		"BadgeCreate": "SpecialBadgeCreate",
-		"BadgeView": "SpecialBadgeView"
+		"BadgeIssue": {
+			"class": "SpecialBadgeIssue",
+			"services": [
+				"ConnectionProvider"
+			]
+		},
+		"BadgeCreate": {
+			"class": "SpecialBadgeCreate",
+			"services": [
+				"ConnectionProvider",
+				"RepoGroup"
+			]
+		},
+		"BadgeView": {
+			"class": "SpecialBadgeView",
+			"services": [
+				"RepoGroup"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"OpenBadges": [

@@ -1,7 +1,7 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 /**
  * OpenBadges special page to issue new badges to users
@@ -12,7 +12,9 @@ use MediaWiki\Title\Title;
 
 class SpecialBadgeIssue extends FormSpecialPage {
 
-	public function __construct() {
+	public function __construct(
+		private readonly IConnectionProvider $dbProvider,
+	) {
 		parent::__construct( 'BadgeIssue' );
 	}
 
@@ -37,8 +39,8 @@ class SpecialBadgeIssue extends FormSpecialPage {
 				'type' => 'text',
 				'label-message' => 'ob-issue-user',
 				'required' => true,
-				'filter-callback' => [ 'SpecialBadgeIssue', 'toDBkey' ],
-				'validation-callback' => [ 'SpecialBadgeIssue', 'validateUser' ],
+				'filter-callback' => self::toDBkey( ... ),
+				'validation-callback' => self::validateUser( ... ),
 			],
 			'BadgeId' => [
 				'type' => 'select',
@@ -50,7 +52,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 				'type' => 'text',
 				'label-message' => 'ob-issue-evidence',
 				'required' => false,
-				'validation-callback' => [ 'SpecialBadgeIssue', 'validateEvidence' ],
+				'validation-callback' => self::validateEvidence( ... ),
 			],
 		];
 	}
@@ -76,7 +78,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	 * @return array
 	 */
 	public function getAllBadges() {
-		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$dbr = $this->dbProvider->getPrimaryDatabase();
 		$res = $dbr->select(
 			'openbadges_class',
 			[ 'obl_name', 'obl_badge_id' ],
@@ -96,14 +98,14 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	 * @return Status|bool
 	 */
 	public function onSubmit( array $data ) {
-		$status = self::validateFormFields( $data );
+		$status = $this->validateFormFields( $data );
 
 		if ( !$status->isOK() ) {
 			return $status;
 		}
 
 		// Inserts the new assertion into the database
-		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$dbw = $this->dbProvider->getPrimaryDatabase();
 		$dbw->startAtomic( __METHOD__ );
 		$result = $dbw->insert(
 			'openbadges_assertion',
@@ -189,10 +191,10 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	 * @param array $data
 	 * @return Status
 	 */
-	public static function validateFormFields( array $data ) {
+	private function validateFormFields( array $data ) {
 		$fields = '*';
 
-		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$dbr = $this->dbProvider->getPrimaryDatabase();
 		$user = User::newFromName( $data['Name'] );
 
 		$badgeRow = $dbr->selectRow(

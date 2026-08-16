@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\FileRepo\RepoGroup;
+
 /**
  * OpenBadges special page to view all the badges issued to a user.
  *
@@ -7,7 +10,9 @@
  */
 
 class SpecialBadgeView extends SpecialPage {
-	public function __construct() {
+	public function __construct(
+		private readonly RepoGroup $repoGroup,
+	) {
 		parent::__construct( 'BadgeView' );
 	}
 
@@ -25,7 +30,7 @@ class SpecialBadgeView extends SpecialPage {
 		$this->checkPermissions();
 		$this->outputHeader();
 
-		$pager = new BadgesPager();
+		$pager = new BadgesPager( $this->repoGroup );
 		$pager->setContext( $this->getContext() );
 		$html = $this->getOutput();
 		$html->addHTML(
