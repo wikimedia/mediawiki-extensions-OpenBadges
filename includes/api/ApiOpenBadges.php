@@ -8,6 +8,7 @@
  */
 
 use MediaWiki\MediaWikiServices;
+use Wikimedia\Rdbms\IResultWrapper;
 
 abstract class ApiOpenBadges extends ApiBase {
 
@@ -73,14 +74,15 @@ abstract class ApiOpenBadges extends ApiBase {
 	 * Run SQL query to get all info about a badge
 	 *
 	 * @param int $badgeID
-	 * @return ResultWrapper|bool
+	 * @return IResultWrapper|bool
 	 */
 	protected function queryBadge( $badgeID ) {
 		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $dbr->select(
 			[ 'openbadges_class' ],
 			'*',
-			[ 'obl_badge_id' => $badgeID ]
+			[ 'obl_badge_id' => $badgeID ],
+			__METHOD__
 		);
 		return $res;
 	}
@@ -90,7 +92,7 @@ abstract class ApiOpenBadges extends ApiBase {
 	 *
 	 * @param int $badgeID
 	 * @param User $recipient
-	 * @return ResultWrapper|bool
+	 * @return IResultWrapper|bool
 	 */
 	protected function queryIssuedBadge( $badgeID, User $recipient ) {
 		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );

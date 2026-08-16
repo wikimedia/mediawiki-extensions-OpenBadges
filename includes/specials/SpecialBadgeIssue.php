@@ -79,7 +79,9 @@ class SpecialBadgeIssue extends FormSpecialPage {
 		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$res = $dbr->select(
 			'openbadges_class',
-			[ 'obl_name', 'obl_badge_id' ]
+			[ 'obl_name', 'obl_badge_id' ],
+			'',
+			__METHOD__
 		);
 		$names = [];
 		// MWDebug::log(print_r($res));
@@ -196,7 +198,8 @@ class SpecialBadgeIssue extends FormSpecialPage {
 		$badgeRow = $dbr->selectRow(
 			'openbadges_class',
 			$fields,
-			[ 'obl_badge_id' => $data['BadgeId'] ]
+			[ 'obl_badge_id' => $data['BadgeId'] ],
+			__METHOD__
 		);
 
 		$evidence = $data['Evidence'] == '' ? null : $data['Evidence'];
@@ -209,7 +212,8 @@ class SpecialBadgeIssue extends FormSpecialPage {
 				[
 					'obl_badge_id' => $data['BadgeId'],
 					'obl_receiver' => $user->getId(),
-				]
+				],
+				__METHOD__
 			);
 			if ( $issued ) {
 				$status = Status::newFatal( 'ob-db-error-issued' );

@@ -121,7 +121,8 @@ class SpecialBadgeCreate extends FormSpecialPage {
 		$badgeRow = $dbr->selectRow(
 			'openbadges_class',
 			'*',
-			[ 'obl_name' => $badgeTitle ]
+			[ 'obl_name' => $badgeTitle ],
+			__METHOD__
 		);
 		if ( $badgeRow ) {
 			return wfMessage( 'ob-create-name-exists' );

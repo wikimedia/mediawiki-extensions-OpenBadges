@@ -89,7 +89,8 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 		$res = $dbr->select(
 			[ 'openbadges_class' ],
 			'obl_criteria',
-			[ 'obl_badge_id = ' . $badgeID ]
+			[ 'obl_badge_id = ' . $badgeID ],
+			__METHOD__
 		);
 		$this->getResult()->addValue( null, 'criteria', $res->current()->obl_criteria );
 	}
@@ -109,7 +110,6 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 		// return error if no hits
 		if ( $res->current() == 0 ) {
 			$this->dieWithError( 'apierror-openbadges-inputerror-noassertion', 'inputerror' );
-			return;
 		}
 
 		// only output for valid users
@@ -185,7 +185,6 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 		// return error if no hits
 		if ( $res->current() == 0 ) {
 			$this->dieWithError( 'apierror-openbadges-inputerror-badgeidnotfound', 'inputerror' );
-			return;
 		}
 
 		// Required for v. 1.1
