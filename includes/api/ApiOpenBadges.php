@@ -23,12 +23,7 @@ abstract class ApiOpenBadges extends ApiBase {
 		global $wgScriptPath;
 		global $wgOpenBadgesThumb;
 		$thumbUrl = $wgCanonicalServer . $wgScriptPath . '/thumb.php?';
-		if ( method_exists( MediaWikiServices::class, 'getRepoGroup' ) ) {
-			// MediaWiki 1.34+
-			$file = MediaWikiServices::getInstance()->getRepoGroup()->findFile( $filename );
-		} else {
-			$file = wfFindFile( $filename );
-		}
+		$file = MediaWikiServices::getInstance()->getRepoGroup()->findFile( $filename );
 		$mimetype = $file->getMimeType();
 
 		if ( $mimetype == 'image/png' ) {

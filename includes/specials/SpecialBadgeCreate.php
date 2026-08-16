@@ -94,13 +94,8 @@ class SpecialBadgeCreate extends FormSpecialPage {
 		if ( $imageTitle == '' ) {
 			return wfMessage( 'htmlform-required' );
 		}
-		if ( method_exists( MediaWikiServices::class, 'getRepoGroup' ) ) {
-			// MediaWiki 1.34+
-			$badgeFile = MediaWikiServices::getInstance()->getRepoGroup()
-				->findFile( $imageTitle );
-		} else {
-			$badgeFile = wfFindFile( $imageTitle );
-		}
+		$badgeFile = MediaWikiServices::getInstance()->getRepoGroup()
+			->findFile( $imageTitle );
 		if ( $badgeFile === false ) {
 			return wfMessage( 'ob-create-no-image' );
 		}

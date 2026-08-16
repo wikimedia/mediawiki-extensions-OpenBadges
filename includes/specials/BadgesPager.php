@@ -90,12 +90,7 @@ class BadgesPager extends TablePager {
 			case 'obl_name':
 				return htmlspecialchars( $value );
 			case 'obl_badge_image':
-				if ( method_exists( MediaWikiServices::class, 'getRepoGroup' ) ) {
-					// MediaWiki 1.34+
-					$file = MediaWikiServices::getInstance()->getRepoGroup()->findFile( $value );
-				} else {
-					$file = wfFindFile( $value );
-				}
+				$file = MediaWikiServices::getInstance()->getRepoGroup()->findFile( $value );
 				$badgeImage = $file->transform( [ 'width' => 180, 'height' => 360 ] );
 				$thumb = $badgeImage->toHtml( [ 'desc-link' => true ] );
 				return $thumb;
