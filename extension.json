@@ -16,8 +16,20 @@
 		"MediaWiki": ">= 1.46"
 	},
 	"APIModules": {
-		"openbadges": "ApiOpenBadgesAssertions",
-		"openbadgesissue": "ApiOpenBadgesIssue"
+		"openbadges": {
+			"class": "ApiOpenBadgesAssertions",
+			"services": [
+				"ConnectionProvider",
+				"RepoGroup"
+			]
+		},
+		"openbadgesissue": {
+			"class": "ApiOpenBadgesIssue",
+			"services": [
+				"ConnectionProvider",
+				"RepoGroup"
+			]
+		}
 	},
 	"AvailableRights": [
 		"createbadge",

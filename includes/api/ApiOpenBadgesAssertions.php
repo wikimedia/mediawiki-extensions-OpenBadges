@@ -2,9 +2,6 @@
 /**
  * OpenBadges API module to expose BadgeAssertions
  */
-
-use MediaWiki\MediaWikiServices;
-
 class ApiOpenBadgesAssertions extends ApiOpenBadges {
 
 	/** @inheritDoc */
@@ -85,7 +82,7 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	 * @param int $badgeID
 	 */
 	public function returnCriteria( $badgeID ) {
-		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$dbr = $this->dbProvider->getReplicaDatabase();
 		$res = $dbr->select(
 			[ 'openbadges_class' ],
 			'obl_criteria',

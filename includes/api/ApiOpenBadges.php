@@ -7,10 +7,20 @@
  *
  */
 
-use MediaWiki\MediaWikiServices;
+use MediaWiki\FileRepo\RepoGroup;
+use Wikimedia\Rdbms\IConnectionProvider;
 use Wikimedia\Rdbms\IResultWrapper;
 
 abstract class ApiOpenBadges extends ApiBase {
+
+	public function __construct(
+		ApiMain $main,
+		string $action,
+		protected readonly IConnectionProvider $dbProvider,
+		protected readonly RepoGroup $repoGroup,
+	) {
+		parent::__construct( $main, $action );
+	}
 
 	/**
 	 * Given an image filename this returns the file url if a png
@@ -24,7 +34,7 @@ abstract class ApiOpenBadges extends ApiBase {
 		global $wgScriptPath;
 		global $wgOpenBadgesThumb;
 		$thumbUrl = $wgCanonicalServer . $wgScriptPath . '/thumb.php?';
-		$file = MediaWikiServices::getInstance()->getRepoGroup()->findFile( $filename );
+		$file = $this->repoGroup->findFile( $filename );
 		$mimetype = $file->getMimeType();
 
 		if ( $mimetype == 'image/png' ) {
@@ -77,7 +87,7 @@ abstract class ApiOpenBadges extends ApiBase {
 	 * @return IResultWrapper|bool
 	 */
 	protected function queryBadge( $badgeID ) {
-		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$dbr = $this->dbProvider->getReplicaDatabase();
 		$res = $dbr->select(
 			[ 'openbadges_class' ],
 			'*',
@@ -95,7 +105,7 @@ abstract class ApiOpenBadges extends ApiBase {
 	 * @return IResultWrapper|bool
 	 */
 	protected function queryIssuedBadge( $badgeID, User $recipient ) {
-		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$dbr = $this->dbProvider->getReplicaDatabase();
 		$res = $dbr->select(
 			[ 'openbadges_assertion', 'openbadges_class' ],
 			'*',
