@@ -2,6 +2,9 @@
 /**
  * OpenBadges API module to expose BadgeAssertions
  */
+
+use MediaWiki\MainConfigNames;
+
 class ApiOpenBadgesAssertions extends ApiOpenBadges {
 
 	/** @inheritDoc */
@@ -64,16 +67,13 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	 * Returns the IssuerOrganization for this wiki
 	 */
 	public function returnIssuer() {
-		global $wgSitename;
-		global $wgCanonicalServer;
-
 		// Required for v. 1.1
 		$this->getResult()->addValue( null, '@context', 'https://w3id.org/openbadges/v1' );
 		$this->getResult()->addValue( null, 'type', 'Issuer' );
 		$this->getResult()->addValue( null, 'id', $this->issuerUrl() );
 
-		$this->getResult()->addValue( null, 'name', $wgSitename );
-		$this->getResult()->addValue( null, 'url', $wgCanonicalServer );
+		$this->getResult()->addValue( null, 'name', $this->getConfig()->get( MainConfigNames::Sitename ) );
+		$this->getResult()->addValue( null, 'url', $this->getConfig()->get( MainConfigNames::CanonicalServer ) );
 	}
 
 	/**
@@ -280,9 +280,8 @@ class ApiOpenBadgesAssertions extends ApiOpenBadges {
 	 * @return string
 	 */
 	public function callToUrl( array $call ) {
-		global $wgCanonicalServer;
-		global $wgScriptPath;
-		$apiUrl = $wgCanonicalServer . $wgScriptPath . '/api.php?';
+		$apiUrl = $this->getConfig()->get( MainConfigNames::CanonicalServer ) .
+			$this->getConfig()->get( MainConfigNames::ScriptPath ) . '/api.php?';
 		return $apiUrl . http_build_query( $call );
 	}
 }

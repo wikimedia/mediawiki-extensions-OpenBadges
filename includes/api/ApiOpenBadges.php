@@ -8,6 +8,7 @@
  */
 
 use MediaWiki\FileRepo\RepoGroup;
+use MediaWiki\MainConfigNames;
 use Wikimedia\Rdbms\IConnectionProvider;
 use Wikimedia\Rdbms\IResultWrapper;
 
@@ -30,10 +31,8 @@ abstract class ApiOpenBadges extends ApiBase {
 	 * @return string
 	 */
 	protected function imageUrl( $filename ) {
-		global $wgCanonicalServer;
-		global $wgScriptPath;
-		global $wgOpenBadgesThumb;
-		$thumbUrl = $wgCanonicalServer . $wgScriptPath . '/thumb.php?';
+		$thumbUrl = $this->getConfig()->get( MainConfigNames::CanonicalServer ) .
+			$this->getConfig()->get( MainConfigNames::ScriptPath ) . '/thumb.php?';
 		$file = $this->repoGroup->findFile( $filename );
 		$mimetype = $file->getMimeType();
 
@@ -43,7 +42,7 @@ abstract class ApiOpenBadges extends ApiBase {
 			// need to get png thumb
 			$thumbCall = [
 				'f' => $file->getName(),
-				'width' => $wgOpenBadgesThumb
+				'width' => $this->getConfig()->get( 'OpenBadgesThumb' )
 			];
 			return $thumbUrl . http_build_query( $thumbCall );
 		} else {
@@ -70,11 +69,13 @@ abstract class ApiOpenBadges extends ApiBase {
 	 * @param User $recipient
 	 */
 	protected function dieOnBadRecipient( User $recipient ) {
-		global $wgOpenBadgesRequireEmail;
-		global $wgOpenBadgesRequireEmailConfirmation;
-		if ( $wgOpenBadgesRequireEmail && !$recipient->getEmail() ) {
+		if ( $this->getConfig()->get( 'OpenBadgesRequireEmail' ) &&
+			!$recipient->getEmail()
+		) {
 			$this->dieWithError( 'apierror-openbadges-noemail', 'noemail' );
-		} elseif ( $wgOpenBadgesRequireEmailConfirmation && !$recipient->isEmailConfirmed() ) {
+		} elseif ( $this->getConfig()->get( 'OpenBadgesRequireEmailConfirmation' ) &&
+			!$recipient->isEmailConfirmed()
+		) {
 			$this->dieWithError( 'apierror-openbadges-noemailconfirmed',
 				'noemailconfirmed' );
 		}

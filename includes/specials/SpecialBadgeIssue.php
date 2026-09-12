@@ -40,7 +40,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 				'label-message' => 'ob-issue-user',
 				'required' => true,
 				'filter-callback' => self::toDBkey( ... ),
-				'validation-callback' => self::validateUser( ... ),
+				'validation-callback' => $this->validateUser( ... ),
 			],
 			'BadgeId' => [
 				'type' => 'select',
@@ -128,9 +128,7 @@ class SpecialBadgeIssue extends FormSpecialPage {
 	 * @param array $alldata
 	 * @return Message|true
 	 */
-	public static function validateUser( $userName, $alldata ) {
-		global $wgOpenBadgesRequireEmail;
-		global $wgOpenBadgesRequireEmailConfirmation;
+	public function validateUser( $userName, $alldata ) {
 		if ( $userName == '' ) {
 			return wfMessage( 'htmlform-required' );
 		}
@@ -142,10 +140,14 @@ class SpecialBadgeIssue extends FormSpecialPage {
 		}
 
 		// Verify that the recipient e-mail settings are suitable
-		if ( $wgOpenBadgesRequireEmail && !$recipient->getEmail() ) {
+		if ( $this->getConfig()->get( 'OpenBadgesRequireEmail' ) &&
+			!$recipient->getEmail()
+		) {
 			return wfMessage( 'ob-db-user-no-email', $recipient->getName() );
 		}
-		if ( $wgOpenBadgesRequireEmailConfirmation && !$recipient->isEmailConfirmed() ) {
+		if ( $this->getConfig()->get( 'OpenBadgesRequireEmailConfirmation' ) &&
+			!$recipient->isEmailConfirmed()
+		) {
 			return wfMessage( 'ob-db-user-no-email-confirmation', $recipient->getName() );
 		}
 

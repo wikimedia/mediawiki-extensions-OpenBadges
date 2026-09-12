@@ -2,6 +2,7 @@
 
 use MediaWiki\FileRepo\RepoGroup;
 use MediaWiki\Html\Html;
+use MediaWiki\MainConfigNames;
 
 /**
  * @ingroup SpecialPage Pager
@@ -88,8 +89,8 @@ class BadgesPager extends TablePager {
 	 * @throws MWException
 	 */
 	function formatValue( $field, $value ) {
-		global $wgScriptPath, $wgCanonicalServer;
-		$apiUrl = $wgCanonicalServer . $wgScriptPath . '/api.php?';
+		$apiUrl = $this->getConfig()->get( MainConfigNames::CanonicalServer ) .
+			$this->getConfig()->get( MainConfigNames::ScriptPath ) . '/api.php?';
 		$userId = $this->getUser()->getId();
 
 		switch ( $field ) {
